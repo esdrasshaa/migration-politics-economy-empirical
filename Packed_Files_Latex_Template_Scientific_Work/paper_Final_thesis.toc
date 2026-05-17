@@ -1,0 +1,16 @@
+\contentsline {section}{List of Abbreviations}{III}{section*.2}%
+\contentsline {section}{List of Figures}{IV}{section*.3}%
+\contentsline {section}{List of Tables}{V}{section*.4}%
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Example Section}{1}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Useful LaTeX commands}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Inserting formulas}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Abbreviations}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Citation}{3}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Figures}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}A figure}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Two figures next to each other}{4}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Inserting tables}{5}{section.4}%
+\contentsline {section}{Appendix}{6}{table.1}%
+\contentsline {section}{Bibliography}{7}{section*.7}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
