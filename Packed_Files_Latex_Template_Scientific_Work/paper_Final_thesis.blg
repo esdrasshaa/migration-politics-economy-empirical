@@ -1,56 +1,53 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: Dokumentvorlage_Seminararbeit_Abschlussarbeit.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
+The top-level auxiliary file: paper_Final_thesis.aux
 The style file: biblatex.bst
-Reallocating 'name_of_file' (item size: 1) to 50 items.
-Reallocating 'name_of_file' (item size: 1) to 10 items.
-Reallocating 'glb_str_end' (item size: 4) to 20 items.
-Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
-Reallocating 'global_strs' (item size: 1) to 4000000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Database file #1: Dokumentvorlage_Seminararbeit_Abschlussarbeit-blx.bib
-Database file #2: literatur.bib
-Biblatex version: 3.20
-Reallocating 'wiz_functions' (item size: 4) to 9000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: paper_Final_thesis-blx.bib
+Database file #2: literature.bib
+Biblatex version: 3.19
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 4 entries,
-            6402 wiz_defined-function locations,
-            1230 strings with 9712 characters,
-and the built_in function-call counts, 18991 in all, are:
+            6399 wiz_defined-function locations,
+            1230 strings with 9625 characters,
+and the built_in function-call counts, 18976 in all, are:
 = -- 1301
 > -- 407
 < -- 135
 + -- 481
 - -- 137
-* -- 1178
+* -- 1175
 := -- 1967
 add.period$ -- 0
 call.type$ -- 4
 change.case$ -- 92
 chr.to.int$ -- 44
 cite$ -- 6
-duplicate$ -- 1979
-empty$ -- 1704
+duplicate$ -- 1976
+empty$ -- 1701
 format.name$ -- 165
-if$ -- 4033
+if$ -- 4030
 int.to.chr$ -- 0
 int.to.str$ -- 10
 missing$ -- 0
 newline$ -- 117
 num.names$ -- 192
-pop$ -- 1087
+pop$ -- 1084
 preamble$ -- 1
 purify$ -- 101
 quote$ -- 0

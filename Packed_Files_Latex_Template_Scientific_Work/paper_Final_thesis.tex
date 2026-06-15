@@ -94,18 +94,18 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
 \chair{\Large Professorship in Economics VII for Statistics and Econometrics}
 \professor{\Large Prof. Dr. Peter Winker}
 %
-\title{\Huge TOPIC OF THE WORK\\[10pt]
+\title{\Huge Political Discourse on and Economic Impact of Migration: An Empirical Analysis\\[10pt]
 }
-\subject{TYPE OF WORK%
+\subject{Masterthesis%
 	\large}
 %
-\author{\\[-10pt] \Large AUTHOR \\ STREET/HOUSE NUMBER, POSTCODE CITY \\ Telephone: XXXX/XXXXXXX \\MARTINA.MUSTERMANN@wirtschaft.uni-giessen.de \\[3pt]}
-\discipline{Bachelor of Science \\ 6th Semester}
-\matriculationnumber{MATRICULATION NUMBER}
+\author{\\[-10pt] \Large ESDRAS SHAA PROMBO \\ Pappelrain 14, 35440 Linden  \\ Telephone: +49 1573 2614412 \\esdras.shaa.prombo@physik.uni-giessen.de \\[3pt]}
+\discipline{Data Science (M.Sc.) \\ 6th Semester}
+\matriculationnumber{8118095}
 %
-\advisor{\Large SUPERVISOR}
-\date{DD.MM.YYYY}
-\place{CITY}
+\advisor{\Large Prof. Dr. Peter Winker \\Jana Röder}
+\date{01.06.2026}
+\place{Gießen}
 
 % Definition of the header and footer
 \pagestyle{scrheadings}
@@ -158,121 +158,486 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
 	
 	
 	% Main part
-	\section{Introduction}
+    % ================================================================
+    % MASTER THESIS OUTLINE — TARGET GRADE 1.0
+    % Political Discourse on and Economic Impact of Migration:
+    % An Empirical Analysis for Germany
+    % ================================================================
+    % Every section title is a deliberate signal to the examiner.
+    % The structure must tell a story: motivation → gap → method →
+    % results → contribution. Each subsection earns its place.
+    %
+    % DATA COVERAGE:
+    %   Econometric analysis: 2008Q1 – 2025Q1  (69 quarters)
+    %   Parliamentary speeches: full corpus (broader), filtered to
+    %   2008Q1–2025Q1 for the VAR/VECM estimation sample.
+    %
+    % KEY EPISODES WITHIN SAMPLE:
+    %   Global Financial Crisis: 2008Q3 – 2009Q2
+    %   European Debt Crisis:    2010Q2 – 2012Q4
+    %   2015 Refugee Crisis:     2015Q3 – 2016Q4
+    %   COVID-19 shock:          2020Q1 – 2021Q2
+    %   2022 Ukraine wave:       2022Q1 – 2023Q2
+    % ================================================================
+    
+    \tableofcontents
+    
+    % ----------------------------------------------------------------
+    \section{Introduction (8\% \; \textasciitilde{} 8,000 characters)}
+    % ----------------------------------------------------------------
+    % Purpose: hook the examiner, state the gap, claim the contribution.
+    % A 1.0 introduction answers three questions in the first two pages:
+    % (1) Why does this matter? (2) What do we not yet know?
+    % (3) What do YOU add?
+    
+    %\subsection{Motivation and Research Context}
+    % Open with the empirical puzzle: Germany's sample period
+    % (2008Q1--2025Q1) captures an exceptional sequence of shocks —
+    % the Global Financial Crisis (2008--2009), the European Debt
+    % Crisis (2010--2012), two structurally different immigration waves
+    % (2015 Syrian refugee crisis, 2022 Ukrainian displacement), and
+    % the COVID-19 pandemic (2020--2021).
+    % This period is uniquely rich: it allows identification of
+    % immigration shocks against a volatile macroeconomic backdrop,
+    % and permits direct comparison of the two largest immigration
+    % episodes in modern German history within a single sample.
+    % Cite Furlanetto et al. (2021) and IMF WP 2023/259 immediately.
+    
+    %\subsection{Research Questions and Objectives}
+    % State explicitly — examiners check this.
+    % RQ1: How did parliamentary discourse on immigration evolve
+    %      across the 2015 and 2022 episodes?
+    % RQ2: What are the dynamic macroeconomic effects of immigration
+    %      shocks on GDP, investment, and unemployment in Germany?
+    % RQ3: Is there a measurable relationship between parliamentary
+    %      sentiment and economic outcomes?
+    
+    %\subsection{Contribution to the Literature}
+    % Three explicit contributions — a 1.0 thesis names them:
+    % (i)   First Bundestag-specific immigration sentiment dictionary
+    %        constructed via Word2Vec corpus mining
+    % (ii)  First comparison of 2015 vs 2022 episodes using SVAR
+    % (iii) Integration of political discourse (S_t) into a
+    %        macroeconomic VAR as an endogenous variable
+    
+    %\subsection{Structure of the Thesis}
+    % One short paragraph. Guide the reader through the sections.
+    % "Section 2 reviews... Section 3 describes... etc."
+    
+    immigration , no oder word has raised  nowaday , so different opinions in ower society , one side with have people , who move from poor region because of wars or looking for better live conditions , to the other peacefull region and rather econmic stable , many country in europe and in america a very concern by the phenomenon  , and oder the side with people , who prepare themself to the realties that those  human move are , because immigration mean in destionation country more heterogenisation of the popuation raising concern about itendity , also it humanbeans to care of , by inversting more in security and infrastructure to reserve and may be anable them to have a economic contribution.
+    
+    so political speeches that , addres imigration go through the meanings that it represent , to take decisions that , would end with a restriction of migration or of fostering.
+    
+    there is one things that play in favor of migration , is the fact that in developped country , willing to maintaint a economic grow the burtrate have never been low as today, and it represent it is small joung population and small workfore against a needing older population. 
+    
+    so the speeches of politicians of each contries aware of that fact , can seem favorable or defavorable to welcome migrant, regarding their economic challenges. so the ton of politicians   regarding the immigration can serve as themomether of how well the country economic is and how it could be in the fucture. a direct exemple of that is the usa political discours about immigration , from a welcoming ton over the 1980s , representing a growing economics to a more restrictive nowaday representing a more difficulte economic climate.
+    
+    so the question that is going to be investigate is : what the political ton about immigration reveal on economical health of the country ?  german is partical well case to study that question , first by her low becoming birth rate , her economic situation , her olding population , and her work force need. 
+    
+    this studie is divided as followed ,  in the first part it going through recent study an the foundings that justified this one,  in a second part it introduse the use data , in the part three  present the study methodology , in part five is going through the empirical results, in part sixth is where the results are discuss  before the studie finish at part seven with a conclusion.  
+    
+    
+     
+    
+    
+    % ----------------------------------------------------------------
+    \section{Theoretical Background and Literature Review (18\% \; \textasciitilde{} 18,000 characters)}
+    % ----------------------------------------------------------------
+    % Purpose: position your work. A 1.0 literature review does not
+    % summarise papers — it maps debates and shows where YOUR thesis
+    % fits. Use subsections as debate clusters, not topic lists.
+    
+    %\subsection{Economic Theories of Migration}
+    % Cover the core theoretical frameworks:
+    % - Neoclassical labour market models (Borjas 2003)
+    % - Task-based complementarity (Peri 2012)
+    % - Fiscal and public finance effects
+    % End: what theory predicts for Germany 2015 vs 2022
+    
+    %\subsection{Empirical Evidence on Migration and Macroeconomic Outcomes}
+    % Organise by method, not chronology:
+    % - SVAR studies: Furlanetto et al. (2021), Furlanetto \& Robstad (2019)
+    % - Local projections: IMF WP 2023/259, d'Albis et al. (2019)
+    % - Germany-specific: Battisti et al. (2018)
+    % End: what gap remains (no study covers 2022 episode)
+    
+    %\subsection{Political Discourse and Immigration Policy}
+    % - Immigration and voting: Halla, Wagner \& Zweimüller (2017)
+    % - Parliamentary text analysis: Proksch \& Slapin (2010)
+    % - Dictionary-based sentiment: Loughran \& McDonald (2011),
+    %   Lüken et al. (fiscal policy benchmark)
+    % End: no immigration-specific dictionary exists for Germany
+    %       → YOUR CONTRIBUTION
+    
+    %\subsection{The 2015 and 2022 Migration Episodes: A Comparative Overview}
+    % Descriptive section — not methodology, not data.
+    % Contextualise the two shocks theoretically:
+    % - 2015: low-skilled, refugee, push-driven (conflict)
+    % - 2022: higher-educated, Ukrainian, different composition
+    % Cite: Battisti (2018), IMF (2022), ECB (2022)
+    % This section justifies WHY comparing the two is meaningful.
+    
+    %\subsection{Gaps in the Literature and Research Positioning}
+    % Synthesis: what the literature has NOT done.
+    % Explicitly state your contribution relative to each gap.
+    % A 1.0 examiner will check that this subsection exists.
+    
+    % ----------------------------------------------------------------
+    \section{Data (10\% \; \textasciitilde{} 10,000 characters)}
+    % ----------------------------------------------------------------
+    % Purpose: describe WHAT the data is, WHERE it comes from,
+    % and basic descriptive properties. HOW you process it
+    % belongs in Section 4 (Methodology). Keep these strictly separate.
+    
+    \subsection{Parliamentary Speeches: The Open Discourse Dataset}
+    % Source: Open Discourse (Harvard Dataverse), covers 1949--2021
+    % Supplemented by Bundestag Open Data XML for 2022Q1--2025Q1
+    % Full corpus: ~900,000 speeches; fields: speaker, party, date, text
+    % Estimation sample: speeches from 2008Q1--2025Q1
+    %   → ~180,000--220,000 speeches in the VAR window
+    % Filtering: immigration-related speeches via keyword filter
+    %   (Flüchtling, Asyl, Migration, Zuwanderung, Ukraine, etc.)
+    % Immigration-related subsample: ~25,000--40,000 speeches
+    % Sample sizes by episode — Table 1:
+    %   Pre-crisis baseline: 2008Q1--2014Q4
+    %   2015 crisis:         2015Q1--2016Q4
+    %   Inter-episode:       2017Q1--2021Q4
+    %   2022 episode:        2022Q1--2023Q4
+    %   Recent:              2024Q1--2025Q1
+    
+    \subsection{Immigration Inflows}
+    % Source: Destatis / BAMF (Bundesamt für Migration und Flüchtlinge)
+    % Variable: quarterly net migration inflows to Germany
+    % Coverage: 2008Q1--2025Q1  (69 observations)
+    % Transformation: levels (persons), log-transformation for VAR
+    % Episode-level descriptives:
+    %   Pre-crisis baseline (2008--2014): avg ~200,000 per quarter
+    %   2015 peak (Q3--Q4):              ~400,000+ per quarter
+    %   2022 peak (Q1--Q2):              ~300,000+ per quarter
+    % Figure: immigration time series with vertical shading for
+    %   both crisis episodes and COVID window (2020Q1--2021Q2)
+    % Note: 2008Q3 GFC quarter as first structural break candidate
+    
+    \subsection{Macroeconomic Variables}
+    %\subsubsection{Real GDP}
+    % Source: Destatis / Eurostat
+    % Coverage: 2008Q1--2025Q1  (69 quarters)
+    % Transformation: log-levels, quarterly, seasonally adjusted
+    % Notable features within sample:
+    %   GFC contraction: 2008Q3--2009Q2  (−5.7\% peak-to-trough)
+    %   COVID contraction: 2020Q1--2020Q2 (−9.7\% peak-to-trough)
+    %   2015 episode: mild positive growth acceleration
+    %   2022 episode: coincides with energy price shock — control needed
+    
+    %\subsubsection{Gross Fixed Capital Formation (Investment)}
+    % Source: Destatis national accounts
+    % Coverage: 2008Q1--2025Q1
+    % Transformation: log-levels, seasonally adjusted
+    % Rationale: investment responds to labour supply shocks
+    %   (Furlanetto et al. 2021 use this variable for Germany)
+    % Note: sharp drops in 2009 and 2020 — dummy variables required
+    
+    %\subsubsection{Unemployment Rate}
+    % Source: Bundesagentur für Arbeit / Eurostat
+    % Coverage: 2008Q1--2025Q1
+    % Transformation: levels (percent), seasonally adjusted
+    % No reunification structural break within this sample
+    % Key feature: German labour market proved resilient —
+    %   Kurzarbeit scheme dampened unemployment in 2009 and 2020
+    %   → may weaken the immigration-unemployment channel
+    %   → discuss as a Germany-specific institutional feature
+    
+    \subsection{Descriptive Statistics and Preliminary Analysis}
+    % Table 1: mean, std, min, max, observations for all variables
+    %   Sample: 2008Q1--2025Q1 (T=69 quarters per variable)
+    % Figure 1: time series plots for all five variables
+    %   with vertical shading for:
+    %   GFC (2008Q3--2009Q2), Debt crisis (2010Q2--2012Q4),
+    %   2015 episode (2015Q3--2016Q4),
+    %   COVID (2020Q1--2021Q2),
+    %   2022 episode (2022Q1--2023Q2)
+    % Table 2: episode-level means — compare baseline vs crisis periods
+    % Note on confounders: the 2022 immigration wave coincides with
+    %   the energy price shock and Russian gas cutoff.
+    %   These confounders must be controlled — discuss dummy strategy.
+    % This is the ONLY place descriptive statistics appear —
+    %   not repeated in Section 5.
+    
+    % ----------------------------------------------------------------
+    \section{Methodology (22\% \; \textasciitilde{} 22,000 characters)}
+    % ----------------------------------------------------------------
+    % Purpose: show methodological mastery. A 1.0 methodology section
+    % does not just describe tools — it justifies every choice,
+    % acknowledges alternatives, and explains why your approach
+    % is appropriate for YOUR research question.
+    
+    \subsection{Construction of the Parliamentary Sentiment Indicator}
+    % This entire subsection belongs here, NOT in Data.
+    
+    %\subsubsection{Corpus Preprocessing}
+    % Lemmatisation (spaCy de\_core\_news\_lg)
+    % Umlaut normalisation (ae/oe/ue)
+    % Immigration speech filtering
+    % Justify each step with a citation
+    
+    %\subsubsection{Doc2Vec Training and Dictionary Extraction}
+    % Model specification: vector\_size=200, window=7, sg=1
+    % Justify: skip-gram better for rare domain-specific terms
+    %   (Mikolov et al. 2013)
+    % Seed word selection — Table A1 in appendix
+    % Candidate extraction via most\_similar()
+    % TF-IDF filtering for immigration-specificity
+    % Ambiguity resolution procedure (mirrors Lüken et al.)
+    
+    \subsubsection{Sentiment Scoring}
+    % Dictionary centroid construction
+    % Speech vector: mean of token vectors (min 30 tokens)
+    % Net score: sim(welcoming) -- sim(restrictive)
+    % Monthly → quarterly aggregation
+    % Weighting by speech length
+    
+    \subsubsection{Validation of the Sentiment Indicator}
+    % Face validity: historical event mapping
+    %   (1999 Citizenship Reform, 2015 Willkommenskultur,
+    %    2021 AfD election campaign trough)
+    % Internal validity: AfD always negative (falsification test)
+    % External validity: correlation with MIPEX / Eurobarometer
+    % Robustness: Wordfish correlation (Proksch \& Slapin 2010)
+    % This subsection is what separates a 1.0 from a 1.7.
+    
+    \subsection{The Vector Autoregression Framework}
+    % Justify VAR over single-equation models:
+    % endogeneity of immigration, GDP, and sentiment
+    % Cite: Sims (1980), Lütkepohl (2005)
+    
+    \subsubsection{Model Specification and Variable System}
+    % y_t = [M_t, Y_t, I_t, U_t, S_t]'
+    % Sample: 2008Q1--2025Q1  (T = 69 quarters)
+    % Important: T=69 is a moderate sample for a 5-variable VAR.
+    %   With p=2 lags: 69-2=67 effective observations.
+    %   Degrees of freedom constraint: keep lag length parsimonious.
+    %   Justify: AIC, BIC, HQ — report all three in Table 3.
+    % Dummy variables (Perron 1989):
+    %   D^{GFC}:   2008Q3--2009Q2   (Global Financial Crisis)
+    %   D^{2015}:  2015Q3--2016Q4   (refugee crisis peak)
+    %   D^{COVID}: 2020Q1--2021Q2   (pandemic shutdown)
+    %   D^{2022}:  2022Q1--2023Q2   (Ukraine displacement wave)
+    %   D^{energy}: 2022Q1--2022Q4  (energy price shock — confound)
+    % Ordering justification (Cholesky):
+    %   M_t first: immigration exogenous within quarter
+    %   Y_t, I_t, U_t: economic block
+    %   S_t last: sentiment responds contemporaneously to all
+    % Note: with T=69, limit to maximum p=3 lags to preserve df.
+    
+    \subsubsection{Stationarity Analysis}
+    % ADF test (Said \& Dickey 1984) — levels and first differences
+    % KPSS test (Kwiatkowski et al. 1992) — complementary null
+    % PP test (Phillips \& Perron 1988) — as robustness
+    % Structural break unit root: Zivot-Andrews test (1992)
+    %   Within 2008Q1--2025Q1 the candidate break dates are:
+    %   2009Q1 (GFC trough), 2015Q3 (refugee peak),
+    %   2020Q1 (COVID onset) — NOT 1990 (outside sample)
+    % Expected outcome: all variables I(1) in levels,
+    %   stationary in first differences → proceed to
+    %   Johansen cointegration test before taking differences.
+    % Table 3: unit root results for all five variables.
+    % Note on sample size: ADF has low power with T=69 —
+    %   report 5\% and 10\% critical values; discuss power caveat.
+    
+    %\subsubsection{Cointegration Analysis: The Johansen Method}
+    % Johansen (1988, 1991), Johansen \& Juselius (1990)
+    % Trace test and maximum eigenvalue test
+    % Rank determination → VECM if r > 0
+    % Restrictions on beta: economic theory (PPP, money demand
+    %   analogy for migration-output relationship)
+    % LR test for binding restrictions
+    
+    %\subsubsection{Structural Identification}
+    % Cholesky decomposition (Christiano et al. 1999)
+    % Ordering justification:
+    %   M_t first: immigration exogenous within period
+    %   S_t last: sentiment responds contemporaneously to all
+    % Robustness: sign restrictions (Furlanetto \& Robstad 2019)
+    
+    \subsubsection{Impulse Response Functions and Forecast Error Variance Decomposition}
+    % IRF: Lütkepohl (2005), Kilian \& Lütkepohl (2017)
+    % Bootstrap confidence bands: 1000 replications, 90\% bands
+    %   (with T=69, use bootstrap not asymptotic — small sample)
+    % Horizon: 12 quarters (3 years)
+    %   Rationale: 20-quarter horizon unreliable with T=69;
+    %   12 quarters covers both short-run adjustment (h=0--4)
+    %   and medium-run dynamics (h=5--12)
+    % FEVD: share of GDP/investment variance explained by:
+    %   (i) immigration shock, (ii) sentiment shock,
+    %   (iii) own shocks, (iv) remaining economic shocks
+    %   → novel finding: does discourse channel matter
+    %      beyond the direct migration flow?
+    
+    %\subsection{Event-Based Local Projection Analysis}
+    % Jordà (2005): y_{t+h} = alpha_h + beta_h D_t + controls + eps
+    % Justification: does not impose full VAR structure,
+    %   allows direct comparison of 2015 vs 2022 episode responses
+    %   without assuming parameter stability across episodes.
+    % Ramey \& Zubairy (2018): regime-dependent local projections
+    % Episode definition within 2008Q1--2025Q1:
+    %   Episode 1 (2015): D_t = 1 for 2015Q3--2016Q4
+    %   Episode 2 (2022): D_t = 1 for 2022Q1--2023Q2
+    %   Controls: lags of y_{t-j} (j=1..p), GFC dummy, COVID dummy,
+    %             energy price index (2022 confound)
+    % Horizon: h = 0, 1, ..., 8 quarters
+    %   (limited to 8 to avoid losing too many observations)
+    % Test: H0: beta_h^{2015} = beta_h^{2022} for all h
+    %   → is the GDP/investment response statistically different
+    %     across the two migration waves?
+    % This comparison is the central empirical contribution.
+    
+    % ----------------------------------------------------------------
+    \clearpage
+    \section{Empirical Results (25\% \; \textasciitilde{} 25,000 characters)}
+    % ----------------------------------------------------------------
+    % Purpose: present findings clearly and systematically.
+    % Do NOT interpret here — interpretation goes in Section 6.
+    % A 1.0 results section is precise, complete, and self-contained.
+    
+    \subsection{The Parliamentary Immigration Sentiment Indicator}
+    % Figure: S_t time series 2008Q1--2025Q1, government vs opposition
+    %   with vertical shading for all five episode windows
+    % Figure: AfD sentiment series 2017Q4--2025Q1 — falsification test
+    %   (AfD never crosses zero; 2021Q3 election trough confirmed)
+    % Table: party-level sentiment statistics across full sample
+    % Table: episode-level summary means and standard deviations:
+    %   Baseline 2008--2014 | 2015 crisis | 2017--2021 | 2022 episode | 2023--2025
+    % Key result to report: does sentiment lead or lag immigration flows?
+    %   → cross-correlogram S_t vs M_t at lags 0, ±1, ±2, ±4
+    % Describe findings — interpretation reserved for Section 6.
+    
+    \subsection{Stationarity and Cointegration Results}
+    % Table: unit root test results for all variables
+    % Table: Johansen trace and max-eigenvalue statistics
+    % State rank r clearly
+    % If VECM: report cointegrating vectors with t-statistics
+    % If VAR in differences: justify
+    
+    \subsection{Impulse Response Analysis}
+    %\subsubsection{Response of GDP to an Immigration Shock}
+    %\subsubsection{Response of Investment to an Immigration Shock}
+    %\subsubsection{Response of Unemployment to an Immigration Shock}
+    %\subsubsection{Response of Sentiment to an Immigration Shock}
+    %\subsubsection{Response of Economic Variables to a Sentiment Shock}
+    % Each with: IRF figure + 90\% bootstrap bands
+    % Short-run (h=0--4) and long-run (h=8--20) effects
+    % Magnitude: basis points or percent deviation from baseline
+    
+    \subsection{Forecast Error Variance Decomposition}
+    % Table: share of GDP variance explained by each shock
+    % How much does immigration sentiment explain beyond
+    % the immigration flow itself? This is a novel finding.
+    
+    \subsection{Episode Comparison: 2015 vs 2022}
+    % Local projection results: beta_h for each episode
+    % Figure: IRF comparison — 2015 episode vs 2022 episode
+    % Are the two episodes statistically distinguishable?
+    % This section answers RQ2 and RQ3 directly.
+    
+    \subsection{Robustness Checks}
+    % Present as a single table of key IRF magnitudes (h=4, h=8)
+    % across all specifications — shows results are not fragile.
+    %
+    % R1. Alternative lag lengths: p=1 and p=3
+    %     (baseline p=2; with T=69 keep parsimonious)
+    % R2. Alternative Cholesky ordering:
+    %     swap M_t and S_t positions
+    % R3. Sign restrictions identification
+    %     (Furlanetto \& Robstad 2019 approach)
+    % R4. Alternative sentiment measure: Wordfish scores
+    %     (Proksch \& Slapin 2010)
+    % R5. Subsample stability:
+    %     Pre-2015: 2008Q1--2014Q4  (T=28, small — report with caution)
+    %     Post-2015: 2015Q1--2025Q1 (T=41)
+    % R6. Exclusion of COVID quarters: drop 2020Q1--2021Q2
+    %     (8 observations removed → T=61)
+    %     Rationale: COVID confounds immigration and economic dynamics
+    %     simultaneously — check if results hold without this period.
+    % R7. Control for energy price shock:
+    %     Add real energy price index as exogenous variable
+    %     for the 2022 episode (Russian gas cutoff confound)
+    
+    % ----------------------------------------------------------------
+    \section{Discussion (10\% \; \textasciitilde{} 10,000 characters)}
+    % ----------------------------------------------------------------
+    % Purpose: interpret, contextualise, and acknowledge limits.
+    % A 1.0 discussion is honest about what the results DO and DO NOT show.
+    
+    \subsection{Interpretation of Main Findings}
+    % Answer each research question explicitly:
+    % RQ1: How did sentiment evolve? → reference S_t time series
+    % RQ2: What are the macro effects? → reference IRFs
+    % RQ3: Sentiment-economy link? → reference FEVD
+    % Connect to theory: consistent with Peri (2012)? Borjas (2003)?
+    
+    \subsection{The 2015 vs 2022 Comparison: What Differs and Why}
+    % Structural differences between the two waves:
+    % skill composition, fiscal cost, political climate
+    % Do your IRFs reflect these differences?
+    % What does the comparison tell us about
+    % heterogeneity in immigration shocks?
+    
+    \subsection{The Role of Political Discourse}
+    % Is sentiment a cause or consequence of economic outcomes?
+    % What does the FEVD tell you about the relative importance
+    % of the discourse channel vs the direct migration channel?
+    % Policy implication: does rhetoric matter for economic adjustment?
+    
+    \subsection{Limitations and Avenues for Future Research}
+    % Be explicit — a 1.0 thesis does not hide weaknesses:
+    % (i)   Moderate sample size (T=69) limits power of unit root
+    %        tests and precision of long-horizon IRFs
+    % (ii)  2022 episode coincides with energy price shock —
+    %        despite dummy controls, full separation impossible
+    % (iii) Negation not handled in sentiment scoring
+    %        (AfD reactive discourse partially misclassified)
+    % (iv)  Quarterly aggregation loses within-quarter dynamics
+    %        (e.g. speech before vs after a major news event)
+    % (v)   Cholesky ordering imposes strong contemporaneous
+    %        exclusion assumptions — partially addressed by R2/R3
+    % (vi)  No microeconomic validation of macro findings
+    % Future research:
+    %   - Extend to 2026+ as more data becomes available
+    %   - Monthly frequency (if immigration data allows)
+    %   - Regional VAR using Bundesland-level data
+    %   - BERT-based sentiment as robustness for the NLP step
+    %   - Firm-level investment panel to validate the macro IRF
+    
+    % ----------------------------------------------------------------
+    \section{Conclusion (7\% \; \textasciitilde{} 7,000 characters)}
+    % ----------------------------------------------------------------
+    % Purpose: close the argument. Three paragraphs maximum.
+    % Para 1: restate the research questions and answer them in 3 sentences.
+    % Para 2: state the three main findings with one number each.
+    % Para 3: contribution to literature and policy implication.
+    % Do NOT introduce new material. Do NOT summarise every section.
+    
+    % ----------------------------------------------------------------
+    % APPENDIX
+    % ----------------------------------------------------------------
+    \appendix
+    \section{Seed Words for Dictionary Construction}
+    % Table A1: welcoming seeds, restrictive seeds
+    
+    \section{Full Dictionary Listings}
+    % Table A2: welcoming\_terms (135 terms) with similarity scores
+    % Table A3: restrictive\_terms (155 terms) with similarity scores
+    % Table A4: ambiguous terms and resolution decisions
+    
+    \section{Unit Root and Cointegration Tables}
+    % Full ADF/KPSS/PP results for all variables and all lags
+    
+    \section{Additional Impulse Response Figures}
+    % All robustness specification IRFs
+    
+    \section{Party-Level Sentiment Statistics}
+    % Full breakdown by party, year, and episode
 	
-	\subsection{Example Section}
-	\lipsum[1]\par Further example text: \lipsum[1] %Dummy text to test layout
-	
-	% Instead of using the command \par, you can simply leave a blank line to generate a paragraph.
-	% \\ creates a line break
-	
-	\section{Useful LaTeX commands}
-	\textit{This sentence should be italicized.}\\ %Set text in italics
-	\underline{This sentence should be underlined.}\\ %Underline text
-	\textbf{This sentence should be bold.}\\ %Set text in bold
-	The word LaTeX should now be placed in quotation marks\footnote{This is just an example of a footnote.}: ''LaTeX''.\\
-	This is a faster alternative: "LaTeX".\\%This blank line creates a paragraph afterwards
-	Enumerations with bullet points are created as follows:
-	
-	\begin{itemize}
-		\item {first bullet point}
-		\item {second bullet point}
-		\item {third bullet point}
-	\end{itemize}
-	\subsection{Inserting formulas}
-	The setting of a formula or a mathematical symbol, for example, to explain the formula within a continuous text, is done by adding dollar signs. If, for example, the formula $a+b=c$ is to be explained, the individual letters can be set "mathematically" by using dollar signs. This then looks as follows: $a$...$b$....$c$...\\
-	If the formula has a large contentual meaning, it can be displayed separated from the text.
-	\begin{equation}
-		a+b=c
-		\label{equation_a}
-	\end{equation}
-	
-	Equation (\ref {equation_a}) describes...
-	
-	\begin{align}
-		A_{m,n} =
-		\begin{pmatrix}
-			a&b&c& \\
-			d&e&f& \\
-			g&h&i&
-			\label{matrix_a}
-		\end{pmatrix}
-	\end{align}
-	
-	In matrix (\ref {matrix_a}) is...
-	
-	
-	\subsection{Abbreviations}
-	The abbreviations were defined in the list of abbreviations. If abbreviations are now to be used in the continuous text, the command "Backslash ac curly bracket"' is used. The central advantage here is that a new abbreviation is introduced in long and short form, and subsequently only the short form is used.\\Here is an example:\\
-	The \ac{GDP} is given in \ac{bn.} euros.\\
-	If these abbreviations are used again, only the short form is compiled.\\
-	The \ac{GDP} is given in \ac{bn.} euros.
-	
-	\subsection{Citation}
-	Citations are entered as follows:\\
-	\parencite[cf.][112-114]{Winker.2017} \\%Citation in parentheses, cf., page number
-	\parencite[50-54]{Lutkepohl.2006}\\ %Citation in parentheses, page number
-	\textcite[470]{Makridakis.2000}\\ %Citation without parentheses, page number
-	\textcite{Makridakis.2000}\\ %Citation without parentheses
-	
-	
-	\section{Figures}
-	\subsection{A figure}
-	\begin{figure}[h] % h important so that the image is placed "here"
-	\begin{center} %Image centered
-	\includegraphics[width=12cm]{bip_de.pdf} %Width of the image and name of the file
-	\caption{Gross domestic product of Germany at current prices, in billions of euros} %Figure caption
-	\label{bip_de} %Reference for the text (see below)
-	\end{center}
-	\end{figure}
-	
-	Figure \ref{bip_de} describes \lipsum[1]
-	
-	\subsection{Two figures next to each other}
-	
-	% set two images next to each other:
-	
-	\begin{figure}[h]
-		\centering
-		\begin{minipage}[t]{0.45\linewidth}
-			\centering
-			\includegraphics[width=8cm]{bip_de.pdf} %Width of the image and name of the file
-			\caption{Test figure caption 1} %Figure caption
-			%\label{Abbildungsverzeichnis}
-			\label{test1}
-		\end{minipage}
-		\hfill
-		\begin{minipage}[t]{0.45\linewidth}
-			\centering
-			\includegraphics[width=8cm]{bip_de.pdf} %Width of the image and name of the file
-			\caption{Test figure caption 2} %Figure caption
-			%\label{Abbildungsverzeichnis}
-			\label{test2}
-		\end{minipage}
-	\end{figure}
-	Figure \ref{test1} and Figure \ref{test2} \lipsum[1] \\Furthermore, Figure \ref{bip_de} \lipsum[1]
-	
-	\section{Inserting tables}
-	
-	\begin{table}[h]
-		\begin{center} %if centered alignment is desired
-			\begin{tabular} {|c|c|c|c|} %Table with four columns is created, the text is centered and the columns are separated by vertical lines
-				\hline %horizontal line is generated (to separate the rows)
-				Column heading 1 & Column heading 2 & Column heading 3 & Column heading 4 \\ \hline
-				example text & example text & example text & example text \\ \hline
-				example text & example text & example text & example text  \\ \hline
-				example text & example text & example text & example text  \\ \cline{2-3} %horizontal line is only generated for cells of column 2 to 3
-				example text & example text & example text & example text  \\ \hline
-				example text & example text & example text & example text  \\ \hline \hline
-				example text & example text & example text & example text \\ \hline
-			\end{tabular}
-		\end{center}
-		\caption{Example table} %Table caption
-		\label{tab_a}
-	\end{table}
-	
-	
-	Table \ref{tab_a} describes...
 	
 	\clearpage
 	\addcontentsline{toc}{section}{Appendix} 					%sets header with chapter title
@@ -292,8 +657,8 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
 	\thispagestyle{empty}
 	I hereby declare that I have written this Bachelor Thesis independently and without using other than the indicated sources and aids and that I have identified the passages taken verbatim or in content from the used sources as such. The work in the same or similar form has not been submitted to any other examination authority.
 	\\[1cm]
-	CITY, DD.MM.YYYY
+	Linden, 01.06.2026
 	\\[1.5cm]
-	MARTINA MUSTERMANN
+	Esdras Shaa Prombo
 	
 \end{document}

@@ -1,0 +1,6 @@
+afd 2019 120
+afd 2020 111,143,160,276
+afd 2024 ,6,141,325,483
+
+immigration als a themomether df_migration_filtered_2010_2015["text"].tolist()[178]
+df_migration_filtered_2010_2015["text"].tolist()[399]
