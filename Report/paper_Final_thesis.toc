@@ -1,0 +1,42 @@
+\contentsline {section}{List of Abbreviations}{IV}{section*.3}%
+\contentsline {section}{List of Figures}{IX}{section*.4}%
+\contentsline {section}{List of Tables}{X}{section*.5}%
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}Literature Review}{3}{section.2}%
+\contentsline {section}{\numberline {3}Text data}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Data Sources and Corpus Construction}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Migration Speech Identification and Dictionary Construction}{8}{subsection.3.2}%
+\contentsline {paragraph}{\nonumberline Step 1: Manual seed selection.}{9}{paragraph*.9}%
+\contentsline {paragraph}{\nonumberline Step 2: Word2Vec-based expansion.}{9}{paragraph*.11}%
+\contentsline {paragraph}{\nonumberline Step 3: Manual cleaning.}{10}{paragraph*.15}%
+\contentsline {subsection}{\numberline {3.3}Sentiment Index Construction}{12}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Validation of the Sentiment Measure}{14}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Estimating the macroeconomic effects}{17}{section.4}%
+\contentsline {subsection}{\numberline {4.1}VAR Model}{17}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Bayesian Estimation}{19}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Structural Identification}{21}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Data}{22}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Identification}{23}{subsection.4.3}%
+\contentsline {paragraph}{\nonumberline Ordering the migration variable.}{24}{paragraph*.19}%
+\contentsline {paragraph}{\nonumberline Ordering the macroeconomic block.}{24}{paragraph*.21}%
+\contentsline {paragraph}{\nonumberline Ordering the sentiment variable.}{25}{paragraph*.23}%
+\contentsline {paragraph}{\nonumberline Predicted signs.}{25}{paragraph*.25}%
+\contentsline {subsection}{\numberline {4.4}Results}{25}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Original Dataset from \blx@tocontentsinit {0}\parencite {maffei2021does}}{26}{subsubsection.4.4.1}%
+\contentsline {paragraph}{\nonumberline Extending the baseline model with sentiment measures.}{27}{paragraph*.27}%
+\contentsline {subsubsection}{\numberline {4.4.2}Extension of the Maffei et al.\ (2021) Dataset to June 2025}{30}{subsubsection.4.4.2}%
+\contentsline {paragraph}{\nonumberline Reconstructed dataset, 2007--2019 window.}{32}{paragraph*.29}%
+\contentsline {paragraph}{\nonumberline Extended sample: 2007--2025.}{36}{paragraph*.31}%
+\contentsline {subsection}{\numberline {4.5}Robustness}{39}{subsection.4.5}%
+\contentsline {paragraph}{\nonumberline Specification 1: baseline ordering.}{39}{paragraph*.33}%
+\contentsline {paragraph}{\nonumberline Specification 2: reordered macroeconomic block.}{39}{paragraph*.35}%
+\contentsline {paragraph}{\nonumberline Specification 3: sentiment ordered second.}{39}{paragraph*.37}%
+\contentsline {paragraph}{\nonumberline Specification 4: alternative sentiment measure \ac {LLM}.}{43}{paragraph*.39}%
+\contentsline {section}{\numberline {5}Conclusion}{49}{section.5}%
+\contentsline {section}{Appendix}{53}{section.5}%
+\contentsline {section}{\numberline {6}Unit Root and Cointegration Tables}{53}{section.6}%
+\contentsline {section}{\numberline {7}Additional Impulse Response Figures}{55}{section.7}%
+\contentsline {section}{\numberline {8}Party-Level Sentiment Statistics}{56}{section.8}%
+\contentsline {section}{\numberline {9}\ac {LLM} Sentiment Classification Prompt}{56}{section.9}%
+\contentsline {section}{Bibliography}{60}{lstnumber.1.58}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

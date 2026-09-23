@@ -1,0 +1,12 @@
+\contentsline {table}{\numberline {1}{\ignorespaces Overview of the two sub-datasets underlying the combined corpus.}}{7}{table.1}%
+\contentsline {table}{\numberline {2}{\ignorespaces Original keyword list (32 inflected word forms), following \blx@tocontentsinit {0}\textcite {kostikova2024fine}.}}{9}{table.2}%
+\contentsline {table}{\numberline {3}{\ignorespaces Reduced list of 13 word stems used for regular-expression matching. Word forms sharing a root were merged into one stem, so no entry overlaps with another.}}{9}{table.3}%
+\contentsline {table}{\numberline {4}{\ignorespaces Evolution of the welcoming and restrictive vocabularies}}{12}{table.4}%
+\contentsline {table}{\numberline {5}{\ignorespaces VAR Lag Length Selection}}{20}{table.5}%
+\contentsline {table}{\numberline {6}{\ignorespaces \small \add@extra@listi {sml}Predicted sign of the response to a one-standard-deviation sentiment shock, under the identifying assumptions in this section.}}{25}{table.6}%
+\contentsline {table}{\numberline {7}{\ignorespaces KPSS Tests for Level Stationarity}}{53}{table.7}%
+\contentsline {table}{\numberline {8}{\ignorespaces Johansen Trace Test for Cointegration}}{53}{table.8}%
+\contentsline {table}{\numberline {9}{\ignorespaces KPSS Tests for Level Stationarity}}{54}{table.9}%
+\contentsline {table}{\numberline {10}{\ignorespaces Johansen Trace Test for Cointegration}}{54}{table.10}%
+\contentsline {table}{\numberline {11}{\ignorespaces Solidarity and anti-solidarity subtypes used in prompt construction.}}{57}{table.11}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

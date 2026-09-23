@@ -1,2 +1,7 @@
 *.csv
 /results
+*.jsonl
+*.xlsx
+businessExpectation.xlsx
+*.npy
+/python/results

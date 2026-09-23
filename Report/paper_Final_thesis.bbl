@@ -1,0 +1,1761 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nyt/global//global/global}
+  \entry{abdelatif2026uncertainty}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AY}{%
+         family={Abdelatif},
+         familyi={A\bibinitperiod},
+         given={Youssuf},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=AZ}{%
+         family={Andriantomanga},
+         familyi={A\bibinitperiod},
+         given={Zo},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{AYAZ1}
+    \strng{fullhash}{AYAZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2026}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{Uncertainty and restrictive migration rhetoric in parliament:
+  evidence from Germany}
+    \field{journaltitle}{Applied Economics Letters}
+    \field{year}{2026}
+  \endentry
+
+  \entry{abercrombie2020sentiment}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AG}{%
+         family={Abercrombie},
+         familyi={A\bibinitperiod},
+         given={Gavin},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BNR}{%
+         family={Batista-Navarro},
+         familyi={B\bibinithyphendelim N\bibinitperiod},
+         given={Riza},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{AGBNR1}
+    \strng{fullhash}{AGBNR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{1}
+    \field{pages}{245\bibrangedash 270}
+    \field{title}{Sentiment and position-taking analysis of parliamentary
+  debates: a systematic literature review: G. Abercrombie, R. Batista-Navarro}
+    \field{volume}{3}
+    \field{journaltitle}{Journal of Computational Social Science}
+    \field{year}{2020}
+  \endentry
+
+  \entry{abramitzky2017immigration}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AR}{%
+         family={Abramitzky},
+         familyi={A\bibinitperiod},
+         given={Ran},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Boustan},
+         familyi={B\bibinitperiod},
+         given={Leah},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Economic Association 2014 Broadway, Suite 305, Nashville, TN
+  37203-2425}%
+    }
+    \strng{namehash}{ARBL1}
+    \strng{fullhash}{ARBL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{4}
+    \field{pages}{1311\bibrangedash 1345}
+    \field{title}{Immigration in American economic history}
+    \field{volume}{55}
+    \field{journaltitle}{Journal of economic literature}
+    \field{year}{2017}
+  \endentry
+
+  \entry{adamson2025colonial}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AFB}{%
+         family={Adamson},
+         familyi={A\bibinitperiod},
+         given={Fiona\bibnamedelima B},
+         giveni={F\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=TH}{%
+         family={Thiollet},
+         familyi={T\bibinitperiod},
+         given={H{\'e}l{\`e}ne},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{AFBTH1}
+    \strng{fullhash}{AFBTH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2025}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{pages}{103270}
+    \field{title}{The colonial migration state}
+    \field{volume}{120}
+    \field{journaltitle}{Political Geography}
+    \field{year}{2025}
+  \endentry
+
+  \entry{adamson2020migration}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AFB}{%
+         family={Adamson},
+         familyi={A\bibinitperiod},
+         given={Fiona\bibnamedelima B},
+         giveni={F\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={Tsourapas},
+         familyi={T\bibinitperiod},
+         given={Gerasimos},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SAGE Publications Sage CA: Los Angeles, CA}%
+    }
+    \strng{namehash}{AFBTG1}
+    \strng{fullhash}{AFBTG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{3}
+    \field{pages}{853\bibrangedash 882}
+    \field{title}{The migration state in the global south: Nationalizing,
+  developmental, and neoliberal models of migration management}
+    \field{volume}{54}
+    \field{journaltitle}{International Migration Review}
+    \field{year}{2020}
+  \endentry
+
+  \entry{borkert2007migration}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BM}{%
+         family={Borkert},
+         familyi={B\bibinitperiod},
+         given={Maren},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BW}{%
+         family={Bosswick},
+         familyi={B\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMBW1}
+    \strng{fullhash}{BMBW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{2008\bibrangedash 08}
+    \field{title}{Migration policy-making in Germany: Between national
+  reluctance and local pragmatism}
+    \field{volume}{20}
+    \field{journaltitle}{International Migration, Integration, and Social
+  Cohesion (IMISCOE) Working Paper}
+    \field{year}{2007}
+  \endentry
+
+  \entry{brader2008triggers}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BT}{%
+         family={Brader},
+         familyi={B\bibinitperiod},
+         given={Ted},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=VNA}{%
+         family={Valentino},
+         familyi={V\bibinitperiod},
+         given={Nicholas\bibnamedelima A},
+         giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Suhay},
+         familyi={S\bibinitperiod},
+         given={Elizabeth},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{BTVNASE1}
+    \strng{fullhash}{BTVNASE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{4}
+    \field{pages}{959\bibrangedash 978}
+    \field{title}{What triggers public opposition to immigration? Anxiety,
+  group cues, and immigration threat}
+    \field{volume}{52}
+    \field{journaltitle}{American journal of political science}
+    \field{year}{2008}
+  \endentry
+
+  \entry{brucker2022war}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=BH}{%
+         family={Br{\"u}cker},
+         familyi={B\bibinitperiod},
+         given={Herbert},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {M{\"u}nchen: ifo Institut-Leibniz-Institut f{\"u}r Wirtschaftsforschung
+  an der~…}%
+    }
+    \strng{namehash}{BH1}
+    \strng{fullhash}{BH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2022}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{CESifo Forum}
+    \field{number}{04}
+    \field{pages}{41\bibrangedash 48}
+    \field{title}{War in the Ukraine: consequences for the governance of
+  refugee migration and integration}
+    \field{volume}{23}
+    \field{year}{2022}
+  \endentry
+
+  \entry{card2022computational}{article}{}
+    \name{author}{8}{}{%
+      {{hash=CD}{%
+         family={Card},
+         familyi={C\bibinitperiod},
+         given={Dallas},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Serina},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Becker},
+         familyi={B\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Mendelsohn},
+         familyi={M\bibinitperiod},
+         given={Julia},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=VR}{%
+         family={Voigt},
+         familyi={V\bibinitperiod},
+         given={Rob},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Boustan},
+         familyi={B\bibinitperiod},
+         given={Leah},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=AR}{%
+         family={Abramitzky},
+         familyi={A\bibinitperiod},
+         given={Ran},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=JD}{%
+         family={Jurafsky},
+         familyi={J\bibinitperiod},
+         given={Dan},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {National Academy of Sciences}%
+    }
+    \strng{namehash}{CD+1}
+    \strng{fullhash}{CDCSBCMJVRBLARJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2022}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{31}
+    \field{pages}{e2120510119}
+    \field{title}{Computational analysis of 140 years of US political speeches
+  reveals more positive but increasingly polarized framing of immigration}
+    \field{volume}{119}
+    \field{journaltitle}{Proceedings of the National Academy of Sciences}
+    \field{year}{2022}
+  \endentry
+
+  \entry{dekker2016use}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DR}{%
+         family={Dekker},
+         familyi={D\bibinitperiod},
+         given={Rianne},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=EG}{%
+         family={Engbersen},
+         familyi={E\bibinitperiod},
+         given={Godfried},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Faber},
+         familyi={F\bibinitperiod},
+         given={Marije},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{DREGFM1}
+    \strng{fullhash}{DREGFM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{6}
+    \field{pages}{539\bibrangedash 551}
+    \field{title}{The use of online media in migration networks}
+    \field{volume}{22}
+    \field{journaltitle}{Population, Space and Place}
+    \field{year}{2016}
+  \endentry
+
+  \entry{bundesbank_ip}{online}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Deutsche Bundesbank}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2026}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{howpublished}{Deutsche Bundesbank Time-Series Statistics}
+    \field{title}{Statistical Time Series Database: Industrial Production in
+  Germany}
+    \verb{url}
+    \verb https://www.bundesbank.de/en/statistics/time-series-databases
+    \endverb
+    \field{year}{2026}
+    \field{urlday}{21}
+    \field{urlmonth}{09}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{bt_drucksache_20_5225}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Deutscher Bundestag}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D2}
+    \strng{fullhash}{D2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{20/5225}
+    \field{subtitle}{Antrag der Abgeordneten René Springer, Jürgen Pohl,
+  Gerrit Huy und weiterer Abgeordneter und der Fraktion der AfD}
+    \field{title}{Technisierung statt Zuwanderung -- Für einen Arbeitsmarkt
+  der Zukunft}
+    \verb{url}
+    \verb https://dserver.bundestag.de/btd/20/052/2005225.pdf
+    \endverb
+    \list{location}{1}{%
+      {Berlin}%
+    }
+    \list{institution}{1}{%
+      {Deutscher Bundestag}%
+    }
+    \field{type}{Drucksache}
+    \field{day}{17}
+    \field{month}{01}
+    \field{year}{2023}
+    \warn{\item Can't use 'date' + 'year'}
+  \endentry
+
+  \entry{dustmann2007racial}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DC}{%
+         family={Dustmann},
+         familyi={D\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PI}{%
+         family={Preston},
+         familyi={P\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DCPI1}
+    \strng{fullhash}{DCPI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{1}
+    \field{title}{Racial and economic factors in attitudes to immigration}
+    \field{volume}{7}
+    \field{journaltitle}{The BE Journal of Economic Analysis \& Policy}
+    \field{year}{2007}
+  \endentry
+
+  \entry{ekman2022great}{article}{}
+    \name{author}{1}{}{%
+      {{hash=EM}{%
+         family={Ekman},
+         familyi={E\bibinitperiod},
+         given={Mattias},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SAGE Publications Sage UK: London, England}%
+    }
+    \strng{namehash}{EM1}
+    \strng{fullhash}{EM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2022}
+    \field{labeldatesource}{}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{number}{4}
+    \field{pages}{1127\bibrangedash 1143}
+    \field{title}{The great replacement: Strategic mainstreaming of far-right
+  conspiracy claims}
+    \field{volume}{28}
+    \field{journaltitle}{Convergence}
+    \field{year}{2022}
+  \endentry
+
+  \entry{emmer2012colonialism}{book}{}
+    \name{author}{1}{}{%
+      {{hash=EPC}{%
+         family={Emmer},
+         familyi={E\bibinitperiod},
+         given={Pieter\bibnamedelima Cornelis},
+         giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Science \& Business Media}%
+    }
+    \strng{namehash}{EPC1}
+    \strng{fullhash}{EPC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{title}{Colonialism and migration; Indentured labour before and after
+  slavery}
+    \field{year}{2012}
+  \endentry
+
+  \entry{esses1998intergroup}{article}{}
+    \name{author}{3}{}{%
+      {{hash=EVM}{%
+         family={Esses},
+         familyi={E\bibinitperiod},
+         given={Victoria\bibnamedelima M},
+         giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=JLM}{%
+         family={Jackson},
+         familyi={J\bibinitperiod},
+         given={Lynne\bibnamedelima M},
+         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=ATL}{%
+         family={Armstrong},
+         familyi={A\bibinitperiod},
+         given={Tamara\bibnamedelima L},
+         giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{EVMJLMATL1}
+    \strng{fullhash}{EVMJLMATL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{labeldatesource}{}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{number}{4}
+    \field{pages}{699\bibrangedash 724}
+    \field{title}{Intergroup competition and attitudes toward immigrants and
+  immigration: An instrumental model of group conflict}
+    \field{volume}{54}
+    \field{journaltitle}{Journal of social issues}
+    \field{year}{1998}
+  \endentry
+
+  \entry{fangmigration}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FJ}{%
+         family={Fang},
+         familyi={F\bibinitperiod},
+         given={Jo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Speer},
+         familyi={S\bibinitperiod},
+         given={Jessie},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SAGE Publications Sage UK: London, England}%
+    }
+    \strng{namehash}{FJSJ1}
+    \strng{fullhash}{FJSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labeldatesource}{nodate}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{pages}{02610183261460327}
+    \field{title}{Migration and housing policy in England: Rethinking
+  narratives of crisis}
+    \field{journaltitle}{Critical Social Policy}
+  \endentry
+
+  \entry{fellini2023}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{1}{}{%
+      {{hash=FI}{%
+         family={Fellini},
+         familyi={F\bibinitperiod},
+         given={Ivana},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FI+1}
+    \strng{fullhash}{FI+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023}
+    \field{labeldatesource}{}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{doi}
+    \verb 10.1080/0023656X.2023.2227600
+    \endverb
+    \field{title}{Introduction: The Cold War of Labour Migrants: Opportunities,
+  Struggles and Adaptations Across the Iron Curtain and Beyond}
+    \field{journaltitle}{Labor History}
+    \field{year}{2023}
+  \endentry
+
+  \entry{forni2014sufficient}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FM}{%
+         family={Forni},
+         familyi={F\bibinitperiod},
+         given={Mario},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Gambetti},
+         familyi={G\bibinitperiod},
+         given={Luca},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{FMGL1}
+    \strng{fullhash}{FMGL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{pages}{124\bibrangedash 136}
+    \field{title}{Sufficient information in structural VARs}
+    \field{volume}{66}
+    \field{journaltitle}{Journal of Monetary Economics}
+    \field{year}{2014}
+  \endentry
+
+  \entry{franz1994macroeconometric}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FW}{%
+         family={Franz},
+         familyi={F\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=OU}{%
+         family={Oser},
+         familyi={O\bibinitperiod},
+         given={Ursula},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=WP}{%
+         family={Winker},
+         familyi={W\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{FWOUWP1}
+    \strng{fullhash}{FWOUWP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1994}
+    \field{labeldatesource}{}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{2}
+    \field{pages}{217\bibrangedash 234}
+    \field{title}{A macroeconometric disequilibrium analysis of current and
+  future migration from Eastern Europe into West Germany}
+    \field{volume}{7}
+    \field{journaltitle}{Journal of Population Economics}
+    \field{year}{1994}
+  \endentry
+
+  \entry{ghafouri2025framing}{article}{}
+    \name{author}{7}{}{%
+      {{hash=GV}{%
+         family={Ghafouri},
+         familyi={G\bibinitperiod},
+         given={Vahid},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={McNeil},
+         familyi={M\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=YT}{%
+         family={Yankov},
+         familyi={Y\bibinitperiod},
+         given={Teodor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sumption},
+         familyi={S\bibinitperiod},
+         given={Madeleine},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Rocher},
+         familyi={R\bibinitperiod},
+         given={Luc},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=HSA}{%
+         family={Hale},
+         familyi={H\bibinitperiod},
+         given={Scott\bibnamedelima A},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mahdi},
+         familyi={M\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GV+1}
+    \strng{fullhash}{GVMRYTSMRLHSAMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2025}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Framing migration: A computational analysis of uk
+  parliamentary discourse}
+    \field{journaltitle}{arXiv preprint arXiv:2509.14197}
+    \field{year}{2025}
+  \endentry
+
+  \entry{grimmer2013text}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GJ}{%
+         family={Grimmer},
+         familyi={G\bibinitperiod},
+         given={Justin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SBM}{%
+         family={Stewart},
+         familyi={S\bibinitperiod},
+         given={Brandon\bibnamedelima M},
+         giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{GJSBM1}
+    \strng{fullhash}{GJSBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{3}
+    \field{pages}{267\bibrangedash 297}
+    \field{title}{Text as data: The promise and pitfalls of automatic content
+  analysis methods for political texts}
+    \field{volume}{21}
+    \field{journaltitle}{Political analysis}
+    \field{year}{2013}
+  \endentry
+
+  \entry{hainmueller2014public}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HJ}{%
+         family={Hainmueller},
+         familyi={H\bibinitperiod},
+         given={Jens},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HDJ}{%
+         family={Hopkins},
+         familyi={H\bibinitperiod},
+         given={Daniel\bibnamedelima J},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Annual Reviews}%
+    }
+    \strng{namehash}{HJHDJ1}
+    \strng{fullhash}{HJHDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{1}
+    \field{pages}{225\bibrangedash 249}
+    \field{title}{Public attitudes toward immigration}
+    \field{volume}{17}
+    \field{journaltitle}{Annual review of political science}
+    \field{year}{2014}
+  \endentry
+
+  \entry{hatton2005global}{book}{}
+    \name{author}{2}{}{%
+      {{hash=HTJ}{%
+         family={Hatton},
+         familyi={H\bibinitperiod},
+         given={Timothy\bibnamedelima J},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=WJG}{%
+         family={Williamson},
+         familyi={W\bibinitperiod},
+         given={Jeffrey\bibnamedelima G},
+         giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The MIT Press}%
+    }
+    \strng{namehash}{HTJWJG1}
+    \strng{fullhash}{HTJWJG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Global migration and the world economy: Two centuries of
+  policy and performance}
+    \field{year}{2005}
+  \endentry
+
+  \entry{hlatshwayo2023south}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HM}{%
+         family={Hlatshwayo},
+         familyi={H\bibinitperiod},
+         given={Mondli},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{HM1}
+    \strng{fullhash}{HM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 17}
+    \field{title}{South Africa enters the second wave of xenophobic violence:
+  The rise of anti-immigrant organisations in South Africa}
+    \field{volume}{50}
+    \field{journaltitle}{Politikon}
+    \field{year}{2023}
+  \endentry
+
+  \entry{hollifield2004emerging}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HJF}{%
+         family={Hollifield},
+         familyi={H\bibinitperiod},
+         given={James\bibnamedelima F},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{HJF1}
+    \strng{fullhash}{HJF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{3}
+    \field{pages}{885\bibrangedash 912}
+    \field{title}{The emerging migration state 1}
+    \field{volume}{38}
+    \field{journaltitle}{International migration review}
+    \field{year}{2004}
+  \endentry
+
+  \entry{huysmans2000european}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HJ}{%
+         family={Huysmans},
+         familyi={H\bibinitperiod},
+         given={Jef},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{HJ1}
+    \strng{fullhash}{HJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{5}
+    \field{pages}{751\bibrangedash 777}
+    \field{title}{The European Union and the securitization of migration}
+    \field{volume}{38}
+    \field{journaltitle}{JCMS: Journal of common market studies}
+    \field{year}{2000}
+  \endentry
+
+  \entry{ifo_bci_2026}{online}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={{Ifo Institute}},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2026}
+    \field{labeldatesource}{}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{Ifo Business Climate Index Rises in June 2026}
+    \verb{url}
+    \verb https://www.ifo.de/en/facts/2026-06-24/ifo-business-climate-index-ris
+    \verb es-june-2026
+    \endverb
+    \field{day}{24}
+    \field{month}{06}
+    \field{year}{2026}
+    \field{urlday}{21}
+    \field{urlmonth}{09}
+    \field{urlyear}{2026}
+    \warn{\item Can't use 'date' + 'year'}
+  \endentry
+
+  \entry{ivarsflaten2008unites}{article}{}
+    \name{author}{1}{}{%
+      {{hash=IE}{%
+         family={Ivarsflaten},
+         familyi={I\bibinitperiod},
+         given={Elisabeth},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Sage Publications Sage CA: Los Angeles, CA}%
+    }
+    \strng{namehash}{IE1}
+    \strng{fullhash}{IE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{number}{1}
+    \field{pages}{3\bibrangedash 23}
+    \field{title}{What unites right-wing populists in Western Europe?
+  Re-examining grievance mobilization models in seven successful cases}
+    \field{volume}{41}
+    \field{journaltitle}{Comparative Political Studies}
+    \field{year}{2008}
+  \endentry
+
+  \entry{kostikova2024fine}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=KA}{%
+         family={Kostikova},
+         familyi={K\bibinitperiod},
+         given={Aida},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PB}{%
+         family={Paassen},
+         familyi={P\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Beese},
+         familyi={B\bibinitperiod},
+         given={Dominik},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PO}{%
+         family={P{\"u}tz},
+         familyi={P\bibinitperiod},
+         given={Ole},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=WG}{%
+         family={Wiedemann},
+         familyi={W\bibinitperiod},
+         given={Gregor},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=ES}{%
+         family={Eger},
+         familyi={E\bibinitperiod},
+         given={Steffen},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KA+1}
+    \strng{fullhash}{KAPBBDPOWGES1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{labeldatesource}{}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{Proceedings of the 2024 Conference on Empirical Methods
+  in Natural Language Processing}
+    \field{pages}{5884\bibrangedash 5907}
+    \field{title}{Fine-grained detection of solidarity for women and migrants
+  in 155 years of German parliamentary debates}
+    \field{year}{2024}
+  \endentry
+
+  \entry{latifi2024fiscal}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LA}{%
+         family={Latifi},
+         familyi={L\bibinitperiod},
+         given={Albina},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NKV}{%
+         family={Naboka-Krell},
+         familyi={N\bibinithyphendelim K\bibinitperiod},
+         given={Viktoriia},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=TP}{%
+         family={Tillmann},
+         familyi={T\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=WP}{%
+         family={Winker},
+         familyi={W\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{LA+1}
+    \strng{fullhash}{LANKVTPWP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{pages}{104827}
+    \field{title}{Fiscal policy in the Bundestag: Textual analysis and
+  macroeconomic effects}
+    \field{volume}{168}
+    \field{journaltitle}{European Economic Review}
+    \field{year}{2024}
+  \endentry
+
+  \entry{le2014distributed}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=LQ}{%
+         family={Le},
+         familyi={L\bibinitperiod},
+         given={Quoc},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Mikolov},
+         familyi={M\bibinitperiod},
+         given={Tomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {PMLR}%
+    }
+    \strng{namehash}{LQMT1}
+    \strng{fullhash}{LQMT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{International conference on machine learning}
+    \field{pages}{1188\bibrangedash 1196}
+    \field{title}{Distributed representations of sentences and documents}
+    \field{year}{2014}
+  \endentry
+
+  \entry{lee1966theory}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LES}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Everett\bibnamedelima S},
+         giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{LES1}
+    \strng{fullhash}{LES1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1966}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{1}
+    \field{pages}{47\bibrangedash 57}
+    \field{title}{A theory of migration}
+    \field{volume}{3}
+    \field{journaltitle}{Demography}
+    \field{year}{1966}
+  \endentry
+
+  \entry{maffei2021does}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MFN}{%
+         family={Maffei-Faccioli},
+         familyi={M\bibinithyphendelim F\bibinitperiod},
+         given={Nicol{\`o}},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=VE}{%
+         family={Vella},
+         familyi={V\bibinitperiod},
+         given={Eugenia},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{MFNVE1}
+    \strng{fullhash}{MFNVE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{pages}{103846}
+    \field{title}{Does immigration grow the pie? Asymmetric evidence from
+  Germany}
+    \field{volume}{138}
+    \field{journaltitle}{European Economic Review}
+    \field{year}{2021}
+  \endentry
+
+  \entry{oecd2024migration}{book}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={{OECD}},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {OECD Publishing}%
+    }
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{1}
+    \field{labeldatesource}{}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \verb{doi}
+    \verb 10.1787/d8814e8b-en
+    \endverb
+    \field{title}{International Migration Outlook 2024}
+    \verb{url}
+    \verb https://doi.org/10.1787/50b0353e-en
+    \endverb
+    \list{location}{1}{%
+      {Paris}%
+    }
+    \field{year}{2024}
+  \endentry
+
+  \entry{oecd2024labour}{book}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={{OECD}},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {OECD Publishing}%
+    }
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{2}
+    \field{labeldatesource}{}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \verb{doi}
+    \verb 10.1787/d8814e8b-en
+    \endverb
+    \field{title}{OECD Economic Outlook, Volume 2024 Issue 2: Resilience in
+  Uncertain Times}
+    \verb{url}
+    \verb https://doi.org/10.1787/d8814e8b-en
+    \endverb
+    \list{location}{1}{%
+      {Paris}%
+    }
+    \field{year}{2024}
+  \endentry
+
+  \entry{oecd_cci}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={{OECD}},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2026}
+    \field{labeldatesource}{}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{howpublished}{OECD Data Explorer}
+    \field{title}{Consumer Confidence Index (CCI)}
+    \verb{url}
+    \verb https://www.oecd.org/en/data/indicators/consumer-confidence-index-cci
+    \verb .html
+    \endverb
+    \field{year}{2026}
+  \endentry
+
+  \entry{okia2023migration}{article}{}
+    \name{author}{1}{}{%
+      {{hash=OO}{%
+         family={Okia},
+         familyi={O\bibinitperiod},
+         given={Opolot},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{OO1}
+    \strng{fullhash}{OO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023}
+    \field{labeldatesource}{}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{pages}{261}
+    \field{title}{Migration and Labor in Sub-Saharan Africa during the Colonial
+  Period}
+    \field{journaltitle}{The Cambridge History of Global Migrations: Volume 2,
+  Migrations, 1800--Present}
+    \field{year}{2023}
+  \endentry
+
+  \entry{ortega2009causes}{report}{}
+    \name{author}{2}{}{%
+      {{hash=OF}{%
+         family={Ortega},
+         familyi={O\bibinitperiod},
+         given={Francesc},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Peri},
+         familyi={P\bibinitperiod},
+         given={Giovanni},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OFPG1}
+    \strng{fullhash}{OFPG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{The causes and effects of international migrations: Evidence
+  from OECD countries 1980-2005}
+    \list{institution}{1}{%
+      {National Bureau of Economic Research}%
+    }
+    \field{type}{techreport}
+    \field{year}{2009}
+  \endentry
+
+  \entry{parliament2020exploring}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PE}{%
+         family={Parliament},
+         familyi={P\bibinitperiod},
+         given={E},
+         giveni={E},
+      }}%
+    }
+    \strng{namehash}{PE1}
+    \strng{fullhash}{PE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Exploring migration causes: why people migrate}
+    \field{journaltitle}{Dostupno na}
+    \field{year}{2020}
+  \endentry
+
+  \entry{pesando2021internetization}{article}{}
+    \name{author}{5}{}{%
+      {{hash=PLM}{%
+         family={Pesando},
+         familyi={P\bibinitperiod},
+         given={Luca\bibnamedelima Maria},
+         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=RV}{%
+         family={Rotondi},
+         familyi={R\bibinitperiod},
+         given={Valentina},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Stranges},
+         familyi={S\bibinitperiod},
+         given={Manuela},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Kashyap},
+         familyi={K\bibinitperiod},
+         given={Ridhi},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BFC}{%
+         family={Billari},
+         familyi={B\bibinitperiod},
+         given={Francesco\bibnamedelima C},
+         giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{PLM+1}
+    \strng{fullhash}{PLMRVSMKRBFC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{1}
+    \field{pages}{79\bibrangedash 111}
+    \field{title}{The internetization of international migration}
+    \field{volume}{47}
+    \field{journaltitle}{Population and Development Review}
+    \field{year}{2021}
+  \endentry
+
+  \entry{qvarnstrom2014sweden}{article}{}
+    \name{author}{1}{}{%
+      {{hash=QS}{%
+         family={Qvarnstr{\"o}m},
+         familyi={Q\bibinitperiod},
+         given={S},
+         giveni={S},
+      }}%
+    }
+    \strng{namehash}{QS1}
+    \strng{fullhash}{QS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{}
+    \field{sortinit}{Q}
+    \field{sortinithash}{Q}
+    \field{title}{Sweden//1914-1918-online: International Encyclopedia of the
+  First World War}
+    \field{journaltitle}{Berlin: Freie Universit{\"a}t Berlin}
+    \field{year}{2014}
+  \endentry
+
+  \entry{rakers20232015}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RJ}{%
+         family={Rakers},
+         familyi={R\bibinitperiod},
+         given={Julia},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Walter de Gruyter GmbH \& Co KG}%
+    }
+    \strng{namehash}{RJ1}
+    \strng{fullhash}{RJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023}
+    \field{labeldatesource}{}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{pages}{233}
+    \field{title}{The 2015 refugee situation as a turning point? Migration-and
+  integration-related debates in the German Bundestag}
+    \field{volume}{37}
+    \field{journaltitle}{Turning Points: Challenges for Western Democracies in
+  the 21st Century}
+    \field{year}{2023}
+  \endentry
+
+  \entry{reformuk2025}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Reform UK}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2025}
+    \field{labeldatesource}{}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+  \field{howpublished}{\url{https://reformuk.org.uk/wp-content/uploads/2025/10/Reform_UK_Our_Contract_with_You.pdf}}
+    \field{note}{Accessed: 2026-08-28}
+    \field{title}{Our Contract with You}
+    \field{year}{2025}
+  \endentry
+
+  \entry{scheve2001labor}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SKF}{%
+         family={Scheve},
+         familyi={S\bibinitperiod},
+         given={Kenneth\bibnamedelima F},
+         giveni={K\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=SMJ}{%
+         family={Slaughter},
+         familyi={S\bibinitperiod},
+         given={Matthew\bibnamedelima J},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press 238 Main St., Suite 500, Cambridge, MA 02142-1046, USA
+  journals~…}%
+    }
+    \strng{namehash}{SKFSMJ1}
+    \strng{fullhash}{SKFSMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{1}
+    \field{pages}{133\bibrangedash 145}
+    \field{title}{Labor market competition and individual preferences over
+  immigration policy}
+    \field{volume}{83}
+    \field{journaltitle}{Review of Economics and Statistics}
+    \field{year}{2001}
+  \endentry
+
+  \entry{sims1990inference}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SCA}{%
+         family={Sims},
+         familyi={S\bibinitperiod},
+         given={Christopher\bibnamedelima A},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SJH}{%
+         family={Stock},
+         familyi={S\bibinitperiod},
+         given={James\bibnamedelima H},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=WMW}{%
+         family={Watson},
+         familyi={W\bibinitperiod},
+         given={Mark\bibnamedelima W},
+         giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JSTOR}%
+    }
+    \strng{namehash}{SCASJHWMW1}
+    \strng{fullhash}{SCASJHWMW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1990}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{pages}{113\bibrangedash 144}
+    \field{title}{Inference in linear time series models with some unit roots}
+    \field{journaltitle}{Econometrica: Journal of the Econometric Society}
+    \field{year}{1990}
+  \endentry
+
+  \entry{destatis_population}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistisches Bundesamt (Destatis)}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2026}
+    \field{extradate}{1}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{howpublished}{GENESIS-Online Database, Table 12411-0001}
+    \field{title}{Bevölkerung nach Nationalität und Geschlecht (Stichtag):
+  Jahresdurchschnitt / Fortschreibung}
+    \verb{url}
+    \verb https://genesis.destatis.de/datenbank/online/table/12411-0001
+    \endverb
+    \field{year}{2026}
+  \endentry
+
+  \entry{destatis_migration_balance}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistisches Bundesamt (Destatis)}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2026}
+    \field{extradate}{2}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{howpublished}{GENESIS-Online Database, Table 12711-0011}
+    \field{title}{Wanderungen (Gesamtübersicht): Saldo der Zuzüge und
+  Fortzüge}
+    \verb{url}
+    \verb https://genesis.destatis.de/datenbank/online/table/12711-0011
+    \endverb
+    \field{year}{2026}
+  \endentry
+
+  \entry{tillmann2025monetary}{article}{}
+    \name{author}{1}{}{%
+      {{hash=TP}{%
+         family={Tillmann},
+         familyi={T\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TP1}
+    \strng{fullhash}{TP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2025}
+    \field{labeldatesource}{}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Monetary Policy and the Fiscal Talk in the Bundestag}
+    \field{journaltitle}{Available at SSRN 5260481}
+    \field{year}{2025}
+  \endentry
+
+  \entry{trauner2017welcome}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TF}{%
+         family={Trauner},
+         familyi={T\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Turton},
+         familyi={T\bibinitperiod},
+         given={Jocelyn},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TFTJ1}
+    \strng{fullhash}{TFTJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{number}{1}
+    \field{title}{“Welcome culture”: the emergence and transformation of a
+  public debate on migration}
+    \field{volume}{46}
+    \field{journaltitle}{{\"O}sterreichische Zeitschrift f{\"u}r
+  Politikwissenschaft}
+    \field{year}{2017}
+  \endentry
+
+  \entry{young2018building}{article}{}
+    \name{author}{3}{}{%
+      {{hash=YY}{%
+         family={Young},
+         familyi={Y\bibinitperiod},
+         given={Yvette},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Loebach},
+         familyi={L\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Korinek},
+         familyi={K\bibinitperiod},
+         given={Kim},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{YYLPKK1}
+    \strng{fullhash}{YYLPKK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{pages}{83\bibrangedash 95}
+    \field{title}{Building walls or opening borders? Global immigration policy
+  attitudes across economic, cultural and human security contexts}
+    \field{volume}{75}
+    \field{journaltitle}{Social Science Research}
+    \field{year}{2018}
+  \endentry
+
+  \entry{yu2025reexamining}{book}{}
+    \name{author}{1}{}{%
+      {{hash=YD}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Derek},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Department of Economics, University of Stellenbosch}%
+    }
+    \strng{namehash}{YD1}
+    \strng{fullhash}{YD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2025}
+    \field{labeldatesource}{}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{title}{Reexamining the South African Labour Force Surveys}
+    \field{year}{2025}
+  \endentry
+\enddatalist
+\endinput
