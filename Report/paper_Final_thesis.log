@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.20)  23 SEP 2026 11:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.20)  29 OCT 2026 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -335,6 +335,30 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \l__lipsum_b_int=\count277
 
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen150
+\lightrulewidth=\dimen151
+\cmidrulewidth=\dimen152
+\belowrulesep=\dimen153
+\belowbottomsep=\dimen154
+\aboverulesep=\dimen155
+\abovetopsep=\dimen156
+\cmidrulesep=\dimen157
+\cmidrulekern=\dimen158
+\defaultaddspace=\dimen159
+\@cmidla=\count278
+\@cmidlb=\count279
+\@aboverulesep=\dimen160
+\@belowrulesep=\dimen161
+\@thisruleclass=\count280
+\@lastruleclass=\count281
+\@thisrulewidth=\dimen162
+)
+(/usr/share/texlive/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box56
+)
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
@@ -357,7 +381,7 @@ Package pdftexcmds Info: \pdfdraftmode found.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count278
+\etb@tempcnta=\count282
 )
 (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
@@ -367,7 +391,7 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count279
+\lrq@indent=\count283
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -379,49 +403,49 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count280
-\c@listtotal=\count281
-\c@listcount=\count282
-\c@liststart=\count283
-\c@liststop=\count284
-\c@citecount=\count285
-\c@citetotal=\count286
-\c@multicitecount=\count287
-\c@multicitetotal=\count288
-\c@instcount=\count289
-\c@maxnames=\count290
-\c@minnames=\count291
-\c@maxitems=\count292
-\c@minitems=\count293
-\c@citecounter=\count294
-\c@maxcitecounter=\count295
-\c@savedcitecounter=\count296
-\c@uniquelist=\count297
-\c@uniquename=\count298
-\c@refsection=\count299
-\c@refsegment=\count300
-\c@maxextratitle=\count301
-\c@maxextratitleyear=\count302
-\c@maxextraname=\count303
-\c@maxextradate=\count304
-\c@maxextraalpha=\count305
-\c@abbrvpenalty=\count306
-\c@highnamepenalty=\count307
-\c@lownamepenalty=\count308
-\c@maxparens=\count309
-\c@parenlevel=\count310
-\blx@tempcnta=\count311
-\blx@tempcntb=\count312
-\blx@tempcntc=\count313
-\c@blx@maxsection=\count314
-\blx@maxsegment@0=\count315
-\blx@notetype=\count316
-\blx@parenlevel@text=\count317
-\blx@parenlevel@foot=\count318
-\blx@sectionciteorder@0=\count319
-\blx@sectionciteorderinternal@0=\count320
-\blx@entrysetcounter=\count321
-\blx@biblioinstance=\count322
+\c@tabx@nest=\count284
+\c@listtotal=\count285
+\c@listcount=\count286
+\c@liststart=\count287
+\c@liststop=\count288
+\c@citecount=\count289
+\c@citetotal=\count290
+\c@multicitecount=\count291
+\c@multicitetotal=\count292
+\c@instcount=\count293
+\c@maxnames=\count294
+\c@minnames=\count295
+\c@maxitems=\count296
+\c@minitems=\count297
+\c@citecounter=\count298
+\c@maxcitecounter=\count299
+\c@savedcitecounter=\count300
+\c@uniquelist=\count301
+\c@uniquename=\count302
+\c@refsection=\count303
+\c@refsegment=\count304
+\c@maxextratitle=\count305
+\c@maxextratitleyear=\count306
+\c@maxextraname=\count307
+\c@maxextradate=\count308
+\c@maxextraalpha=\count309
+\c@abbrvpenalty=\count310
+\c@highnamepenalty=\count311
+\c@lownamepenalty=\count312
+\c@maxparens=\count313
+\c@parenlevel=\count314
+\blx@tempcnta=\count315
+\blx@tempcntb=\count316
+\blx@tempcntc=\count317
+\c@blx@maxsection=\count318
+\blx@maxsegment@0=\count319
+\blx@notetype=\count320
+\blx@parenlevel@text=\count321
+\blx@parenlevel@foot=\count322
+\blx@sectionciteorder@0=\count323
+\blx@sectionciteorderinternal@0=\count324
+\blx@entrysetcounter=\count325
+\blx@biblioinstance=\count326
 \labelnumberwidth=\skip67
 \labelalphawidth=\skip68
 \biblabelsep=\skip69
@@ -433,9 +457,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language10
-\c@mincomprange=\count323
-\c@maxcomprange=\count324
-\c@mincompwidth=\count325
+\c@mincomprange=\count327
+\c@maxcomprange=\count328
+\c@mincompwidth=\count329
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -446,74 +470,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count326
-\c@savedafterword=\count327
-\c@annotator=\count328
-\c@savedannotator=\count329
-\c@author=\count330
-\c@savedauthor=\count331
-\c@bookauthor=\count332
-\c@savedbookauthor=\count333
-\c@commentator=\count334
-\c@savedcommentator=\count335
-\c@editor=\count336
-\c@savededitor=\count337
-\c@editora=\count338
-\c@savededitora=\count339
-\c@editorb=\count340
-\c@savededitorb=\count341
-\c@editorc=\count342
-\c@savededitorc=\count343
-\c@foreword=\count344
-\c@savedforeword=\count345
-\c@holder=\count346
-\c@savedholder=\count347
-\c@introduction=\count348
-\c@savedintroduction=\count349
-\c@namea=\count350
-\c@savednamea=\count351
-\c@nameb=\count352
-\c@savednameb=\count353
-\c@namec=\count354
-\c@savednamec=\count355
-\c@translator=\count356
-\c@savedtranslator=\count357
-\c@shortauthor=\count358
-\c@savedshortauthor=\count359
-\c@shorteditor=\count360
-\c@savedshorteditor=\count361
-\c@labelname=\count362
-\c@savedlabelname=\count363
-\c@institution=\count364
-\c@savedinstitution=\count365
-\c@lista=\count366
-\c@savedlista=\count367
-\c@listb=\count368
-\c@savedlistb=\count369
-\c@listc=\count370
-\c@savedlistc=\count371
-\c@listd=\count372
-\c@savedlistd=\count373
-\c@liste=\count374
-\c@savedliste=\count375
-\c@listf=\count376
-\c@savedlistf=\count377
-\c@location=\count378
-\c@savedlocation=\count379
-\c@organization=\count380
-\c@savedorganization=\count381
-\c@origlocation=\count382
-\c@savedoriglocation=\count383
-\c@origpublisher=\count384
-\c@savedorigpublisher=\count385
-\c@publisher=\count386
-\c@savedpublisher=\count387
-\c@language=\count388
-\c@savedlanguage=\count389
-\c@origlanguage=\count390
-\c@savedoriglanguage=\count391
-\c@pageref=\count392
-\c@savedpageref=\count393
+\c@afterword=\count330
+\c@savedafterword=\count331
+\c@annotator=\count332
+\c@savedannotator=\count333
+\c@author=\count334
+\c@savedauthor=\count335
+\c@bookauthor=\count336
+\c@savedbookauthor=\count337
+\c@commentator=\count338
+\c@savedcommentator=\count339
+\c@editor=\count340
+\c@savededitor=\count341
+\c@editora=\count342
+\c@savededitora=\count343
+\c@editorb=\count344
+\c@savededitorb=\count345
+\c@editorc=\count346
+\c@savededitorc=\count347
+\c@foreword=\count348
+\c@savedforeword=\count349
+\c@holder=\count350
+\c@savedholder=\count351
+\c@introduction=\count352
+\c@savedintroduction=\count353
+\c@namea=\count354
+\c@savednamea=\count355
+\c@nameb=\count356
+\c@savednameb=\count357
+\c@namec=\count358
+\c@savednamec=\count359
+\c@translator=\count360
+\c@savedtranslator=\count361
+\c@shortauthor=\count362
+\c@savedshortauthor=\count363
+\c@shorteditor=\count364
+\c@savedshorteditor=\count365
+\c@labelname=\count366
+\c@savedlabelname=\count367
+\c@institution=\count368
+\c@savedinstitution=\count369
+\c@lista=\count370
+\c@savedlista=\count371
+\c@listb=\count372
+\c@savedlistb=\count373
+\c@listc=\count374
+\c@savedlistc=\count375
+\c@listd=\count376
+\c@savedlistd=\count377
+\c@liste=\count378
+\c@savedliste=\count379
+\c@listf=\count380
+\c@savedlistf=\count381
+\c@location=\count382
+\c@savedlocation=\count383
+\c@organization=\count384
+\c@savedorganization=\count385
+\c@origlocation=\count386
+\c@savedoriglocation=\count387
+\c@origpublisher=\count388
+\c@savedorigpublisher=\count389
+\c@publisher=\count390
+\c@savedpublisher=\count391
+\c@language=\count392
+\c@savedlanguage=\count393
+\c@origlanguage=\count394
+\c@savedoriglanguage=\count395
+\c@pageref=\count396
+\c@savedpageref=\count397
 \shorthandwidth=\skip75
 \shortjournalwidth=\skip76
 \shortserieswidth=\skip77
@@ -549,19 +573,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count394
-\c@textcitetotal=\count395
-\c@textcitemaxnames=\count396
-\c@biburlbigbreakpenalty=\count397
-\c@biburlbreakpenalty=\count398
-\c@biburlnumpenalty=\count399
-\c@biburlucpenalty=\count400
-\c@biburllcpenalty=\count401
+\c@textcitecount=\count398
+\c@textcitetotal=\count399
+\c@textcitemaxnames=\count400
+\c@biburlbigbreakpenalty=\count401
+\c@biburlbreakpenalty=\count402
+\c@biburlnumpenalty=\count403
+\c@biburlucpenalty=\count404
+\c@biburllcpenalty=\count405
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count402
+\c@smartand=\count406
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
@@ -573,8 +597,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count403
-\c@bbx:relatedtotal=\count404
+\c@bbx:relatedcount=\count407
+\c@bbx:relatedtotal=\count408
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -609,24 +633,24 @@ Package: xparse 2023-10-10 L3 Experimental document command parser
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count405
-\lst@gtempboxa=\box56
+\lst@mode=\count409
+\lst@gtempboxa=\box57
 \lst@token=\toks25
-\lst@length=\count406
-\lst@currlwidth=\dimen150
-\lst@column=\count407
-\lst@pos=\count408
-\lst@lostspace=\dimen151
-\lst@width=\dimen152
-\lst@newlines=\count409
-\lst@lineno=\count410
-\lst@maxwidth=\dimen153
+\lst@length=\count410
+\lst@currlwidth=\dimen163
+\lst@column=\count411
+\lst@pos=\count412
+\lst@lostspace=\dimen164
+\lst@width=\dimen165
+\lst@newlines=\count413
+\lst@lineno=\count414
+\lst@maxwidth=\dimen166
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count411
-\lst@skipnumbers=\count412
-\lst@framebox=\box57
+\c@lstnumber=\count415
+\lst@skipnumbers=\count416
+\lst@framebox=\box58
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
@@ -660,46 +684,26 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen154
-\ar@mcellbox=\box58
-\extrarowheight=\dimen155
+\col@sep=\dimen167
+\ar@mcellbox=\box59
+\extrarowheight=\dimen168
 \NC@list=\toks26
 \extratabsurround=\skip89
 \backup@length=\skip90
-\ar@cellbox=\box59
+\ar@cellbox=\box60
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count413
-\calc@Bcount=\count414
-\calc@Adimen=\dimen156
-\calc@Bdimen=\dimen157
+\calc@Acount=\count417
+\calc@Bcount=\count418
+\calc@Adimen=\dimen169
+\calc@Bdimen=\dimen170
 \calc@Askip=\skip91
 \calc@Bskip=\skip92
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count415
+\calc@Ccount=\count419
 \calc@Cskip=\skip93
-)
-(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen158
-\lightrulewidth=\dimen159
-\cmidrulewidth=\dimen160
-\belowrulesep=\dimen161
-\belowbottomsep=\dimen162
-\aboverulesep=\dimen163
-\abovetopsep=\dimen164
-\cmidrulesep=\dimen165
-\cmidrulekern=\dimen166
-\defaultaddspace=\dimen167
-\@cmidla=\count416
-\@cmidlb=\count417
-\@aboverulesep=\dimen168
-\@belowrulesep=\dimen169
-\@thisruleclass=\count418
-\@lastruleclass=\count419
-\@thisrulewidth=\dimen170
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
@@ -875,7 +879,7 @@ Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 (./titlepage.sty
 Package: titlepage 2013/08/06 v0.4d KOMA presents the title page project 
 \c@titlepage=\count437
-\titlebox=\box60
+\titlebox=\box61
  (./title-TU-DD.def
 File: title-TU-DD.def 2013/08/06 v0.4d KOMA presents the title page project 
 ))
@@ -892,69 +896,69 @@ Package scrlayer-scrpage Warning: Command deprecated!
 (scrlayer-scrpage)                `<line thickness>:<line length>' to setup
 (scrlayer-scrpage)                the line length and thickness, and
 (scrlayer-scrpage)                `\setkomafont' or `\addtokomafont' to
-(scrlayer-scrpage)                setup the colour on input line 126.
+(scrlayer-scrpage)                setup the colour on input line 128.
 
 \@quotelevel=\count438
 \@quotereset=\count439
-LaTeX Font Info:    Trying to load font information for T1+txr on input line 12
-9.
+LaTeX Font Info:    Trying to load font information for T1+txr on input line 13
+1.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txr.fd
 File: t1txr.fd 2000/12/15 v3.1
 )
 (./paper_Final_thesis.aux)
 \openout1 = `paper_Final_thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 129.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 131.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-129.
+131.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 131.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-129.
+131.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 131.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-129.
+131.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 131.
 LaTeX Font Info:    Trying to load font information for U+txexa on input line 1
-29.
+31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-Package scrbase Info: activating english \abstractname on input line 129.
-Package scrbase Info: activating english \partname on input line 129.
-Package scrbase Info: activating english \figurename on input line 129.
-Package scrbase Info: activating english \tablename on input line 129.
-Package scrbase Info: activating english \contentsname on input line 129.
-Package scrbase Info: activating english \listfigurename on input line 129.
-Package scrbase Info: activating english \listtablename on input line 129.
-Package scrbase Info: activating english \refname on input line 129.
-Package scrbase Info: activating english \indexname on input line 129.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+Package scrbase Info: activating english \abstractname on input line 131.
+Package scrbase Info: activating english \partname on input line 131.
+Package scrbase Info: activating english \figurename on input line 131.
+Package scrbase Info: activating english \tablename on input line 131.
+Package scrbase Info: activating english \contentsname on input line 131.
+Package scrbase Info: activating english \listfigurename on input line 131.
+Package scrbase Info: activating english \listtablename on input line 131.
+Package scrbase Info: activating english \refname on input line 131.
+Package scrbase Info: activating english \indexname on input line 131.
 
 
 Package scrlayer-scrpage Warning: Very small head height detected!
@@ -996,14 +1000,14 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Can't use 'date' + 'year'.
 
 )
-Package biblatex Info: Reference section=0 on input line 129.
-Package biblatex Info: Reference segment=0 on input line 129.
+Package biblatex Info: Reference section=0 on input line 131.
+Package biblatex Info: Reference segment=0 on input line 131.
 \c@lstlisting=\count440
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count441
 \scratchdimen=\dimen190
-\scratchbox=\box61
+\scratchbox=\box62
 \nofMPsegments=\count442
 \nofMParguments=\count443
 \everyMPshowfont=\toks30
@@ -1028,7 +1032,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 129.
+Package hyperref Info: Link coloring OFF on input line 131.
 
 (./paper_Final_thesis.out) (./paper_Final_thesis.out)
 \@outlinefile=\write4
@@ -1041,7 +1045,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 129.
+(scrartcl)           before \begin{document} on input line 131.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
@@ -1085,93 +1089,93 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package scrbase Info: activating english \projectpapername on input line 129.
-Package scrbase Info: activating english \seminarpapername on input line 129.
-Package scrbase Info: activating english \studentresearchname on input line 129
+Package scrbase Info: activating english \projectpapername on input line 131.
+Package scrbase Info: activating english \seminarpapername on input line 131.
+Package scrbase Info: activating english \studentresearchname on input line 131
 .
-Package scrbase Info: activating english \diplomathesisname on input line 129.
-Package scrbase Info: activating english \degreethesisname on input line 129.
-Package scrbase Info: activating english \masterthesisname on input line 129.
-Package scrbase Info: activating english \bachelorthesisname on input line 129.
+Package scrbase Info: activating english \diplomathesisname on input line 131.
+Package scrbase Info: activating english \degreethesisname on input line 131.
+Package scrbase Info: activating english \masterthesisname on input line 131.
+Package scrbase Info: activating english \bachelorthesisname on input line 131.
 
-Package scrbase Info: activating english \ordinal on input line 129.
-Package scrbase Info: activating english \presentedbyname on input line 129.
-Package scrbase Info: activating english \advisorname on input line 129.
-Package scrbase Info: activating english \thename on input line 129.
-Package scrbase Info: activating english \ofthename on input line 129.
-Package scrbase Info: activating english \fromname on input line 129.
-Package scrbase Info: activating english \fromplacename on input line 129.
-Package scrbase Info: activating english \refereename on input line 129.
+Package scrbase Info: activating english \ordinal on input line 131.
+Package scrbase Info: activating english \presentedbyname on input line 131.
+Package scrbase Info: activating english \advisorname on input line 131.
+Package scrbase Info: activating english \thename on input line 131.
+Package scrbase Info: activating english \ofthename on input line 131.
+Package scrbase Info: activating english \fromname on input line 131.
+Package scrbase Info: activating english \fromplacename on input line 131.
+Package scrbase Info: activating english \refereename on input line 131.
 Package scrbase Info: activating english \oralexaminationdatename on input line
- 129.
-Package scrbase Info: activating english \durationname on input line 129.
+ 131.
+Package scrbase Info: activating english \durationname on input line 131.
 Package scrbase Info: activating english \matriculationnumbername on input line
- 129.
-Package scrbase Info: activating english \coursename on input line 129.
-Package scrbase Info: activating english \companyname on input line 129.
-Package scrbase Info: activating english \examinationname on input line 129.
+ 131.
+Package scrbase Info: activating english \coursename on input line 131.
+Package scrbase Info: activating english \companyname on input line 131.
+Package scrbase Info: activating english \examinationname on input line 131.
 Package titlepage Info: leaving not defined pre-title page empty on input line 
-140.
+142.
 LaTeX Font Info:    Trying to load font information for T1+txss on input line 1
-40.
+42.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txss.fd
 File: t1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 140.
+(Font)              scaled to size 11.39996pt on input line 142.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 26.59991pt on input line 140.
+(Font)              scaled to size 26.59991pt on input line 142.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 140.
+(Font)              scaled to size 23.63593pt on input line 142.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 22.79993pt on input line 140.
+(Font)              scaled to size 22.79993pt on input line 142.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 19.70294pt on input line 140.
+(Font)              scaled to size 19.70294pt on input line 142.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 18.99994pt on input line 140.
+(Font)              scaled to size 18.99994pt on input line 142.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 140.
+(Font)              scaled to size 16.41594pt on input line 142.
 LaTeX Font Info:    Font shape `T1/txss/b/n' in size <17.28> not available
-(Font)              Font shape `T1/txss/bx/n' tried instead on input line 140.
+(Font)              Font shape `T1/txss/bx/n' tried instead on input line 142.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 16.41594pt on input line 140.
+(Font)              scaled to size 16.41594pt on input line 142.
 LaTeX Font Info:    Font shape `T1/txss/b/n' in size <24.88> not available
-(Font)              Font shape `T1/txss/bx/n' tried instead on input line 140.
+(Font)              Font shape `T1/txss/bx/n' tried instead on input line 142.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 23.63593pt on input line 140.
+(Font)              scaled to size 23.63593pt on input line 142.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 140.
+(Font)              scaled to size 13.67995pt on input line 142.
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 1
-40.
+42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
-40.
+42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
-40.
+42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
-40.
+42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
-40.
+42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-Overfull \hbox (3.0pt too wide) in paragraph at lines 140--140
+Overfull \hbox (3.0pt too wide) in paragraph at lines 142--142
 [][] 
  []
 
@@ -1181,14 +1185,18 @@ Overfull \hbox (3.0pt too wide) in paragraph at lines 140--140
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/base/8r.enc}]
 Package titlepage Info: leaving not defined post-title page empty on input line
- 140.
+ 142.
 LaTeX Font Info:    Font shape `T1/txss/b/n' in size <12> not available
-(Font)              Font shape `T1/txss/bx/n' tried instead on input line 140.
+(Font)              Font shape `T1/txss/bx/n' tried instead on input line 142.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 11.39996pt on input line 140.
+(Font)              scaled to size 11.39996pt on input line 142.
  (./paper_Final_thesis.toc
 Package acronym Info: Label `acro:LLM' newly defined as it shall be overridden
-although it is yet undefined on input line 40.
+although it is yet undefined on input line 24.
+)
+\tf@toc=\write5
+\openout5 = `paper_Final_thesis.toc'.
+
 
 
 Package scrlayer-scrpage Warning: \headheight to low.
@@ -1198,8 +1206,8 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                processing, but you should do this yourself,
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=21.74998pt'.
-(scrlayer-scrpage)                I'll also decrease \topmargin on input line 4
-1.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
+45.
 
 
 Overfull \vbox (3.62498pt too high) has occurred while \output is active []
@@ -1214,16 +1222,12 @@ Package scrlayer-scrpage Warning: \footheight to low.
 (scrlayer-scrpage)                e.g., using
 (scrlayer-scrpage)                  \setlength{\footheight}{21.74998pt}
 (scrlayer-scrpage)                in your preamble.
-(scrlayer-scrpage)                I'll also increase \footskip on input line 41
-.
+(scrlayer-scrpage)                I'll also increase \footskip on input line 14
+5.
 
-[2])
-\tf@toc=\write5
-\openout5 = `paper_Final_thesis.toc'.
-
- [3]
+[2] [3]
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <12> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 148.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 150.
  [4
 
 ] (./paper_Final_thesis.lof
@@ -1232,566 +1236,523 @@ Overfull \hbox (2.647pt too wide) in paragraph at lines 6--6
 -a-tive scores 
  []
 
-LaTeX Font Info:    Font shape `T1/txr/b/n' in size <10.95> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 11.
 [5
 
-] [6] [7]
-Overfull \hbox (3.67574pt too wide) in paragraph at lines 24--24
- [][] [][]\T1/txr/bx/n/10.95 Robustness check, Spec-i-fi-ca-tion 2 (re-ordered 
-macroe-co-nomic block), sam- 
+] [6]
+Overfull \hbox (11.31105pt too wide) in paragraph at lines 21--21
+ [][] [][]\T1/txr/m/n/12 Robustness to the vari-able or-der-ing: im-pulse re-sp
+onses to a one-standard- 
  []
 
-[8])
+
+Overfull \hbox (11.31105pt too wide) in paragraph at lines 22--22
+ [][] [][]\T1/txr/m/n/12 Robustness to the vari-able or-der-ing: im-pulse re-sp
+onses to a one-standard- 
+ []
+
+[7]
+Overfull \hbox (1.77104pt too wide) in paragraph at lines 26--26
+ \T1/txr/m/n/12 standard-deviation gov-ern-ment im-mi-gra-tion sen-ti-ment shoc
+k, with sen- 
+ []
+
+
+Overfull \hbox (1.77104pt too wide) in paragraph at lines 28--28
+ \T1/txr/m/n/12 standard-deviation gov-ern-ment im-mi-gra-tion sen-ti-ment shoc
+k, with sen- 
+ []
+
+[8] [9])
 \tf@lof=\write6
 \openout6 = `paper_Final_thesis.lof'.
 
- [9] (./paper_Final_thesis.lot)
+ [10] (./paper_Final_thesis.lot)
 \tf@lot=\write7
 \openout7 = `paper_Final_thesis.lot'.
 
- [10
+ [11
 
 ] [1
 
-] [2] [3] [4]
-Overfull \hbox (3.571pt too wide) in paragraph at lines 218--219
-[]\T1/txr/m/n/12 This the-sis there-fore com-bines the trans-parency of a dic-t
-io-nary ap-proach with corpus-
- []
-
-[5]
+] [2] [3] [4] [5]
 LaTeX Font Info:    Font shape `T1/txss/b/n' in size <14.4> not available
-(Font)              Font shape `T1/txss/bx/n' tried instead on input line 235.
+(Font)              Font shape `T1/txss/bx/n' tried instead on input line 231.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 13.67995pt on input line 235.
+(Font)              scaled to size 13.67995pt on input line 231.
 Package acronym Info: Label `acro:XML' newly defined as it shall be overridden
-although it is yet undefined on input line 237.
+although it is yet undefined on input line 233.
 Package acronym Info: Label `acro:NLP' newly defined as it shall be overridden
-although it is yet undefined on input line 237.
- [6]
+although it is yet undefined on input line 233.
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <10> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 248.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 244.
 LaTeX Font Info:    Trying to load font information for T1+txtt on input line 2
-52.
- (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
+48.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
-)
-<images/originalDataDistributionMonthly.png, id=492, 1193.45876pt x 592.2125pt>
+) [6]
+<images/originalDataDistributionMonthly.png, id=474, 1193.45876pt x 592.2125pt>
 
 File: images/originalDataDistributionMonthly.png Graphic file (type png)
 <use images/originalDataDistributionMonthly.png>
 Package pdftex.def Info: images/originalDataDistributionMonthly.png  used on in
-put line 270.
+put line 266.
 (pdftex.def)             Requested size: 341.43306pt x 169.42389pt.
-<images/FilterDataDistributionMonthly.png, id=494, 1193.45876pt x 592.2125pt>
+<images/FilterDataDistributionMonthly.png, id=476, 1193.45876pt x 592.2125pt>
 File: images/FilterDataDistributionMonthly.png Graphic file (type png)
 <use images/FilterDataDistributionMonthly.png>
 Package pdftex.def Info: images/FilterDataDistributionMonthly.png  used on inpu
-t line 271.
+t line 267.
 (pdftex.def)             Requested size: 341.43306pt x 169.42389pt.
- [7]
-[8 <./images/originalDataDistributionMonthly.png> <./images/FilterDataDistribut
-ionMonthly.png>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7] [8 <./images/originalDataDistributionMonthly.png> <./images/FilterDataDistr
+ibutionMonthly.png>]
 Package acronym Info: Label `acro:TF-IDF' newly defined as it shall be overridd
 en
-although it is yet undefined on input line 323.
+although it is yet undefined on input line 321.
  [9]
-<images/wordtwovectone.png, id=523, 1394.20876pt x 792.9625pt>
+<images/wordtwovectone.png, id=504, 1394.20876pt x 792.9625pt>
 File: images/wordtwovectone.png Graphic file (type png)
 <use images/wordtwovectone.png>
-Package pdftex.def Info: images/wordtwovectone.png  used on input line 327.
+Package pdftex.def Info: images/wordtwovectone.png  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 194.18675pt.
 Package acronym Info: Label `acro:PCA' newly defined as it shall be overridden
-although it is yet undefined on input line 333.
-<images/wordtwovecttwo.png, id=527, 1394.20876pt x 792.9625pt>
+although it is yet undefined on input line 331.
+<images/wordtwovecttwo.png, id=508, 1394.20876pt x 792.9625pt>
 File: images/wordtwovecttwo.png Graphic file (type png)
 <use images/wordtwovecttwo.png>
-Package pdftex.def Info: images/wordtwovecttwo.png  used on input line 337.
+Package pdftex.def Info: images/wordtwovecttwo.png  used on input line 335.
 (pdftex.def)             Requested size: 341.43306pt x 194.18675pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10 <./images/wordtwovectone.png>] [11 <./images/wordtwovecttwo.png>]
-<images/averagePartySentiment.png, id=548, 992.70876pt x 592.2125pt>
+<images/averagePartySentiment.png, id=526, 992.70876pt x 592.2125pt>
 File: images/averagePartySentiment.png Graphic file (type png)
 <use images/averagePartySentiment.png>
 Package pdftex.def Info: images/averagePartySentiment.png  used on input line 3
-74.
+72.
 (pdftex.def)             Requested size: 341.43306pt x 203.68097pt.
 Package acronym Info: Label `acro:PV-DBOW' newly defined as it shall be overrid
 den
-although it is yet undefined on input line 382.
+although it is yet undefined on input line 380.
 
-Overfull \hbox (12.09097pt too wide) in paragraph at lines 382--383
+Overfull \hbox (12.09097pt too wide) in paragraph at lines 380--381
 []\T1/txr/m/n/12 For each quar-ter $\OML/txmi/m/it/12 t$\T1/txr/m/n/12 , we tra
 in a [][][]Paragraph Vec-tor - Dis-tributed Bag of Words ([])[]
  []
 
 [12 <./images/averagePartySentiment.png>]
-<images/rollingwindow.png, id=559, 373.395pt x 279.0425pt>
+<images/rollingwindow.png, id=536, 373.395pt x 279.0425pt>
 File: images/rollingwindow.png Graphic file (type png)
 <use images/rollingwindow.png>
-Package pdftex.def Info: images/rollingwindow.png  used on input line 399.
+Package pdftex.def Info: images/rollingwindow.png  used on input line 397.
 (pdftex.def)             Requested size: 227.62204pt x 170.10497pt.
-<images/foursentiment.png, id=562, 3583.3875pt x 1475.5125pt>
-File: images/foursentiment.png Graphic file (type png)
-<use images/foursentiment.png>
-Package pdftex.def Info: images/foursentiment.png  used on input line 410.
-(pdftex.def)             Requested size: 426.79134pt x 175.72551pt.
 
-Overfull \hbox (14.2263pt too wide) in paragraph at lines 410--411
- [] 
+Overfull \hbox (19.74945pt too wide) in paragraph at lines 404--405
+\T1/txr/m/n/12 cal-en-dar month in which it was de-liv-ered. For speaker group 
+$\OML/txmi/m/it/12 g \OMS/txsy/m/n/12 2 f[]\OML/txmi/m/it/12 ; []\OMS/txsy/m/n/
+12 g$
+ []
+
+
+Overfull \hbox (13.89098pt too wide) in paragraph at lines 404--405
+\T1/txr/m/n/12 and month $\OML/txmi/m/it/12 m$\T1/txr/m/n/12 , the sen-ti-ment 
+in-dex is the un-weighted mean of the scores of all immigration-
  []
 
 [13 <./images/rollingwindow.png>]
-<images/sentimentgorvnment.png, id=569, 3583.3875pt x 1475.5125pt>
+<images/foursentiment.png, id=547, 3583.3875pt x 1475.5125pt>
+File: images/foursentiment.png Graphic file (type png)
+<use images/foursentiment.png>
+Package pdftex.def Info: images/foursentiment.png  used on input line 418.
+(pdftex.def)             Requested size: 426.79134pt x 175.72551pt.
+
+Overfull \hbox (14.2263pt too wide) in paragraph at lines 418--419
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/sentimentgorvnment.png, id=548, 3583.3875pt x 1475.5125pt>
 File: images/sentimentgorvnment.png Graphic file (type png)
 <use images/sentimentgorvnment.png>
-Package pdftex.def Info: images/sentimentgorvnment.png  used on input line 418.
+Package pdftex.def Info: images/sentimentgorvnment.png  used on input line 426.
 
 (pdftex.def)             Requested size: 369.88582pt x 152.28793pt.
- [14 <./images/foursentiment.png> <./images/sentimentgorvnment.png>]
-<images/sentimentOpposition.png, id=585, 3583.3875pt x 1475.5125pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14]
+<images/sentimentOpposition.png, id=565, 3583.3875pt x 1475.5125pt>
 File: images/sentimentOpposition.png Graphic file (type png)
 <use images/sentimentOpposition.png>
-Package pdftex.def Info: images/sentimentOpposition.png  used on input line 432
+Package pdftex.def Info: images/sentimentOpposition.png  used on input line 440
 .
 (pdftex.def)             Requested size: 369.88582pt x 152.28793pt.
-<images/allSentimentTogether.png, id=586, 1394.20876pt x 594.22pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/allSentimentTogether.png, id=566, 1394.20876pt x 594.22pt>
 File: images/allSentimentTogether.png Graphic file (type png)
 <use images/allSentimentTogether.png>
 Package pdftex.def Info: images/allSentimentTogether.png  used on input line 44
-0.
+8.
 (pdftex.def)             Requested size: 369.88582pt x 157.64888pt.
- [15 <./images/sentimentOpposition.png> <./images/allSentimentTogether.png>] [1
-6] [17] [18] [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 668--673
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15 <./images/foursentiment.png> <./images/sentimentgorvnment.png>] [16 <./imag
+es/sentimentOpposition.png> <./images/allSentimentTogether.png>] [17] [18]
+[19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 670--675
 
  []
 
 
-Overfull \hbox (10.95096pt too wide) in paragraph at lines 686--687
+Overfull \hbox (10.95096pt too wide) in paragraph at lines 688--689
 \T1/txr/m/n/12 The base-line spec-i-fi-ca-tion has five en-doge-nous vari-ables
 : net im-mi-gra-tion rate $[][]$
  []
 
-[21] [22]
+[21]
 Package acronym Info: Label `acro:OECD' newly defined as it shall be overridden
 
-although it is yet undefined on input line 700.
-<./../code/images/NewDataset/From2006To2019/dataComparison.pdf, id=690, 493.845
+although it is yet undefined on input line 702.
+ [22]
+<./../code/images/NewDataset/From2006To2019/dataComparison.pdf, id=664, 493.845
 pt x 409.53pt>
 File: ./../code/images/NewDataset/From2006To2019/dataComparison.pdf Graphic fil
 e (type pdf)
 <use ./../code/images/NewDataset/From2006To2019/dataComparison.pdf>
 Package pdftex.def Info: ./../code/images/NewDataset/From2006To2019/dataCompari
-son.pdf  used on input line 708.
+son.pdf  used on input line 710.
 (pdftex.def)             Requested size: 341.43306pt x 283.1384pt.
- [23] [24 <./../code/images/NewDataset/From2006To2019/dataComparison.pdf>] [25]
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\parencite' on input line 755.
-
-<./../code/images/From2006To2019/originalStudyResult.pdf, id=730, 566.115pt x 4
-69.755pt>
-File: ./../code/images/From2006To2019/originalStudyResult.pdf Graphic file (typ
-e pdf)
-<use ./../code/images/From2006To2019/originalStudyResult.pdf>
-Package pdftex.def Info: ./../code/images/From2006To2019/originalStudyResult.pd
-f  used on input line 759.
-(pdftex.def)             Requested size: 398.33858pt x 330.54655pt.
-[26 <./../code/images/From2006To2019/originalStudyResult.pdf>]
-<./../code/images/From2006To2019/GvtSentimentIrf.pdf, id=756, 534.99875pt x 502
-.87875pt>
-File: ./../code/images/From2006To2019/GvtSentimentIrf.pdf Graphic file (type pd
-f)
-<use ./../code/images/From2006To2019/GvtSentimentIrf.pdf>
-Package pdftex.def Info: ./../code/images/From2006To2019/GvtSentimentIrf.pdf  u
-sed on input line 787.
-(pdftex.def)             Requested size: 341.43306pt x 320.95119pt.
-<./../code/images/From2006To2019/OppSentimentIrf.pdf, id=757, 534.99875pt x 502
-.87875pt>
-File: ./../code/images/From2006To2019/OppSentimentIrf.pdf Graphic file (type pd
-f)
-<use ./../code/images/From2006To2019/OppSentimentIrf.pdf>
-Package pdftex.def Info: ./../code/images/From2006To2019/OppSentimentIrf.pdf  u
-sed on input line 795.
-(pdftex.def)             Requested size: 341.43306pt x 320.95119pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./../code/images/From2006To2019/BunSentimentIrf.pdf, id=758, 534.99875pt x 502
-.87875pt>
-File: ./../code/images/From2006To2019/BunSentimentIrf.pdf Graphic file (type pd
-f)
-<use ./../code/images/From2006To2019/BunSentimentIrf.pdf>
-Package pdftex.def Info: ./../code/images/From2006To2019/BunSentimentIrf.pdf  u
-sed on input line 803.
-(pdftex.def)             Requested size: 341.43306pt x 320.95119pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[27 <./../code/images/From2006To2019/GvtSentimentIrf.pdf>] [28 <./../code/image
-s/From2006To2019/OppSentimentIrf.pdf>] [29 <./../code/images/From2006To2019/Bun
-SentimentIrf.pdf>]
-<./../code/images/NewDataset/From2006To2019/irfOrgVsnewData.pdf, id=803, 549.05
-125pt x 502.87875pt>
-File: ./../code/images/NewDataset/From2006To2019/irfOrgVsnewData.pdf Graphic fi
+ [23 <./../code/images/NewDataset/From2006To2019/dataComparison.pdf>]
+[24]
+<./../bvar_project/outputs/figures/base_gvt_2006_2019_irf.pdf, id=693, 454.6987
+5pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/base_gvt_2006_2019_irf.pdf Graphic file
+ (type pdf)
+<use ./../bvar_project/outputs/figures/base_gvt_2006_2019_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/base_gvt_2006_2019_i
+rf.pdf  used on input line 737.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
+<./../bvar_project/outputs/figures/base_opp_2006_2019_irf.pdf, id=694, 454.6987
+5pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/base_opp_2006_2019_irf.pdf Graphic file
+ (type pdf)
+<use ./../bvar_project/outputs/figures/base_opp_2006_2019_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/base_opp_2006_2019_i
+rf.pdf  used on input line 744.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
+<./../bvar_project/outputs/figures/new_gvt_2007_2019_irf.pdf, id=698, 454.69875
+pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/new_gvt_2007_2019_irf.pdf Graphic file 
+(type pdf)
+<use ./../bvar_project/outputs/figures/new_gvt_2007_2019_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/new_gvt_2007_2019_ir
+f.pdf  used on input line 753.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
+<./../bvar_project/outputs/figures/new_opp_2007_2019_irf.pdf, id=699, 454.69875
+pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/new_opp_2007_2019_irf.pdf Graphic file 
+(type pdf)
+<use ./../bvar_project/outputs/figures/new_opp_2007_2019_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/new_opp_2007_2019_ir
+f.pdf  used on input line 760.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
+ [25] [26 <./../bvar_project/outputs/figures/base_gvt_2006_2019_irf.pdf>]
+[27 <./../bvar_project/outputs/figures/base_opp_2006_2019_irf.pdf>] [28 <./../b
+var_project/outputs/figures/new_gvt_2007_2019_irf.pdf>] [29 <./../bvar_project/
+outputs/figures/new_opp_2007_2019_irf.pdf>]
+<./../bvar_project/outputs/figures/new_gvt_2007_2025_irf.pdf, id=747, 454.69875
+pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/new_gvt_2007_2025_irf.pdf Graphic file 
+(type pdf)
+<use ./../bvar_project/outputs/figures/new_gvt_2007_2025_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/new_gvt_2007_2025_ir
+f.pdf  used on input line 769.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
+<./../bvar_project/outputs/figures/new_opp_2007_2025_irf.pdf, id=748, 454.69875
+pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/new_opp_2007_2025_irf.pdf Graphic file 
+(type pdf)
+<use ./../bvar_project/outputs/figures/new_opp_2007_2025_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/new_opp_2007_2025_ir
+f.pdf  used on input line 776.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
+ [30] [31 <./../bvar_project/outputs/figures/new_gvt_2007_2025_irf.pdf>] [32 <.
+/../bvar_project/outputs/figures/new_opp_2007_2025_irf.pdf>]
+<./../bvar_project/outputs/figures/unrate_gvt_2007_2025_irf.pdf, id=781, 454.69
+875pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/unrate_gvt_2007_2025_irf.pdf Graphic fi
 le (type pdf)
-<use ./../code/images/NewDataset/From2006To2019/irfOrgVsnewData.pdf>
-Package pdftex.def Info: ./../code/images/NewDataset/From2006To2019/irfOrgVsnew
-Data.pdf  used on input line 823.
-(pdftex.def)             Requested size: 398.33858pt x 364.85016pt.
- [30
-
- <./../code/images/NewDataset/From2006To2019/irfOrgVsnewData.pdf>]
-<./../code/images/NewDataset/From2007To2025/irfOrgVsnewData2.pdf, id=821, 549.0
-5125pt x 502.87875pt>
-File: ./../code/images/NewDataset/From2007To2025/irfOrgVsnewData2.pdf Graphic f
-ile (type pdf)
-<use ./../code/images/NewDataset/From2007To2025/irfOrgVsnewData2.pdf>
-Package pdftex.def Info: ./../code/images/NewDataset/From2007To2025/irfOrgVsnew
-Data2.pdf  used on input line 833.
-(pdftex.def)             Requested size: 398.33858pt x 364.85016pt.
- [31 <./../code/images/NewDataset/From2007To2025/irfOrgVsnewData2.pdf>]
-Overfull \hbox (0.70294pt too wide) in paragraph at lines 850--851
-[]\T1/txr/m/n/12 Arrivals re-spond neg-a-tively and sig-nif-i-cantly to an op-p
-o-si-tion sen-ti-ment shock, while
- []
-
-<./../code/images/NewDataset/From2006To2019/Gvt2007To2019Irf.pdf, id=847, 534.9
-9875pt x 502.87875pt>
-File: ./../code/images/NewDataset/From2006To2019/Gvt2007To2019Irf.pdf Graphic f
-ile (type pdf)
-<use ./../code/images/NewDataset/From2006To2019/Gvt2007To2019Irf.pdf>
-Package pdftex.def Info: ./../code/images/NewDataset/From2006To2019/Gvt2007To20
-19Irf.pdf  used on input line 854.
-(pdftex.def)             Requested size: 341.43306pt x 320.95119pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./../code/images/NewDataset/From2006To2019/Opp2007To2019Irf.pdf, id=848, 534.9
-9875pt x 502.87875pt>
-File: ./../code/images/NewDataset/From2006To2019/Opp2007To2019Irf.pdf Graphic f
-ile (type pdf)
-<use ./../code/images/NewDataset/From2006To2019/Opp2007To2019Irf.pdf>
-Package pdftex.def Info: ./../code/images/NewDataset/From2006To2019/Opp2007To20
-19Irf.pdf  used on input line 862.
-(pdftex.def)             Requested size: 341.43306pt x 320.95119pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./../code/images/NewDataset/From2006To2019/Bu2007To2019Irf.pdf, id=849, 534.99
-875pt x 502.87875pt>
-File: ./../code/images/NewDataset/From2006To2019/Bu2007To2019Irf.pdf Graphic fi
+<use ./../bvar_project/outputs/figures/unrate_gvt_2007_2025_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/unrate_gvt_2007_2025
+_irf.pdf  used on input line 789.
+(pdftex.def)             Requested size: 312.9803pt x 397.96922pt.
+<./../bvar_project/outputs/figures/unrate_opp_2007_2025_irf.pdf, id=782, 454.69
+875pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/unrate_opp_2007_2025_irf.pdf Graphic fi
 le (type pdf)
-<use ./../code/images/NewDataset/From2006To2019/Bu2007To2019Irf.pdf>
-Package pdftex.def Info: ./../code/images/NewDataset/From2006To2019/Bu2007To201
-9Irf.pdf  used on input line 870.
-(pdftex.def)             Requested size: 341.43306pt x 320.95119pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[32] [33 <./../code/images/NewDataset/From2006To2019/Gvt2007To2019Irf.pdf>]
-[34 <./../code/images/NewDataset/From2006To2019/Opp2007To2019Irf.pdf>] [35 <./.
-./code/images/NewDataset/From2006To2019/Bu2007To2019Irf.pdf>]
-<./../code/images/NewDataset/From2007To2025/gvtTo2007to2025.pdf, id=902, 534.99
-875pt x 502.87875pt>
-File: ./../code/images/NewDataset/From2007To2025/gvtTo2007to2025.pdf Graphic fi
-le (type pdf)
-<use ./../code/images/NewDataset/From2007To2025/gvtTo2007to2025.pdf>
-Package pdftex.def Info: ./../code/images/NewDataset/From2007To2025/gvtTo2007to
-2025.pdf  used on input line 884.
-(pdftex.def)             Requested size: 341.43306pt x 320.95119pt.
-<./../code/images/NewDataset/From2007To2025/oppto2007to2025.pdf, id=903, 534.99
-875pt x 502.87875pt>
-File: ./../code/images/NewDataset/From2007To2025/oppto2007to2025.pdf Graphic fi
-le (type pdf)
-<use ./../code/images/NewDataset/From2007To2025/oppto2007to2025.pdf>
-Package pdftex.def Info: ./../code/images/NewDataset/From2007To2025/oppto2007to
-2025.pdf  used on input line 892.
-(pdftex.def)             Requested size: 341.43306pt x 320.95119pt.
+<use ./../bvar_project/outputs/figures/unrate_opp_2007_2025_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/unrate_opp_2007_2025
+_irf.pdf  used on input line 796.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
+ [33] [34 <./../bvar_project/outputs/figures/unrate_gvt_2007_2025_irf.pdf>] [35
+ <./../bvar_project/outputs/figures/unrate_opp_2007_2025_irf.pdf>] [36]
+<./../bvar_project/outputs/figures/new_gvt_2007_2014_irf.pdf, id=827, 454.69875
+pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/new_gvt_2007_2014_irf.pdf Graphic file 
+(type pdf)
+<use ./../bvar_project/outputs/figures/new_gvt_2007_2014_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/new_gvt_2007_2014_ir
+f.pdf  used on input line 821.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./../code/images/NewDataset/From2007To2025/BUto2007to2025.pdf, id=904, 534.998
-75pt x 502.87875pt>
-File: ./../code/images/NewDataset/From2007To2025/BUto2007to2025.pdf Graphic fil
-e (type pdf)
-<use ./../code/images/NewDataset/From2007To2025/BUto2007to2025.pdf>
-Package pdftex.def Info: ./../code/images/NewDataset/From2007To2025/BUto2007to2
-025.pdf  used on input line 900.
-(pdftex.def)             Requested size: 341.43306pt x 320.95119pt.
+<./../bvar_project/outputs/figures/new_opp_2007_2014_irf.pdf, id=828, 454.69875
+pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/new_opp_2007_2014_irf.pdf Graphic file 
+(type pdf)
+<use ./../bvar_project/outputs/figures/new_opp_2007_2014_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/new_opp_2007_2014_ir
+f.pdf  used on input line 831.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[36
+<./../bvar_project/outputs/figures/rob_gvt_sentfirst_irf.pdf, id=831, 454.69875
+pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/rob_gvt_sentfirst_irf.pdf Graphic file 
+(type pdf)
+<use ./../bvar_project/outputs/figures/rob_gvt_sentfirst_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/rob_gvt_sentfirst_ir
+f.pdf  used on input line 843.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
 
- <./../code/images/NewDataset/From2007To2025/gvtTo2007to2025.pdf>] [37 <./../co
-de/images/NewDataset/From2007To2025/oppto2007to2025.pdf>] [38 <./../code/images
-/NewDataset/From2007To2025/BUto2007to2025.pdf>]
-Overfull \hbox (10.291pt too wide) in paragraph at lines 913--920
-\T1/txr/m/n/12 As a fur-ther ro-bust-ness check on the iden-ti-fi-ca-tion schem
-e, we re-estimate the opposition-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
+<./../bvar_project/outputs/figures/rob_opp_sentfirst_irf.pdf, id=832, 454.69875
+pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/rob_opp_sentfirst_irf.pdf Graphic file 
+(type pdf)
+<use ./../bvar_project/outputs/figures/rob_opp_sentfirst_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/rob_opp_sentfirst_ir
+f.pdf  used on input line 852.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
 
-Overfull \hbox (1.04764pt too wide) in paragraph at lines 921--926
-[] []\T1/txss/bx/n/12 Specification 1: base-line or-der-ing.[][] \T1/txr/m/n/12
- The first or-der-ing fol-lows the base-line scheme
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[39
+[37
 
 ]
-<./../code/images/robustness/short2007to2014_baseline.pdf, id=966, 631.35875pt 
-x 502.87875pt>
-File: ./../code/images/robustness/short2007to2014_baseline.pdf Graphic file (ty
-pe pdf)
-<use ./../code/images/robustness/short2007to2014_baseline.pdf>
-Package pdftex.def Info: ./../code/images/robustness/short2007to2014_baseline.p
-df  used on input line 992.
-(pdftex.def)             Requested size: 398.33858pt x 317.28336pt.
-<./../code/images/robustness/short2007to2014_macroreorder.pdf, id=967, 631.3587
-5pt x 502.87875pt>
-File: ./../code/images/robustness/short2007to2014_macroreorder.pdf Graphic file
- (type pdf)
-<use ./../code/images/robustness/short2007to2014_macroreorder.pdf>
-Package pdftex.def Info: ./../code/images/robustness/short2007to2014_macroreord
-er.pdf  used on input line 1000.
-(pdftex.def)             Requested size: 398.33858pt x 317.28336pt.
+Overfull \hbox (8.995pt too wide) in paragraph at lines 874--875
+\T1/txr/m/n/12 have the high-est scores. This dif-fers from the Doc2Vec mea-sur
+e, which as-signs Die Linke
+ []
 
+[38]
+<./../code/images/LLM/partiesGtpaverage.png, id=860, 1502.61375pt x 1168.365pt>
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./../code/images/robustness/short2007to2014_sentsecond.pdf, id=968, 631.35875p
-t x 502.87875pt>
-File: ./../code/images/robustness/short2007to2014_sentsecond.pdf Graphic file (
-type pdf)
-<use ./../code/images/robustness/short2007to2014_sentsecond.pdf>
-Package pdftex.def Info: ./../code/images/robustness/short2007to2014_sentsecond
-.pdf  used on input line 1008.
-(pdftex.def)             Requested size: 398.33858pt x 317.28336pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./../code/images/robustness/doc2vecandgpt.png, id=969, 1394.20876pt x 595.2237
-5pt>
-File: ./../code/images/robustness/doc2vecandgpt.png Graphic file (type png)
-<use ./../code/images/robustness/doc2vecandgpt.png>
-Package pdftex.def Info: ./../code/images/robustness/doc2vecandgpt.png  used on
- input line 1016.
-(pdftex.def)             Requested size: 398.33858pt x 170.05832pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[40 <./../code/images/robustness/short2007to2014_baseline.pdf>] [41 <./../code/
-images/robustness/short2007to2014_macroreorder.pdf>] [42 <./../code/images/robu
-stness/short2007to2014_sentsecond.pdf> <./../code/images/robustness/doc2vecandg
-pt.png>]
-<./../code/images/LLM/partiesGtpaverage.png, id=1022, 1502.61375pt x 1168.365pt
->
 File: ./../code/images/LLM/partiesGtpaverage.png Graphic file (type png)
 <use ./../code/images/LLM/partiesGtpaverage.png>
 Package pdftex.def Info: ./../code/images/LLM/partiesGtpaverage.png  used on in
-put line 1049.
-(pdftex.def)             Requested size: 398.33858pt x 309.72221pt.
-<./images/compassion.png, id=1023, 978.65625pt x 577.15625pt>
+put line 878.
+(pdftex.def)             Requested size: 412.56503pt x 320.79327pt.
+<./images/compassion.png, id=861, 978.65625pt x 577.15625pt>
 File: ./images/compassion.png Graphic file (type png)
 <use ./images/compassion.png>
-Package pdftex.def Info: ./images/compassion.png  used on input line 1060.
-(pdftex.def)             Requested size: 227.62204pt x 134.24028pt.
-
-Overfull \hbox (41.96904pt too wide) in paragraph at lines 1060--1061
- [][] 
- []
-
-
-Underfull \hbox (badness 1831) in paragraph at lines 1061--1061
-[][][]\T1/txr/m/n/10.95 Average Net Com-pas-sion-ate
- []
-
-<./images/economics.png, id=1024, 978.65625pt x 577.15625pt>
+Package pdftex.def Info: ./images/compassion.png  used on input line 887.
+(pdftex.def)             Requested size: 202.15912pt x 119.21606pt.
+<./images/economics.png, id=862, 978.65625pt x 577.15625pt>
 File: ./images/economics.png Graphic file (type png)
 <use ./images/economics.png>
-Package pdftex.def Info: ./images/economics.png  used on input line 1067.
-(pdftex.def)             Requested size: 227.62204pt x 134.24028pt.
+Package pdftex.def Info: ./images/economics.png  used on input line 894.
+(pdftex.def)             Requested size: 202.15912pt x 119.21606pt.
+<./../bvar_project/outputs/figures/rob_gvt_gpt41_2007_2019_irf.pdf, id=870, 454
+.69875pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/rob_gvt_gpt41_2007_2019_irf.pdf Graphic
+ file (type pdf)
+<use ./../bvar_project/outputs/figures/rob_gvt_gpt41_2007_2019_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/rob_gvt_gpt41_2007_2
+019_irf.pdf  used on input line 908.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
 
-Overfull \hbox (41.96904pt too wide) in paragraph at lines 1067--1068
- [][] 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./../bvar_project/outputs/figures/rob_opp_gpt41_2007_2019_irf.pdf, id=871, 454
+.69875pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/rob_opp_gpt41_2007_2019_irf.pdf Graphic
+ file (type pdf)
+<use ./../bvar_project/outputs/figures/rob_opp_gpt41_2007_2019_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/rob_opp_gpt41_2007_2
+019_irf.pdf  used on input line 917.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./../bvar_project/outputs/figures/rob_gvt_gpt41_2007_2025_irf.pdf, id=872, 454
+.69875pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/rob_gvt_gpt41_2007_2025_irf.pdf Graphic
+ file (type pdf)
+<use ./../bvar_project/outputs/figures/rob_gvt_gpt41_2007_2025_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/rob_gvt_gpt41_2007_2
+025_irf.pdf  used on input line 926.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./../bvar_project/outputs/figures/rob_opp_gpt41_2007_2025_irf.pdf, id=873, 454
+.69875pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/rob_opp_gpt41_2007_2025_irf.pdf Graphic
+ file (type pdf)
+<use ./../bvar_project/outputs/figures/rob_opp_gpt41_2007_2025_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/rob_opp_gpt41_2007_2
+025_irf.pdf  used on input line 935.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[39] [40 <./../bvar_project/outputs/figures/new_gvt_2007_2014_irf.pdf>]
+[41 <./../bvar_project/outputs/figures/new_opp_2007_2014_irf.pdf>] [42 <./../bv
+ar_project/outputs/figures/rob_gvt_sentfirst_irf.pdf>] [43 <./../bvar_project/o
+utputs/figures/rob_opp_sentfirst_irf.pdf>] [44 <./../code/images/LLM/partiesGtp
+average.png> <./images/compassion.png> <./images/economics.png>] [45 <./../bvar
+_project/outputs/figures/rob_gvt_gpt41_2007_2019_irf.pdf>] [46 <./../bvar_proje
+ct/outputs/figures/rob_opp_gpt41_2007_2019_irf.pdf>] [47 <./../bvar_project/out
+puts/figures/rob_gvt_gpt41_2007_2025_irf.pdf>] [48 <./../bvar_project/outputs/f
+igures/rob_opp_gpt41_2007_2025_irf.pdf>] [49
+
+] [50]
+Overfull \hbox (63.55229pt too wide) in paragraph at lines 967--988
+ [] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./../code/images/LLM/gpt_var_2007_2014.pdf, id=1025, 549.05125pt x 446.66875pt
->
-File: ./../code/images/LLM/gpt_var_2007_2014.pdf Graphic file (type pdf)
-<use ./../code/images/LLM/gpt_var_2007_2014.pdf>
-Package pdftex.def Info: ./../code/images/LLM/gpt_var_2007_2014.pdf  used on in
-put line 1078.
-(pdftex.def)             Requested size: 398.33858pt x 324.0685pt.
-[43
-
- <./../code/images/LLM/partiesGtpaverage.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./../code/images/LLM/gpt_var_2007_2019.pdf, id=1036, 592.2125pt x 502.87875pt>
-
-File: ./../code/images/LLM/gpt_var_2007_2019.pdf Graphic file (type pdf)
-<use ./../code/images/LLM/gpt_var_2007_2019.pdf>
-Package pdftex.def Info: ./../code/images/LLM/gpt_var_2007_2019.pdf  used on in
-put line 1086.
-(pdftex.def)             Requested size: 398.33858pt x 338.26216pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./../code/images/LLM/gpt_var_2007_2025.pdf, id=1039, 549.05125pt x 446.66875pt
->
-File: ./../code/images/LLM/gpt_var_2007_2025.pdf Graphic file (type pdf)
-<use ./../code/images/LLM/gpt_var_2007_2025.pdf>
-Package pdftex.def Info: ./../code/images/LLM/gpt_var_2007_2025.pdf  used on in
-put line 1094.
-(pdftex.def)             Requested size: 398.33858pt x 324.0685pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[44 <./images/compassion.png> <./images/economics.png>]
-<./../code/images/LLM/gpt_var_2007_2025Forcast.pdf, id=1057, 630.355pt x 502.87
-875pt>
-File: ./../code/images/LLM/gpt_var_2007_2025Forcast.pdf Graphic file (type pdf)
-
-<use ./../code/images/LLM/gpt_var_2007_2025Forcast.pdf>
-Package pdftex.def Info: ./../code/images/LLM/gpt_var_2007_2025Forcast.pdf  use
-d on input line 1127.
-(pdftex.def)             Requested size: 398.33858pt x 317.78212pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[45 <./../code/images/LLM/gpt_var_2007_2014.pdf>] [46 <./../code/images/LLM/gpt
-_var_2007_2019.pdf>] [47 <./../code/images/LLM/gpt_var_2007_2025.pdf>] [48 <./.
-./code/images/LLM/gpt_var_2007_2025Forcast.pdf>] [49
-
-] [50] [51] [52]
-Overfull \hbox (5.92905pt too wide) in paragraph at lines 1171--1191
- [][] 
- []
-
-[53
+[51
 
 ]
-Overfull \hbox (5.92905pt too wide) in paragraph at lines 1249--1269
- [][] 
- []
+<./../bvar_project/outputs/figures/arr_gvt_2007_2025_irf.pdf, id=984, 454.69875
+pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/arr_gvt_2007_2025_irf.pdf Graphic file 
+(type pdf)
+<use ./../bvar_project/outputs/figures/arr_gvt_2007_2025_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/arr_gvt_2007_2025_ir
+f.pdf  used on input line 1026.
+(pdftex.def)             Requested size: 312.9803pt x 397.96922pt.
+<./../bvar_project/outputs/figures/arr_opp_2007_2025_irf.pdf, id=985, 454.69875
+pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/arr_opp_2007_2025_irf.pdf Graphic file 
+(type pdf)
+<use ./../bvar_project/outputs/figures/arr_opp_2007_2025_irf.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/arr_opp_2007_2025_ir
+f.pdf  used on input line 1035.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
 
-[54
 
-]
-<./../code/images/LLM/gpt5_var_2007_2025_opp_.pdf, id=1137, 630.355pt x 502.878
-75pt>
-File: ./../code/images/LLM/gpt5_var_2007_2025_opp_.pdf Graphic file (type pdf)
-<use ./../code/images/LLM/gpt5_var_2007_2025_opp_.pdf>
-Package pdftex.def Info: ./../code/images/LLM/gpt5_var_2007_2025_opp_.pdf  used
- on input line 1323.
-(pdftex.def)             Requested size: 284.52756pt x 226.98393pt.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-Overfull \hbox (78.24504pt too wide) in paragraph at lines 1323--1324
- [][] 
- []
+<./../bvar_project/outputs/figures/unrate_opp_2007_2025_fevd.pdf, id=986, 454.6
+9875pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/unrate_opp_2007_2025_fevd.pdf Graphic f
+ile (type pdf)
+<use ./../bvar_project/outputs/figures/unrate_opp_2007_2025_fevd.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/unrate_opp_2007_2025
+_fevd.pdf  used on input line 1045.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
 
-<./../code/images/LLM/gpt5_var_2007_2025_gvt_.pdf, id=1138, 630.355pt x 502.878
-75pt>
-File: ./../code/images/LLM/gpt5_var_2007_2025_gvt_.pdf Graphic file (type pdf)
-<use ./../code/images/LLM/gpt5_var_2007_2025_gvt_.pdf>
-Package pdftex.def Info: ./../code/images/LLM/gpt5_var_2007_2025_gvt_.pdf  used
- on input line 1330.
-(pdftex.def)             Requested size: 284.52756pt x 226.98393pt.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-Overfull \hbox (78.24504pt too wide) in paragraph at lines 1330--1331
- [][] 
- []
+<./../bvar_project/outputs/figures/rob_opp_gpt41_2007_2025_fevd.pdf, id=987, 45
+4.69875pt x 578.16pt>
+File: ./../bvar_project/outputs/figures/rob_opp_gpt41_2007_2025_fevd.pdf Graphi
+c file (type pdf)
+<use ./../bvar_project/outputs/figures/rob_opp_gpt41_2007_2025_fevd.pdf>
+Package pdftex.def Info: ./../bvar_project/outputs/figures/rob_opp_gpt41_2007_2
+025_fevd.pdf  used on input line 1055.
+(pdftex.def)             Requested size: 341.43306pt x 434.14825pt.
 
-[55
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- <./../code/images/LLM/gpt5_var_2007_2025_opp_.pdf> <./../code/images/LLM/gpt5_
-var_2007_2025_gvt_.pdf>]
-<./../code/images/partyAveragesentiment.png, id=1161, 1394.20876pt x 1495.5875p
+[52
+
+ <./../bvar_project/outputs/figures/arr_gvt_2007_2025_irf.pdf>] [53 <./../bvar_
+project/outputs/figures/arr_opp_2007_2025_irf.pdf>] [54 <./../bvar_project/outp
+uts/figures/unrate_opp_2007_2025_fevd.pdf>] [55 <./../bvar_project/outputs/figu
+res/rob_opp_gpt41_2007_2025_fevd.pdf>]
+<./../code/images/partyAveragesentiment.png, id=1029, 1480.53125pt x 1696.3375p
 t>
 File: ./../code/images/partyAveragesentiment.png Graphic file (type png)
 <use ./../code/images/partyAveragesentiment.png>
 Package pdftex.def Info: ./../code/images/partyAveragesentiment.png  used on in
-put line 1342.
-(pdftex.def)             Requested size: 398.33858pt x 427.29663pt.
+put line 1068.
+(pdftex.def)             Requested size: 341.43306pt x 391.18478pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ac' on input line 1358.
+(hyperref)                removing `\@ac' on input line 1084.
 
+LaTeX Font Info:    Font shape `T1/txr/b/n' in size <10.95> not available
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 1100.
 
-Underfull \hbox (badness 2717) in paragraph at lines 1381--1382
+Underfull \hbox (badness 2717) in paragraph at lines 1107--1108
 []|\T1/txr/m/n/10.95 Migrants' iden-tity, dig-nity, cul-ture, au-ton-omy, or se
 lf-
  []
 
 
-Underfull \hbox (badness 2717) in paragraph at lines 1387--1388
+Underfull \hbox (badness 2717) in paragraph at lines 1113--1114
 []|\T1/txr/m/n/10.95 Migrants' iden-tity, dig-nity, cul-ture, au-ton-omy, or se
 lf-
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [56
 
  <./../code/images/partyAveragesentiment.png>] [57]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 1394.
+nput line 1120.
  [58
 
 ] [59]
-Overfull \hbox (6.46643pt too wide) in paragraph at lines 1458--1458
+Overfull \hbox (6.46643pt too wide) in paragraph at lines 1184--1184
 \T1/txr/m/n/12 im-mi-gra-tion, \T1/txr/m/it/12 Pro-ceed-ings of the Na-tional A
 cademy of Sci-ences \T1/txr/m/n/12 119.31, e2120510119. 
- []
-
-
-Overfull \hbox (3.35843pt too wide) in paragraph at lines 1458--1458
-\T1/txr/m/it/12 Ger-rit Huy und weit-erer Ab-ge-ord-neter und der Frak-tion der
- AfD\T1/txr/m/n/12 , Druck-sache, Berlin. 
  []
 
 [60
 
 ]
-Overfull \hbox (7.28166pt too wide) in paragraph at lines 1458--1458
+Overfull \hbox (7.28166pt too wide) in paragraph at lines 1184--1184
 \T1/txr/m/n/12 com-pe-ti-tion and at-ti-tudes to-ward im-mi-grants and im-mi-gr
 a-tion: An in-stru-men-tal model
  []
 
 [61] [62]
-Overfull \hbox (19.78181pt too wide) in paragraph at lines 1458--1458
-[][]\T1/txr/m/n/12 Pesando, Luca Maria, Valentina Ro-tondi, Manuela Stranges, R
-idhi Kashyap, and Francesco
- []
-
-
-Overfull \hbox (18.4651pt too wide) in paragraph at lines 1458--1458
+Overfull \hbox (18.4651pt too wide) in paragraph at lines 1184--1184
 [][]\T1/txr/m/n/12 Statistisches Bun-de-samt (Destatis) (2026a), \T1/txr/m/it/1
 2 Bevölkerung nach Na-tion-al-ität und Geschlecht
  []
 
 
-Overfull \hbox (11.68999pt too wide) in paragraph at lines 1458--1458
+Overfull \hbox (11.68999pt too wide) in paragraph at lines 1184--1184
 [][][]\T1/txr/m/n/12 (2026b), \T1/txr/m/it/12 Wan-derun-gen (Gesamtüber-sicht):
  Saldo der Zuzüge und Fortzüge\T1/txr/m/n/12 , GENESIS-
  []
 
-[63] [64] [65
+[63] [64
 
 ] (./paper_Final_thesis.aux)
  ***********
@@ -1805,11 +1766,11 @@ Package logreq Info: Writing requests to 'paper_Final_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27852 strings out of 476129
- 528579 string characters out of 5793185
- 2154975 words of memory out of 5000000
- 49149 multiletter control sequences out of 15000+600000
- 677703 words of font info for 229 fonts, out of 8000000 for 9000
+ 27828 strings out of 476129
+ 527552 string characters out of 5793185
+ 2155975 words of memory out of 5000000
+ 49161 multiletter control sequences out of 15000+600000
+ 679641 words of font info for 233 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  108i,21n,107p,10934b,2112s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/shar
@@ -1826,10 +1787,10 @@ ts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper_Final_thesis.pdf (75 pages, 3112392 bytes).
+Output written on paper_Final_thesis.pdf (75 pages, 2785259 bytes).
 PDF statistics:
- 1509 PDF objects out of 1728 (max. 8388607)
- 1304 compressed objects within 14 object streams
- 340 named destinations out of 1000 (max. 500000)
- 402 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1357 PDF objects out of 1440 (max. 8388607)
+ 1163 compressed objects within 12 object streams
+ 297 named destinations out of 1000 (max. 500000)
+ 376 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -9,7 +9,9 @@
 \usepackage[T1]{fontenc}						% Umlauts as separate characters
 \usepackage{textcomp}							% TS1-encoding symbols
 \usepackage{txfonts}							% Font: Times New Roman
-\usepackage{lipsum}								% Package to generate dummy text for testing the source code
+\usepackage{lipsum}			
+\usepackage{booktabs}
+\usepackage{threeparttable}					% Package to generate dummy text for testing the source code
 %%%%%%%%%%%%%%%%%%%%%%%
 %Bibliography
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -115,8 +117,8 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
 \matriculationnumber{8118095}
 %
 \advisor{\Large Prof. Dr. Peter Winker \\Jana Röder}
-\date{13.07.2026}
-\place{Gießen}
+\date{02.11.2026}
+\place{Linden}
 
 % Definition of the header and footer
 \pagestyle{scrheadings}
@@ -188,7 +190,7 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
     
     The main methodological contribution of this thesis is therefore the integration of parliamentary text data into a multivariate macroeconomic time-series framework. Rather than treating political discourse solely as an outcome of economic and migration conditions, the analysis treats sentiment expressed in parliamentary debates as a measurable time-varying variable that may contain information about future developments. This approach combines quantitative text analysis with Bayesian time-series modelling and provides a framework for studying the temporal interaction between political discourse, migration, and macroeconomic conditions. Importantly, the empirical framework does not presume that political sentiment causes subsequent economic or migration outcomes. Instead, it allows the temporal structure of the data to reveal whether systematic dynamic relationships and predictive interactions exist between these variables.
     
-    Germany provides a particularly suitable setting for this analysis. First, the study can build directly on the empirical framework developed by \parencite{maffei2021does}, allowing the analysis to extend an established examination of migration and macroeconomic dynamics. Second, Germany has experienced substantial variation in both migration flows and the political salience of immigration. The 2015--2016 migration episode represented a major turning point in German immigration politics and generated extensive parliamentary debate. More recently, the large-scale displacement following Russia's invasion of Ukraine in 2022 produced another substantial increase in migration and renewed political attention to immigration. These episodes, together with longer-term changes in migration and economic conditions, provide substantial temporal variation for examining whether shifts in immigration-related political sentiment coincide with, precede, or follow changes in migration and macroeconomic indicators.
+    Germany provides a particularly suitable setting for this analysis. First, the study can build directly on the empirical framework developed by \parencite{maffei2021does}, allowing the analysis to extend an established examination of migration and macroeconomic dynamics. Second, Germany has experienced substantial variation in both migration flows and the political salience of immigration. The 2015--2016 migration episode represented a major turning point in German immigration politics and generated extensive parliamentary debate. More recently, the large-scale displacement from Ukraine in 2022 produced another substantial increase in migration and renewed political attention to immigration. These episodes, together with longer-term changes in migration and economic conditions, provide substantial temporal variation for examining whether shifts in immigration-related political sentiment coincide with, precede, or follow changes in migration and macroeconomic indicators.
     
     The remainder of this thesis is organized as follows. Section~\ref{sec:literature} 
     reviews the relevant literature on migration, macroeconomic dynamics, political 
@@ -198,34 +200,28 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
     construction of the sentiment measure from Bundestag speeches, and its 
     validation. Section~\ref{sec:economic_interaction} introduces the Bayesian VAR 
     framework, presents the macroeconomic and migration variables used in the 
-    analysis, discusses the identification strategy, and presents and discusses the 
+    analysis, discusses the identification strategy, presents and discusses the 
     empirical results together with a series of robustness checks. 
     Section~\ref{sec:conclusion} concludes.
     
     \section{Literature Review}
     \label{sec:literature}
     
-    Migration has long been an important economic and social force. States have used migration policy to address labour shortages, demographic change, and broader economic and territorial goals \parencite{hatton2005global,fellini2023,emmer2012colonialism,okia2023migration,qvarnstrom2014sweden,adamson2020migration,adamson2025colonial}. After the Second World War, Western European countries increasingly used organised labour recruitment, including the ``guest worker'' programmes involving Southern Europe and the Maghreb \parencite{fellini2023}. Today, migration policy is closely linked to labour demand, demographic change, security, integration, and migrants' rights \parencite{hollifield2004emerging}.
+    This thesis builds on three strands of literature: research on the macroeconomic effects of migration, research on how economic conditions shape attitudes and political rhetoric toward immigration, and research that turns political text into quantitative indicators. Each strand covers one link in the relationship studied here. None of them, however, models these links jointly.
     
-    Migration decisions are often explained by the push--pull model. Unemployment, poverty, conflict, and political instability can push people to leave, while better economic and social conditions can attract migrants to destination countries \parencite{lee1966theory,parliament2020exploring}. Information and transport can further reduce the costs of migration \parencite{dekker2016use,pesando2021internetization,fellini2023}. At the same time, ageing populations and labour shortages create demand for foreign workers in advanced economies \parencite{oecd2024labour,oecd2024migration}. Migration can nevertheless generate concerns about public services, housing, security, cultural identity, and economic pressure \parencite{huysmans2000european,young2018building,oecd2024migration}. This tension provides an important context for political discourse on immigration.
+    Migration has long been closely tied to economic conditions. In the push--pull framework, unemployment, poverty, conflict, and political instability push people to leave their home countries, while better economic and social conditions attract them to destination countries \parencite{lee1966theory,hatton2005global}. Destination states have, in turn, used migration policy to address labour shortages and demographic change, and today such policy is closely linked to labour demand, security, integration, and migrants' rights \parencite{hollifield2004emerging}. Ageing populations and persistent labour shortages continue to raise the demand for foreign workers in advanced economies \parencite{oecd2024labour,oecd2024migration}. Regarding the consequences of migration, \textcite{franz1994macroeconometric} show in a macroeconometric disequilibrium model that the effects of migration into West Germany depend on the prevailing economic conditions and market regimes. More recently, \textcite{maffei2021does} use a structural VAR for Germany and find that net migration shocks affect vacancies, wages, house prices, consumption, investment, net exports, output, and unemployment. Their framework is the starting point of the empirical analysis in this thesis. Like most of this literature, however, it treats realised migration flows as the driving force and does not ask whether the political debate surrounding migration carries information of its own.
     
-    Germany provides a useful case for studying these dynamics. The Gastarbeiter agreements of the 1950s and 1960s framed immigration mainly as a response to labour shortages. In the early 1990s, rising asylum applications coincided with more restrictive rhetoric and the 1993 asylum compromise \parencite{borkert2007migration}. Around 2000, policy became more open, including birthright citizenship and the Süssmuth Commission \parencite{borkert2007migration}. The 2015--2016 refugee inflow again transformed political debate, while the arrival of refugees from Ukraine in 2022 generated substantial institutional and public support \parencite{trauner2017welcome,brucker2022war}. These episodes illustrate that German immigration discourse can change substantially with political and social conditions.
+    A second strand examines the reverse direction: how economic and social conditions shape attitudes toward immigration. Survey-based studies relate opposition to immigration to labour-market competition, fiscal concerns, and cultural considerations \parencite{scheve2001labor,dustmann2007racial,hainmueller2014public}. Concerns about public services, housing, security, and cultural identity add to these economic motives \parencite{huysmans2000european,young2018building,oecd2024migration}, and threat-based messages can amplify them \parencite{brader2008triggers,esses1998intergroup}. Political actors respond to and shape these concerns. Right-wing populist parties in particular mobilise broader economic and social grievances through the immigration issue \parencite{ivarsflaten2008unites}. Analysing 140 years of US political speeches, \textcite{card2022computational} show that the framing of immigration has become more positive on average but increasingly polarised between parties.
     
-    Political actors also differ in how they frame immigration. Positive and negative views coexist and respond to political and social events \parencite{card2022computational}. Threat-based messages can increase concerns about economic competition, security, and national or cultural identity \parencite{brader2008triggers,esses1998intergroup}. Parliamentary discourse can therefore reveal political preferences while also reflecting broader economic and social concerns. This creates an important empirical question: whether political discourse merely responds to changing conditions or also contains information about subsequent developments.
+    Germany illustrates how strongly immigration discourse can shift with political and economic conditions. The Gastarbeiter agreements of the 1950s and 1960s framed immigration mainly as a response to labour shortages. In the early 1990s, rising asylum applications coincided with more restrictive rhetoric and the 1993 asylum compromise, while reforms around 2000, including birthright citizenship and the work of the Süssmuth Commission, marked a more open phase \parencite{borkert2007migration}. The 2015--2016 refugee inflow transformed the political debate once again, whereas the arrival of refugees from Ukraine in 2022 met with broad institutional and public support \parencite{trauner2017welcome,brucker2022war}.
     
-    The growth of digitised parliamentary records makes such questions measurable at scale \parencite{grimmer2013text}. Dictionary methods are transparent and efficient, but can miss context, negation, and reported speech \textcite{kostikova2024fine}. Supervised models and large language models can capture more context, but require more data, computation, and often manual labelling. \textcite{kostikova2024fine}, for example, use large language models to measure solidarity and anti-solidarity toward migrants in Reichstag and Bundestag speeches over 155 years.
+    The study closest to this thesis is \textcite{abdelatif2026uncertainty}. They construct a migration sentiment index from Bundestag speeches for 1991--2018, using openness and restriction terms around migration anchors with a correction for negation. They find that higher economic and migration-related uncertainty is followed by more restrictive parliamentary rhetoric. Their design treats rhetoric as the outcome variable, so it captures only one direction of the relationship. In addition, their sample ends in 2018. It therefore excludes the Ukrainian displacement of 2022 and most of the period in which the AfD has been represented in the Bundestag.
     
-    This thesis therefore combines the transparency of a dictionary approach with corpus-specific semantic expansion. The dictionary is manually seeded and refined using word embeddings, allowing the measure to adapt to the language of the corpus while retaining an interpretable construction. As a robustness check, immigration sentiment is also estimated with GPT-4.1-nano and GPT-5-nano following \parencite{kostikova2024fine}. Related work on UK parliamentary discourse likewise finds shifts toward more securitised and border-control framing and less emphasis on integration \parencite{ghafouri2025framing}.
+    The digitisation of parliamentary records has made political discourse measurable at scale, but automated measures are only as informative as their validation \parencite{grimmer2013text}. Dictionary methods are transparent and efficient, yet they can miss context, negation, and reported speech \parencite{kostikova2024fine}. Supervised models and large language models capture more context, but they require more computation, often rely on manual labelling, and are harder to reproduce. \textcite{kostikova2024fine}, for example, use large language models to measure solidarity and anti-solidarity toward migrants in Reichstag and Bundestag speeches over 155 years. Applying computational methods to UK parliamentary debates, \textcite{ghafouri2025framing} document a shift toward securitised and border-control framing and a declining emphasis on integration. This trade-off between transparency and contextual accuracy motivates the measurement strategy of this thesis. The main measure is built from a manually seeded dictionary that is expanded with word embeddings trained on the corpus itself, so that it adapts to parliamentary language while remaining interpretable. As a robustness check, immigration sentiment is additionally estimated with GPT-4.1-nano, following \textcite{kostikova2024fine}.
     
-    A related literature demonstrates that political text can be transformed into quantitative indicators with economic information. \textcite{latifi2024fiscal} construct a fiscal-policy sentiment measure from Bundestag speeches and incorporate it into a recursively identified VAR. They find that changes in fiscal sentiment are associated with subsequent changes in government spending and other macroeconomic variables. \textcite{tillmann2025monetary} further shows that monetary tightening affects fiscal sentiment differently for government and opposition speakers. Together, these studies suggest that parliamentary text can provide economically relevant information and that political position may matter for its interpretation.
+    A growing literature shows that sentiment extracted from parliamentary text contains economically relevant information. \textcite{latifi2024fiscal} construct a fiscal-policy sentiment measure from Bundestag speeches, include it in a recursively identified VAR, and find that changes in fiscal sentiment are followed by changes in government spending and other macroeconomic variables. \textcite{tillmann2025monetary} shows that monetary tightening affects fiscal sentiment differently for government and opposition speakers. Together, these studies suggest that parliamentary text can enter macroeconomic models as an endogenous variable, and that the speaker's political position matters for interpreting it. To my knowledge, this approach has not yet been applied to immigration.
     
-    The closest study is \textcite{abdelatif2026uncertainty}, who construct a migration sentiment index from German Bundestag speeches for 1991--2018. Using openness and restriction terms around migration anchors and correcting for negation, they find that higher economic and migration-related uncertainty is followed by more restrictive parliamentary rhetoric. Their study therefore provides evidence for one direction of the relationship: economic and migration conditions shape parliamentary sentiment. This thesis examines the complementary direction by asking whether parliamentary immigration sentiment contains information about subsequent economic and migration dynamics.
-    
-    The migration literature provides the other side of this relationship. \textcite{franz1994macroeconometric} find that the effects of migration depend on economic conditions and market regimes. Using a structural VAR, \textcite{maffei2021does} find that net migration shocks affect vacancies, wages, house prices, consumption, investment, net exports, output, and unemployment. These findings establish that migration itself can have broad economic effects, while also suggesting that its consequences depend on the wider economic environment.
-    
-    Taken together, the literature establishes three relevant relationships: migration can affect economic outcomes, economic and migration conditions can shape immigration attitudes and parliamentary rhetoric, and political text can contain measurable economic information. What remains less explored is whether immigration sentiment expressed in parliamentary debates contains information about subsequent migration and macroeconomic dynamics. In particular, it is unclear whether sentiment provides information about future developments or primarily reflects conditions that are already underway.
-    
-    This thesis addresses this gap by constructing immigration-sentiment measures from German Bundestag speeches and incorporating them into a Bayesian vector autoregressive framework based on \textcite{maffei2021does}. The analysis distinguishes government and opposition speakers and examines robustness across sample periods, recursive orderings, and alternative sentiment measures. It therefore connects migration economics with computational political text analysis and investigates whether parliamentary immigration discourse is systematically related to subsequent economic and migration dynamics.
+    Taken together, the literature establishes three relationships. Migration affects economic outcomes, economic and migration conditions shape immigration attitudes and parliamentary rhetoric, and parliamentary text can contain measurable economic information. What remains open is whether immigration sentiment expressed in parliament contains information about subsequent migration and macroeconomic dynamics, or whether it primarily reflects conditions that are already underway. This thesis addresses that question in three ways. First, it extends the BVAR framework of \textcite{maffei2021does} by an immigration sentiment measure treated as an endogenous variable, which allows feedback in both directions instead of imposing one a priori. Second, following \textcite{tillmann2025monetary}, it distinguishes between government and opposition speakers. Third, it extends the sample to 2025 and tests robustness across sample periods, recursive orderings, and an independent LLM-based sentiment measure. The thesis thereby connects migration economics with computational political text analysis.
     
     
     
@@ -258,7 +254,7 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
     
     The second sub-dataset covers October 2017 to the second quarter of 2025. After a format change in the 19th legislative period, records became structured, so speeches and their metadata could be extracted directly. For this period, \textcite{latifi2024fiscal} used the \texttt{pybundestag} package. The result matches the structure of the first sub-dataset. Combining both gives one consistent speech-level corpus from Q1 1960 to Q2 2025.
     
-    Preprocessing was done by the data provider, following \textcite{latifi2024fiscal}; we received the corpus already cleaned. The steps were: (i) removing irrelevant speeches and speeches shorter than 100 or longer than 3,573 tokens; (ii) lemmatization; (iii) normalizing German umlauts and the Eszett (ß); (iv) removing line breaks, digits, and special characters; (v) lowercasing all text; (vi) removing single-character tokens and tokens longer than 30 characters; and (vii) removing stop words.\footnote{Stop words are very common words that carry little meaning and add little to text analysis.}
+    Preprocessing was done by the data provider, following \textcite{latifi2024fiscal}; we received the corpus already cleaned. The steps were: (i) removing irrelevant speeches; (ii) lemmatization; (iii) normalizing German umlauts and the Eszett (ß); (iv) removing line breaks, digits, and special characters; (v) lowercasing all text; (vi) removing single-character tokens and tokens longer than 30 characters; and (vii) removing stop words.\footnote{Stop words are very common words that carry little meaning and add little to text analysis.}
     
     This pipeline produces a final dataset of exactly 260,660 parliamentary speeches, covering Q1 1960 to Q2 2025.
     
@@ -316,12 +312,14 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
     
     This filtering reduces the corpus from 260,660 to 28,662 speeches, about 11\% of all speeches. Figure~\ref{filtereddataplot} shows the counts before and after filtering. While total speeches have grown steadily over time, immigration-related speeches have grown even more, especially during periods of high migration.
     
-    From this reduced corpus, we build two sentiment dictionaries: a welcoming (open) dictionary and a restrictive dictionary. We build them in three steps: manual seed selection, Word2Vec-based expansion, and manual cleaning.
+    Notable peaks are in the years 1993 and 2016, corresponding to serious tension around migration politics. After 2016 and an additional event (immigration from Ukraine), debates around that topic are more present, fluctuating around an average of 100 speeches per month.
     
-    \paragraph{Step 1: Manual seed selection.} We manually pick speeches that reflect different immigration positions, based on the documented history of German parties on this issue: 200 AfD speeches from 2017--2025, 94 CDU/CSU speeches from 1990--1994, and 500 CDU/CSU, SPD, and FDP speeches from the 2015--2018 refugee period. Close reading of these speeches gives us 655 seed words for the welcoming dictionary and 872 for the restrictive dictionary.
+    From the reduced corpus, we build two sentiment dictionaries: a welcoming (open) dictionary and a restrictive dictionary. We build them in three steps: manual seed selection, Word2Vec-based expansion, and manual cleaning.
     
-    \paragraph{Step 2: Word2Vec-based expansion.} We train a skip-gram Word2Vec model on the immigration-related corpus (vector size 100, context window 7, minimum word count 10, 50 training epochs, fixed random seed). We expand the dictionaries iteratively: in each round, we use a small, topic-focused seed list (for example, terms about the economic side of migration policy). For each seed word in the model's vocabulary, we find its 20 nearest neighbors by cosine similarity. We keep a candidate word only if (i) its similarity to the seed is at least 0.72, (ii) it appears in a \ac{TF-IDF} vocabulary built on the immigration corpus ($\mathit{max\_features}=80{,}000$, $\mathit{min\_df}=2$), and (iii) it is a purely alphabetic token longer than three characters. Words that appear as neighbors of seeds from both dictionaries are treated as ambiguous and dropped from both. We merge the kept words from each round into the growing dictionaries, ending with 755 welcoming words and 968 restrictive words.
+    We manually pick speeches that reflect different immigration positions, based on the documented history of German parties on this issue: 200 AfD speeches from 2017--2025, 94 CDU/CSU speeches from 1990--1994, and 500 CDU/CSU, SPD, and FDP speeches from the 2015--2018 refugee period. Close reading of these speeches gives us 655 seed words for the welcoming dictionary and 872 for the restrictive dictionary.
     
+	We represent our speeches as a unique text corpus and use the word2vec method developed in \textcite{mikolov2013efficient} to represent words as vectors, so that we can capture relationships between them based on their numerical representation. We train a skip-gram Word2Vec model on the immigration-related corpus (vector size 100, context window 7, minimum word count 10, 100 training epochs, fixed random seed). We expand the dictionaries iteratively: in each round, we use a small, topic-focused seed list (for example, terms about the economic side of migration policy). For each seed word in the model's vocabulary, we find its 20 nearest neighbors by cosine similarity. We keep a candidate word only if (i) its similarity to the seed is at least 0.72, (ii) it appears in a \ac{TF-IDF} vocabulary built on the immigration corpus ($\mathit{max\_features}=80{,}000$, $\mathit{min\_df}=2$), and (iii) it is a purely alphabetic token longer than three characters. Words that appear as neighbors of seeds from both dictionaries are treated as ambiguous and dropped from both. We merge the kept words from each round into the growing dictionaries, ending with 755 welcoming words and 968 restrictive words.
+
     \begin{figure}[h]
     	\begin{center}
     		\includegraphics[width=12cm]{images/wordtwovectone.png}
@@ -330,7 +328,7 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
     	\end{center}
     \end{figure}
     
-    To sharpen the split between the two dictionaries, we project the word embeddings onto two dimensions using \ac{PCA}, which keeps most of the variance while giving an interpretable view of the embedding space. As Figure~\ref{wordtwovecone} shows, restrictive terms (red) mostly sit lower in the projection, while welcoming terms (green) sit higher. The interval $[-0.48, 0.5]$ on the $y$-axis holds most ambiguous words. We keep restrictive words with a $y$-coordinate below $-0.48$ and welcoming words above $0.5$, dropping everything in between. This gives cleaner dictionaries (Figure~\ref{wordtwovecttwo}) of 288 restrictive and 241 welcoming terms.
+    To have a visual representation of our dictionaries, we project the word embeddings onto two dimensions using \ac{PCA}, which keeps most of the variance while giving an interpretable view of the embedding space. As Figure~\ref{wordtwovecone} shows, restrictive terms (red) mostly sit lower in the projection, while welcoming terms (green) sit higher. By visual analysis of the graph, the interval $[-0.48, 0.5]$ on the $y$-axis holds most ambiguous words. To sharpen the split between the two dictionaries, we keep in our respective dictionaries only the restrictive words with a $y$-coordinate below $-0.48$ and the welcoming words with a $y$-coordinate above $0.5$, dropping everything in between, which increases the semantic difference between the dictionaries. This gives cleaner dictionaries (Figure~\ref{wordtwovecttwo}) of 288 restrictive and 241 welcoming terms.
     
     \begin{figure}[h]
     	\begin{center}
@@ -340,13 +338,13 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
     	\end{center}
     \end{figure}
     
-    \paragraph{Step 3: Manual cleaning.} \label{sec:party_averages} We then manually clean the dictionaries, prompted by an early check of average sentiment scores by party (Section~\ref{sentiment-index-construction}). This check found implausibly negative scores for parties known to hold welcoming positions, especially Bündnis~90/Die Grünen and Die Linke. For each of these parties, we randomly sampled speeches with a sentiment score below zero and read them individually.
+    \label{sec:party_averages} We then manually clean the dictionaries, prompted by an early check of average sentiment scores by party (Section~\ref{sentiment-index-construction}). This check found unusual negative scores for parties known to hold welcoming positions, especially Bündnis~90/Die Grünen and Die Linke. For each of these parties, we randomly sampled speeches with a sentiment score below zero and read them individually.
     
     This revealed two problems. First, restrictive words were sometimes used critically, for example when a speaker quoted or condemned anti-immigration rhetoric rather than expressing it themselves — a nuance our embedding-based measure cannot capture. Second, some dictionary words carried purely administrative or legal meaning (e.g., \textit{Familiennachzug}, \textit{Asylrecht}, \textit{Ausländer}) or no clear stance at all (e.g., \textit{abschieben}, \textit{Abschiebung}, \textit{Zurückweisung}, \textit{Migrationswelle}, \textit{Migrationsstrom}), adding noise unrelated to the speaker's actual position. We removed all such entries, retrained the model, and recomputed the scores.
     
     This cleaning was not done to force parties into a preset ranking: after this step, Bündnis~90/Die Grünen's average sentiment became less negative, while Die Linke's stayed negative (Figure~\ref{AveragePartySentiment}). This shows the correction came from real misclassifications found by close reading, not from adjusting until a target ranking appeared. We revisit this in the robustness check (Section~\ref{sec:robustness}).
     
-    This gives a final welcoming dictionary of 222 words, covering skilled labor, the economy, the labor market, human rights, humanitarian aid, protection, integration, education, language learning, citizenship, social cohesion, and diversity and inclusion. The final restrictive dictionary has 178 words, covering border security, state control, repatriation, deportation, legal enforcement, capacity limits, labor market protection, and concerns about social integration \footnote{To conserve space in the main document, the complete lists of welcoming and restrictive dictionary terms are provided in the replication code and supplementary data folder accompanying this thesis.}.
+    This gives a final welcoming dictionary of 233 words, covering skilled labor, the economy, the labor market, human rights, humanitarian aid, protection, integration, education, language learning, citizenship, social cohesion, and diversity and inclusion. The final restrictive dictionary has 177 words, covering border security, state control, repatriation, deportation, legal enforcement, capacity limits, labor market protection, and concerns about social integration \footnote{To conserve space in the main document, the complete lists of welcoming and restrictive dictionary terms are provided in the replication code and supplementary data folder accompanying this thesis.}.
     
     \begin{table}[htbp]
     	\centering
@@ -357,9 +355,9 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
     		\textbf{Stage} & \textbf{Welcoming} & \textbf{Restrictive} & \textbf{Total} \\
     		\midrule
     		Initial seeds & 655 & 872 & 1527 \\
-    		Word2Vec expansion & 755 & 969 & 1724 \\
+    		Word2Vec expansion & 755 & 968 & 1724 \\
     		PCA refinement & 241 & 288 & 529 \\
-    		Final vocabulary & 222 & 178 & 400 \\
+    		Final vocabulary & 233 & 177 & 410 \\
     		\bottomrule
     	\end{tabular}
     \end{table}
@@ -372,18 +370,18 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
     \begin{figure}[h]
     	\begin{center}
     		\includegraphics[width=12cm]{images/averagePartySentiment.png}
-    		\caption{Average restrictive immigration sentiment by political party (negative values indicate frequent use of restrictive anti-immigration vocabulary, whether framed defensively or critically).}
+    		\caption{Average net immigration sentiment by political party (Doc2Vec measure). Negative values indicate that a party's speeches are, on average, closer to the restrictive than to the welcoming reference vector, whether the restrictive vocabulary is used defensively or critically.}
     		\label{AveragePartySentiment}
     	\end{center}
     \end{figure}
     
-    Instead of simply counting dictionary words, we embed both speeches and dictionary terms in one shared vector space, and define each speech's stance as its cosine similarity to two reference vectors — one per dictionary. We use a rolling-window Doc2Vec procedure to avoid look-ahead bias: speeches in a given quarter are always scored using a model trained only on earlier data.
+    Instead of simply counting dictionary words, we embed both speeches and dictionary terms in one shared vector space, and define each speech's stance as its cosine similarity to two reference vectors, one per dictionary. We use a rolling-window Doc2Vec procedure to avoid look-ahead bias: speeches in a given quarter are always scored using a model trained only on earlier data.
     
     For each quarter $t$, we train a \ac{PV-DBOW} Doc2Vec model (\texttt{dm=0}, with word vectors trained jointly via \texttt{dbow\_words=1}), vector size 100, context window 5, minimum word count 1, initial learning rate 0.025, and 50 training epochs, using only speeches from the preceding 40 quarters (ten years), $[t-40, t)$. This follows the rolling-window design of \textcite{latifi2024fiscal} for fiscal sentiment, adapted here for immigration. Figure~\ref{rollingwindow} shows the procedure.
     
-    Using this model, we build two reference vectors — one for each dictionary — by averaging the embeddings of all dictionary words present in that window's vocabulary (for multi-word entries, we sum the word embeddings). We then infer document vectors for all speeches in the following, held-out quarter $t$, and compute their cosine similarity to each reference vector, giving a \textit{similarity\textsubscript{welcoming}} and a \textit{similarity\textsubscript{restrictive}} score per speech.
+    Using this model, we build two reference vectors, one for each dictionary, by averaging the embeddings of all dictionary terms present in that window's vocabulary. For multi-word entries (up to five words), we sum the word embeddings, and an entry is used only if all of its words are in the vocabulary. We then infer document vectors for all speeches in the following, held-out quarter $t$, and compute their cosine similarity to each reference vector, giving a \textit{similarity\textsubscript{welcoming}} and a \textit{similarity\textsubscript{restrictive}} score per speech.
     
-    We start the rolling training from Q1 1980 onward, since immigration-related discourse becomes more consistent from this point. With the ten-year window requirement, this gives out-of-sample sentiment scores from Q1 1990 to Q2 2025.
+    The first training window covers Q1 1980 to Q4 1989, since immigration-related discourse becomes more consistent from 1980 onward. With the ten-year window requirement, this gives out-of-sample sentiment scores from Q1 1990 to Q2 2025.
     
     The sentiment score of speech $i$ is the difference between its two similarities:
     \begin{equation}
@@ -401,6 +399,16 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
     		\label{rollingwindow}
     	\end{center}
     \end{figure}
+    
+    
+    Since the macroeconomic variables in Section~\ref{identification} are observed at a monthly frequency, we aggregate the speech-level scores to months. Each speech is assigned to the calendar month in which it was delivered. For speaker group $g \in \{\text{Government}, \text{Opposition}\}$ and month $m$, the sentiment index is the unweighted mean of the scores of all immigration-related speeches given by members of that group:
+    \begin{equation}
+    	S_{g,m} = \frac{1}{N_{g,m}} \sum_{i \in \mathcal{I}_{g,m}} \text{sentiment}_i,
+    	\label{eq:monthly_sentiment}
+    \end{equation}
+    where $\mathcal{I}_{g,m}$ is the set of speeches by group $g$ in month $m$ and $N_{g,m}$ their number. Every speech receives the same weight, regardless of its length or the speaker's role. A speech is assigned to the government group if the speaker's party belonged to the governing coalition on the date of the speech, and to the opposition otherwise. The overall parliamentary index is computed in the same way over all speeches.
+    
+    Months without any immigration-related speech occur mainly during the parliamentary summer recess in July and August. Of the 426 months between January 1990 and June 2025, 46 contain no scored speech at all. The group-specific series can have additional empty months, when only government or only opposition members spoke on immigration. Because the VAR requires a continuous monthly series, we fill each empty month by linear interpolation between the two adjacent observed months. Gaps at the beginning or end of a series, where no neighbour exists on one side, are filled with the nearest observed value. The procedure is applied to the government, opposition, and overall series separately.
     
     \subsection{Validation of the Sentiment Measure}
     \label{validation-of-the-sentiment-measure}
@@ -443,7 +451,7 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
     	\end{center}
     \end{figure}
     
-    Party-level results show large differences in immigration-related discourse. The AfD shows mostly negative sentiment throughout its observed period, while parties traditionally seen as pro-immigration show higher average scores, though variation within each party remains substantial (Appendix~\ref{fig:party_sentiment}).
+    Party-level results show large differences in immigration-related discourse. The AfD shows mostly negative sentiment throughout its observed period, while parties traditionally seen as pro-immigration show higher average scores, though variation within each party remains substantial (Figure~\ref{fig:party_sentiment}).
   
     \newpage
     
@@ -454,12 +462,11 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
     
     \subsection{VAR Model}
      
-     This study employs a Bayesian vector autoregressive (VAR) framework to
+     This study employs a Bayesian vector autoregressive (BVAR) framework to
      analyse the dynamic relationships among the selected macroeconomic and
      political variables. The model is estimated over different sample periods in
      order to examine the robustness of the results and to distinguish between the
-     pre-pandemic and extended sample periods. Specifically, the analysis considers
-     the periods 2006--2019, 2007--2019, and 2007--2025.
+     pre-pandemic and extended sample periods. Specifically, the analysis considers the periods 2006--2019 (the period considered in the original study, because monthly immigration data are available only since 2006), 2007--2019, and 2007--2025 (we extended and reconstructed the dataset, beginning in 2007, because the employment rate is available on the website of the Bundesagentur für Arbeit only since May 2007).
      
      For the pre-pandemic samples, namely 2006--2019 and 2007--2019, we estimate
      a standard reduced-form VAR model with $p$ lags and $n$ endogenous variables:
@@ -562,8 +569,7 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
      	\mathbf{U} = \left(\mathbf{u}_{p+1},\ldots,\mathbf{u}_{T}\right)',
      \end{equation}
      and has dimension $(T-p) \times n$.
-     We estimate the VAR model using the variables in levels. The KPSS results indicate that most variables are non-stationary in levels (see Tables~\ref{tab:kpss_level} and~\ref{tab:kpss_level_dataset2}), while the Johansen trace test provides evidence of long-run relationships among the variables (see Tables~\ref{tab:johansen_trace} and~\ref{tab:johansen_trace_dataset2} in the Appendix). Given the objective of preserving these long-run relationships and following the level-VAR approach adopted in the reference study, the VAR models are estimated in levels. The resulting impulse responses are therefore interpreted primarily as dynamic associations rather than as estimates of a structural causal mechanism (\cite{sims1990inference}).
-         
+     
      \subsubsection{Bayesian Estimation}
      
      Both the baseline VAR models and the extended specification including the
@@ -572,40 +578,36 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
      Lag length was assessed using the Akaike Information Criterion (AIC),
      Hannan--Quinn Information Criterion (HQ), Schwarz Information Criterion
      (SC), and Final Prediction Error (FPE). As shown in
-     Table~\ref{tab:lag_selection}, the criteria disagree substantially: AIC
+     Table~\ref{tab:lags}, the criteria disagree substantially: AIC
      and FPE favor long lag structures, particularly in the 2007--2019 and
      2007--2014 sub-samples, while SC consistently favors one or two lags
      across all samples. We follow the Schwarz Criterion throughout, both
      for its parsimony and to guard against overfitting given the limited
-     sample size. This yields one monthly lag for the original 2006--2019
-     specification, two lags for the reconstructed 2007--2025 sample, and
-     one lag for the reconstructed 2007--2019 and 2007--2014 sub-samples.
+     sample size. 
      
      \begin{table}[htbp]
      	\centering
-     	\caption{VAR Lag Length Selection}
-     	\label{tab:lag_selection}
-     	\begin{tabular}{lrrrrc}
-     		\hline
-     		\textbf{Sample} & \textbf{AIC} & \textbf{HQ} &
-     		\textbf{SC} & \textbf{FPE} & \textbf{Final Lag (SC)} \\
-     		\hline
-     		Original study (2006--2019) & 3 & 2 & 1 & 3 & 1 \\
-     		Reconstructed, 2007--2025   & 3 & 3 & 2 & 3 & 2 \\
-     		Reconstructed, 2007--2019   & 10 & 2 & 1 & 9 & 1 \\
-     		Reconstructed, 2007--2014   & 5 & 2 & 1 & 4 & 1 \\
-     		\hline
-     	\end{tabular}
-     	
-     	\begin{flushleft}
-     		\footnotesize
-     		\textit{Notes:} AIC denotes the Akaike Information Criterion,
-     		HQ the Hannan--Quinn Information Criterion, SC the Schwarz
-     		Information Criterion, and FPE the Final Prediction Error.
-     		Reported values indicate the lag order minimizing each
-     		criterion. The lag order selected by SC is retained in the
-     		final specification for each sample.
-     	\end{flushleft}
+     	\begin{threeparttable}
+     		\caption{Lag-order selection for the VAR in levels}
+     		\label{tab:lags}
+     		\begin{tabular}{llcccccc}
+     			\toprule
+     			Sample & Sentiment & AIC & HQ & SC & FPE \\
+     			\midrule
+     			2007--2025 & Government    & 3 & 3 & 3 & 3 \\
+     			2007--2025 & Opposition    & 3 & 3 & 2 & 3 \\
+     			2007--2025 & Overall       & 3 & 3 & 3 & 3 \\
+     			\midrule
+     			2007--2019 & Government & 5 & 3 & 2 & 5 \\
+     			2007--2019 & Opposition & 5 & 3 & 2 & 5 \\
+     			2007--2019 & Overall    & 5 & 3 & 2 & 5 \\
+     			\midrule
+     			2007--2014 & Government & 4 & 2 & 1 & 4 \\
+     			2007--2014 & Opposition & 4 & 2 & 2 & 4 \\
+     			2007--2014 & Overall    & 4 & 2 & 1 & 4 \\
+     			\bottomrule
+     		\end{tabular}
+     	\end{threeparttable}
      \end{table}
      
      The objective is to generate posterior draws (one thousand) of the coefficient matrix $\mathbf{\Pi}$ and the covariance matrix $\boldsymbol{\Sigma}$ from their joint posterior distribution. According to Bayes' theorem, the joint posterior distribution is proportional to the likelihood of the observed data multiplied by the
@@ -699,9 +701,9 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
     
     The Consumer Confidence Index comes from household assessments of their financial situation, the general economy, employment prospects, and savings, sourced from the \ac{OECD}. The Business Expectations Index comes from monthly ifo Institute surveys of firms in manufacturing, services, trade, and construction, on their expectations for the next six months. Industrial production captures overall economic activity, and registered unemployment lets us directly examine the link between labour-market conditions and immigration.
     
-    All log series are multiplied by 100, and the data are monthly. Our analysis reconstructs and extends the dataset from \textcite{maffei2021does}.
+    All log series are multiplied by 100, and the data are monthly, so that coefficients and impulse responses can be read directly as percentage changes. Our analysis reconstructs and extends the dataset from \textcite{maffei2021does}.
     
-    We estimate three VAR models over three sample periods. First, 2006--2019, matching the original study, so our reconstructed data and estimates can be compared directly against \textcite{maffei2021does} as a validation check. Second, 2007--2019 on our reconstructed data, motivated by a large discrepancy we found between the original study's consumer confidence series and the series from its stated source (Figure~\ref{data_comparison}); this lets us check whether results are sensitive to our reconstructed series while staying close to the original sample. Third, the extended 2007--2025 period, adding the COVID-19 pandemic and its aftermath, with a binary COVID-19 dummy as an exogenous control (Eq.~\ref{eq:covid_dummy}) to keep pandemic-driven disruption from being wrongly attributed to the endogenous relationships between immigration, the economy, and political sentiment. This dummy appears only in the 2007--2025 specification and is excluded from both the endogenous vector and the structural shocks.
+    We estimate three VAR models over three sample periods. First, 2006--2019, matching the original study data. Second, 2007--2019 on our reconstructed data, motivated by a large discrepancy we found between the original study's consumer confidence series and the series from its stated source (Figure~\ref{data_comparison}); this lets us check whether results are sensitive to our reconstructed series while staying close to the original sample. Third, the extended 2007--2025 period, adding the COVID-19 pandemic and its aftermath, with a binary COVID-19 dummy as an exogenous control (Eq.~\ref{eq:covid_dummy}) to keep pandemic-driven disruption from being wrongly attributed to the endogenous relationships between immigration, the economy, and political sentiment. This dummy appears only in the 2007--2025 specification and is excluded from both the endogenous vector and the structural shocks.
     
     \begin{figure}[htbp]
     	\centering
@@ -713,449 +715,244 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
     \subsection{Identification}
     \label{identification}
     
-    We identify immigration and sentiment shocks with a recursive (Cholesky) ordering, following \parencite{maffei2021does} for the migration block and extending it by placing our new Bundestag immigration sentiment measure last, as in Eq.~\ref{eq:alt_variables}. We report three specifications, one per sentiment measure ($i \in \{\mathit{Government}, \mathit{Opposition}\}$); only the sentiment series changes across them, so the migration and macro block ordering stays fixed, and any difference in results can be attributed to the sentiment measure itself, not the identification scheme.
+    We identify immigration and sentiment shocks with a recursive (Cholesky) ordering, following \parencite{maffei2021does} for the migration block and extending it by placing our new Bundestag immigration sentiment measure last, as in Eq.~\ref{eq:alt_variables}. We report two specifications, one per sentiment measure ($i \in \{\mathit{Government}, \mathit{Opposition}\}$); only the sentiment series and the lags number changes across them, so the migration and macro block ordering stays fixed, and any difference in results can be attributed to the sentiment measure itself, not the identification scheme.
     
-    \paragraph{Ordering the migration variable.} Arrivals are ordered first, assuming German economic conditions do not affect migration within the same month: as \parencite{maffei2021does} argue, deciding to migrate, getting authorization, and arriving takes longer than a month, so a same-month economic shock is unlikely to drive contemporaneous migration.
+    Arrivals are ordered first, assuming German economic conditions do not affect migration within the same month: as \parencite{maffei2021does} argue, deciding to migrate, getting authorization, and arriving takes longer than a month, so a same-month economic shock is unlikely to drive contemporaneous migration.
     
-    \paragraph{Ordering the macroeconomic block.} We order $\text{BExp}_t, \text{CConf}_t, \text{IndPr}_t, \text{UnemplR}_t$, following \parencite{maffei2021does}: the forward-looking survey measures (expectations, confidence) come before the realized ("harder") indicators (production, unemployment). This internal ordering is not critical to our results, since both survey and realized variables sit between arrivals and sentiment in every specification; reordering within this block does not affect the sentiment ordering or the identification of the sentiment shock, our main object of interest. We test sensitivity to this choice in Section~\ref{sec:robustness}.
+    We order $\text{BExp}_t, \text{CConf}_t, \text{IndPr}_t, \text{UnemplR}_t$, following \parencite{maffei2021does}: the forward-looking survey measures (expectations, confidence) come before the realized ("harder") indicators (production, unemployment). This internal ordering is not critical to our results, since both survey and realized variables sit between arrivals and sentiment in every specification; reordering within this block does not affect the sentiment ordering or the identification of the sentiment shock, our main object of interest. 
     
-    \paragraph{Ordering the sentiment variable.} Sentiment is ordered last because parliamentary immigration rhetoric is likely to respond contemporaneously to prevailing economic and social conditions, while its effects on migration and macroeconomic outcomes are expected to operate with a delay through public discourse and social amplification \parencite{abdelatif2026uncertainty,rakers20232015}. The recursive identification therefore assumes that macroeconomic and migration variables may affect sentiment within the month, but sentiment does not affect them contemporaneously. This is an identifying assumption, which we assess through alternative recursive orderings in Section~\ref{sec:robustness}.
+    Sentiment is ordered last because parliamentary immigration rhetoric is likely to respond contemporaneously to prevailing economic and social conditions, while its effects on migration and macroeconomic outcomes are expected to operate with a delay through public discourse and social amplification \parencite{abdelatif2026uncertainty,rakers20232015}. The recursive identification therefore assumes that macroeconomic and migration variables may affect sentiment within the month, but sentiment does not affect them contemporaneously. This is an identifying assumption, which we assess through alternative recursive orderings in Section~\ref{sec:robustness}.
     
-    
-    \paragraph{Predicted signs.} This ordering implies directional predictions we can check against our results. If sentiment genuinely carries information about future immigration and economic conditions, a one-standard-deviation rise in immigration sentiment should, over the following one to two years: (i) raise arrivals, business expectations, and industrial production; (ii) lower consumer confidence in the short run, consistent with natives reading more open rhetoric as a signal of stronger labour-market competition; and (iii) lower unemployment over the medium term. Table~\ref{tab:predicted_signs} summarizes these predictions.
-    \begin{table}[h]
-    	\centering
-    	\small
-    	\begin{tabular}{lcc}
-    		\hline
-    		Variable & Sentiment shock \\
-    		\hline
-    		Arrivals & $+$\\
-    		Business expectations & $+$ \\
-    		Consumer confidence & $-$ (short run) \\
-    		Industrial production & $+$ \\
-    		Unemployment & $-$ (medium run) \\
-    		\hline
-    	\end{tabular}
-    	\caption{\small Predicted sign of the response to a one-standard-deviation sentiment shock, under the identifying assumptions in this section.}
-    	\label{tab:predicted_signs}
-    \end{table}
-    
+    We estimate the VAR in levels, as our interest lies in short- to medium-run dynamics. KPSS tests reject level stationarity for all variables at the 1\% level, except log industrial production (Tables~\ref{tab:kpss_level} in the Appendix), and Johansen trace tests indicate at least two cointegrating relations in all samples and sentiment specifications (Tables~\ref{tab:johansen_trace} in the Appendix). Estimation in levels remains consistent in the presence of unit roots and cointegration \cite{sims1990inference}, whereas differencing would discard the long-run information contained in the data. The impulse responses are therefore interpreted as dynamic associations rather than as structural causal effects.
+      
     \subsection{Results}
-    
-    This section presents the estimation results for several Bayesian VAR
-    specifications, using different datasets and sample periods, and interprets
-    the findings in light of the existing literature. We proceed in three steps.
-    First, we replicate the baseline results of \parencite{maffei2021does} using
-    their original dataset and extend their model with three measures of
-    immigration-related political sentiment (government, opposition, Bundestag). Second, we re-estimate the same specifications on a reconstructed
-    dataset covering an extended sample period through June 2025. Third, we
-    summarize what is robust across specifications and datasets and what is not.
-    
-    \subsubsection{Original Dataset from \parencite{maffei2021does}}
- 
-    \begin{figure}[h]
-    	\begin{center}
-    		\includegraphics[width=14cm]{./../code/images/From2006To2019/originalStudyResult.pdf}
-    		\caption{\small\textbf{Impulse response functions to a one-standard-deviation net migration shock.} 
-    			The plots present the first main result of \parencite{maffei2021does}, showing the responses of the endogenous variables to a positive shock to net migration. 
-    			The impulse responses are obtained from a recursively identified Bayesian VAR model with three lags and Normal--Wishart priors. 
-    			The shaded areas represent the 68\% credible intervals based on posterior draws.}
-    		\label{org_irf_study}
-    	\end{center}
-    \end{figure}
-    
-    We first reproduce the main results of \parencite{maffei2021does} using their
-    original dataset. Our results are broadly consistent with theirs
-    (Figure~\ref{org_irf_study}). A positive shock to immigration leads to a
-    short-term increase in business expectations and industrial production, while
-    consumer confidence declines significantly. The original authors interpret
-    this decline as reflecting concerns among the German population about
-    increased labour-market competition; we return to this interpretation, and
-    its limits, below. Unemployment also decreases following the immigration
-    shock, with the response becoming significant approximately nine months after
-    impact.
-    
-   \paragraph{Extending the baseline model with sentiment measures.}
-   
-   Figures~\ref{fig:govt_sentiment_irf}, \ref{fig:opp_sentiment_irf}, and \ref{fig:bundestag_sentiment_irf} show the responses of the endogenous variables to a positive shock in immigration sentiment, as reflected in speeches by government members, opposition members, and the Bundestag as a whole, respectively.
-   
-   Across all three shocks, business expectations and industrial production decline significantly over comparable horizons. Unemployment rises significantly following opposition and Bundestag sentiment shocks (see  \ref{fig:opp_sentiment_irf}, \ref{fig:bundestag_sentiment_irf}), while the response to a government sentiment shock is comparatively weaker (see \ref{fig:govt_sentiment_irf}). Consumer confidence declines significantly only after Bundestag and government sentiment shocks (see \ref{fig:govt_sentiment_irf}, \ref{fig:bundestag_sentiment_irf}); under an opposition sentiment shock, its response remains close to zero. Arrivals decline slightly following all three shocks, but the response is statistically negligible throughout.
-   
-   \begin{figure}[h]
-   	\begin{center}
-   		\includegraphics[width=12cm]{./../code/images/From2006To2019/GvtSentimentIrf.pdf}
-   		\caption{\small Macroeconomic and Sentiment Dynamics (2006--2019). The figure shows the responses of the endogenous variables to an increase in immigration sentiment, as reflected in speeches by members of the governing parties (horizons 0--50). Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with one lag and Normal--Wishart priors.}
-   		\label{fig:govt_sentiment_irf}
-   	\end{center}
-   \end{figure}
-   
-   \begin{figure}[h]
-   	\begin{center}
-   		\includegraphics[width=12cm]{./../code/images/From2006To2019/OppSentimentIrf.pdf}
-   		\caption{\small Macroeconomic and Sentiment Dynamics (2006--2019). The figure shows the responses of the endogenous variables to an increase in immigration sentiment, as reflected in speeches by members of the opposition parties (horizons 0--50). Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with one lag and Normal--Wishart priors.}
-   		\label{fig:opp_sentiment_irf}
-   	\end{center}
-   \end{figure}
-   
-   \begin{figure}[h]
-   	\begin{center}
-   		\includegraphics[width=12cm]{./../code/images/From2006To2019/BunSentimentIrf.pdf}
-   		\caption{\small Macroeconomic and Sentiment Dynamics (2006--2019). The figure shows the responses of the endogenous variables to an increase in immigration sentiment, as reflected in speeches of all members of the Bundestag (horizons 0--50). Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with one lag and Normal--Wishart priors.}
-   		\label{fig:bundestag_sentiment_irf}
-   	\end{center}
-   \end{figure}
-   
-   \clearpage
-    
-    \subsubsection{Extension of the Maffei et al.\ (2021) Dataset to June 2025}
     \label{sec:extended_results}
     
-    We now turn to the reconstructed dataset, which extends the sample period
-    to June 2025. As discussed above, the reconstructed consumer confidence
-    series differs from the one used in the original study (see
-    Figure~\ref{data_comparison}), motivating separate estimation over the
-    pre-pandemic window 2007--2019 and the full extended window 2007--2025,
-    with a COVID-19 exogenous dummy included in the latter.
+    All impulse responses refer to a one-standard-deviation shock. Because log series are multiplied by 100, responses of business expectations, consumer confidence and industrial production are in percent, the response of the unemployment rate is in percentage points, and arrivals are in net migrants per 1,000 inhabitants. Since sentiment is ordered last, the shock is the part of sentiment that is not explained by past values of all variables or by same-month macroeconomic and migration conditions. It is best read as an unexpected shift toward a more welcoming (positive) or more restrictive (negative) vocabulary, not as a change in policy. We call a response credible when the 90\% credible band excludes zero, and we mention responses that are supported only by the 68\% band separately.
     
-    \begin{figure}[h]
-    	\begin{center}
-    		\includegraphics[width=14cm]{./../code/images/NewDataset/From2006To2019/irfOrgVsnewData.pdf}
-    		\caption{\small Macroeconomic and Sentiment Dynamics, New Sample: 2007--2019. Impulse response functions to a one-standard-deviation arrival shock. Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with two lags and a diffuse (flat-Jeffreys) prior.}
-    		\label{irfOrgVsnewData}
-    	\end{center}
+    On the baseline data set, both sentiment shocks are followed by a temporary economic slowdown (Figures~\ref{base_gvt_2006_2019_irf} and~\ref{base_opp_2006_2019_irf}). After a government sentiment shock, business expectations fall by about 0.5\% within five months, consumer confidence falls by about 0.06\%, and industrial production falls by about 0.5\% after roughly a year. The unemployment rate rises by about 0.03 percentage points, with a peak after about 15 months. The opposition shock produces a similar pattern, with a slightly larger fall in business expectations (about 0.6\%) and a delayed decline in industrial production. In both models, the responses turn slightly positive after about two years, so the shocks have no lasting effect on the level of activity.
+    
+    \begin{figure}[htbp]
+    	\centering
+    	\includegraphics[width=12cm]{./../bvar_project/outputs/figures/base_gvt_2006_2019_irf.pdf}
+    	\caption{Impulse responses to a one-standard-deviation government immigration sentiment shock, baseline panel, 2006M1--2019M10 ($n=166$, $p=2$ lags). Bayesian VAR with a diffuse prior and Cholesky identification (sentiment ordered last). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+    	\label{base_gvt_2006_2019_irf}
     \end{figure}
     
-    Figures~\ref{irfOrgVsnewData} and~\ref{irfOrgVsnewData2} report the responses to an arrival shock, partially replicating the findings of the original study (Figure~\ref{org_irf_study}). The decline in unemployment and the rise in industrial production appear across all specifications, though with varying magnitudes. Business expectations and consumer confidence are significant in the original study and the 2007--2019 sample, but lose significance in the extended 2007--2025 sample. Additionally, the reconstructed sample yields a positive consumer confidence response, unlike the negative response in the original study. This difference might stem from two factors: first, discrepancies in the underlying \ac{OECD} consumer confidence data series for the overlapping period; second, the structural multi-crisis environment of 2020--2025 (comprising the pandemic, energy crisis, inflation, and economic stagnation) which alters macroeconomic dynamics.
-    
-    \begin{figure}[h]
-    	\begin{center}
-    		\includegraphics[width=14cm]{./../code/images/NewDataset/From2007To2025/irfOrgVsnewData2.pdf}
-    		\caption{\small Macroeconomic and Sentiment Dynamics, New Sample: 2007--2025. Impulse response functions to a one-standard-deviation arrival shock. Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with two lags and a diffuse (flat-Jeffreys) prior, including a COVID-19 exogenous control dummy for observations between March 2020 and October 2021.}
-    		\label{irfOrgVsnewData2}
-    	\end{center}
+    \begin{figure}[htbp]
+    	\centering
+    	\includegraphics[width=12cm]{./../bvar_project/outputs/figures/base_opp_2006_2019_irf.pdf}
+    	\caption{Impulse responses to a one-standard-deviation opposition immigration sentiment shock, baseline panel, 2006M1--2019M10 ($n=166$, $p=2$ lags). Bayesian VAR with a diffuse prior and Cholesky identification (sentiment ordered last). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+    	\label{base_opp_2006_2019_irf}
     \end{figure}
     
-    In short, the reconstructed dataset yields a significant relationship
-    between immigration shocks and macroeconomic variables, although the
-    strength and significance of this relationship depend on the sample period
-    considered. This sensitivity is likely attributable, at least in part, to
-    the dataset reconstruction differences discussed in
-    Figure~\ref{data_comparison}.
+    On the reconstructed data set, most of these responses lose credibility (Figures~\ref{new_gvt_2007_2019_irf} and~\ref{new_opp_2007_2019_irf}). The responses of business expectations, consumer confidence and industrial production keep their negative sign, but their credible bands largely include zero. The exception is the unemployment rate. It rises by about 0.07 percentage points within three months after both shocks and remains above zero over the following years. Two factors can explain the weaker results. The sample is shorter, and the reconstructed consumer confidence series differs markedly from the one used in the original study (Figure~\ref{data_comparison}). The baseline results should therefore be read with some caution, since they partly depend on the earlier version of the data.
     
-    \paragraph{Reconstructed dataset, 2007--2019 window.}
-    
-    Figures~\ref{fig:gvt_2007_2019_irf}, \ref{fig:opp_2007_2019_irf}, and \ref{fig:bun_2007_2019_irf} show the responses of the endogenous variables to sentiment shocks computed from speeches by government members, opposition members, and the Bundestag as a whole, respectively. The overall pattern is broadly consistent with the original sample (Figures~\ref{fig:govt_sentiment_irf}--\ref{fig:bundestag_sentiment_irf}): business expectations and consumer confidence decline sharply following each shock. The rise in unemployment, however, is markedly stronger and more persistent here than in the original sample (see figures~\ref{fig:govt_sentiment_irf}, \ref{fig:opp_sentiment_irf}, \ref{fig:bundestag_sentiment_irf}), and this is especially pronounced under the opposition and Bundestag sentiment shocks (see figure \ref{fig:opp_2007_2019_irf} ), where the response is both larger in magnitude and slower to revert than under the government shock.
-    
-    Arrivals respond negatively and significantly to an opposition sentiment shock, while the response is comparatively small and less clearly significant for the government and Bundestag shocks (see figures \ref{fig:gvt_2007_2019_irf}, \ref{fig:bun_2007_2019_irf}). 
-    
-    \begin{figure}[h]
-    	\begin{center}
-    		\includegraphics[width=12cm]{./../code/images/NewDataset/From2006To2019/Gvt2007To2019Irf.pdf}
-    		\caption{\small Macroeconomic and Sentiment Dynamics, New Sample: 2007--2019. The figure shows the responses of the endogenous variables to an increase in immigration sentiment, as reflected in speeches by members of the governing parties (horizons 0--50). Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with one lag and Normal--Wishart priors.}
-    		\label{fig:gvt_2007_2019_irf}
-    	\end{center}
+    \begin{figure}[htbp]
+    	\centering
+    	\includegraphics[width=12cm]{./../bvar_project/outputs/figures/new_gvt_2007_2019_irf.pdf}
+    	\caption{Impulse responses to a one-standard-deviation government immigration sentiment shock, new data panel, 2007M5--2019M10 ($n=150$, $p=2$ lags). Bayesian VAR with a diffuse prior and Cholesky identification (sentiment ordered last). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+    	\label{new_gvt_2007_2019_irf}
     \end{figure}
     
-    \begin{figure}[h]
-    	\begin{center}
-    		\includegraphics[width=12cm]{./../code/images/NewDataset/From2006To2019/Opp2007To2019Irf.pdf}
-    		\caption{\small Macroeconomic and Sentiment Dynamics, New Sample: 2007--2019. The figure shows the responses of the endogenous variables to an increase in immigration sentiment, as reflected in speeches by members of the opposition parties (horizons 0--50). Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with one lag and Normal--Wishart priors.}
-    		\label{fig:opp_2007_2019_irf}
-    	\end{center}
+    \begin{figure}[htbp]
+    	\centering
+    	\includegraphics[width=12cm]{./../bvar_project/outputs/figures/new_opp_2007_2019_irf.pdf}
+    	\caption{Impulse responses to a one-standard-deviation opposition immigration sentiment shock, new data panel, 2007M5--2019M10 ($n=150$, $p=2$ lags). Bayesian VAR with a diffuse prior and Cholesky identification (sentiment ordered last). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+    	\label{new_opp_2007_2019_irf}
     \end{figure}
     
-    \begin{figure}[h]
-    	\begin{center}
-    		\includegraphics[width=12cm]{./../code/images/NewDataset/From2006To2019/Bu2007To2019Irf.pdf}
-    		\caption{\small Macroeconomic and Sentiment Dynamics, New Sample: 2007--2019. The figure shows the responses of the endogenous variables to an increase in immigration sentiment, as reflected in speeches of all members of the Bundestag (horizons 0--50). Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with one lag and Normal--Wishart priors.}
-    		\label{fig:bun_2007_2019_irf}
-    	\end{center}
+    Over the full period, the responses become larger, and the two speaker groups diverge (Figures~\ref{new_gvt_2007_2025_irf} and~\ref{new_opp_2007_2025_irf}). After a government sentiment shock, business expectations fall by about 0.6\% within three months, and consumer confidence and industrial production decline briefly. After an opposition sentiment shock, by contrast, business expectations rise by about 0.35\% and consumer confidence by about 0.06\%, both peaking after roughly ten months. Arrivals fall on impact and return to zero within about a year. In both models, the unemployment rate rises: by about 0.05 percentage points after a government shock and by about 0.08 percentage points after an opposition shock, with a peak after three to five months. This rise in unemployment is the most stable result across all samples and models.
+    
+    \begin{figure}[htbp]
+    	\centering
+    	\includegraphics[width=12cm]{./../bvar_project/outputs/figures/new_gvt_2007_2025_irf.pdf}
+    	\caption{Impulse responses to a one-standard-deviation government immigration sentiment shock, new data panel, 2007M5--2025M6 ($n=218$, $p=3$ lags), including a COVID dummy (2020M3--2021M10). Bayesian VAR with a diffuse prior and Cholesky identification (sentiment ordered last). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+    	\label{new_gvt_2007_2025_irf}
     \end{figure}
     
-    \clearpage
-    
-    \paragraph{Extended sample: 2007--2025.}
-    
-    Figures~\ref{fig:gvt_2007_2025_irf}, \ref{fig:opp_2007_2025_irf}, and \ref{fig:bu_2007_2025_irf} report the corresponding impulse responses. The pattern differs markedly from the government shock, on one hand, and the opposition and Bundestag shocks, on the other. Following a government sentiment shock, most endogenous variables respond weakly and without clear significance (see figure \ref{fig:gvt_2007_2025_irf}), with the exception of unemployment, which remains positive throughout the horizon. Following opposition and Bundestag sentiment shocks, unemployment, business expectations, and consumer confidence all rise significantly, while arrivals decline significantly; industrial production, by contrast, shows no statistically discernible response (see figures~\ref{fig:opp_2007_2025_irf}, \ref{fig:bu_2007_2025_irf}).
-    
-    \begin{figure}[h]
-    	\begin{center}
-    		\includegraphics[width=12cm]{./../code/images/NewDataset/From2007To2025/gvtTo2007to2025.pdf}
-    		\caption{\small Macroeconomic and Sentiment Dynamics, New Sample: 2007--2025. The figure shows the responses of the endogenous variables to an increase in immigration sentiment, as reflected in speeches by members of the governing parties (horizons 0--50). Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with two lags and Normal--Wishart priors.}
-    		\label{fig:gvt_2007_2025_irf}
-    	\end{center}
+    \begin{figure}[htbp]
+    	\centering
+    	\includegraphics[width=12cm]{./../bvar_project/outputs/figures/new_opp_2007_2025_irf.pdf}
+    	\caption{Impulse responses to a one-standard-deviation opposition immigration sentiment shock, new data panel, 2007M5--2025M6 ($n=218$, $p=2$ lags), including a COVID dummy (2020M3--2021M10). Bayesian VAR with a diffuse prior and Cholesky identification (sentiment ordered last). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+    	\label{new_opp_2007_2025_irf}
     \end{figure}
     
-    \begin{figure}[h]
-    	\begin{center}
-    		\includegraphics[width=12cm]{./../code/images/NewDataset/From2007To2025/oppto2007to2025.pdf}
-    		\caption{\small Macroeconomic and Sentiment Dynamics, New Sample: 2007--2025. The figure shows the responses of the endogenous variables to an increase in immigration sentiment, as reflected in speeches by members of the opposition parties (horizons 0--50). Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with two lags and Normal--Wishart priors.}
-    		\label{fig:opp_2007_2025_irf}
-    	\end{center}
+    The opposing signs for business expectations and consumer confidence are partly a result of how the two groups changed over the sample. Until 2017, the opposition consisted mainly of parties with welcoming positions on immigration. Since then, it has included the AfD, and from 2021 also the CDU/CSU. A positive opposition shock in the later years therefore often means that restrictive opposition rhetoric softened. Survey-based expectations may react more favourably to such a shift than to welcoming statements by a government that is responsible for managing large inflows. This interpretation is consistent with the instability of the opposition responses across samples. In 2006--2019, business expectations fell after an opposition shock, whereas in 2007--2025 they rose. Results for the opposition therefore depend on which parties form it.
+    
+    That a shift toward more welcoming rhetoric is followed by higher unemployment is the most counterintuitive result, and several mechanisms are possible. The first is a composition effect in the unemployment statistics. Welcoming rhetoric is concentrated in periods of large refugee inflows, such as 2015--2016 and 2022. Refugees enter registered unemployment with a delay, once their asylum procedures are decided or, for refugees from Ukraine, after they moved into the basic income support system in mid-2022. Under this mechanism, sentiment does not affect the labour market directly. It signals inflows that appear in the unemployment statistics a few months later. The second mechanism is a mismatch between the skills of the unemployed and the needs of firms. Even when unemployment rises, political discourse may emphasise the need for skilled immigration in specific occupations and a more selective immigration policy. This would also be consistent with the temporary decline in arrivals after an opposition shock. The third possibility is anticipation. Politicians may react to labour-market information, such as announced layoffs or forecasts, before it appears in the monthly data. Distinguishing between these mechanisms would require unemployment rates for German and foreign nationals separately, which we leave for future work (Section~\ref{sec:conclusion}).
+   
+    The relationship also runs from the economy to sentiment. After a one-standard-deviation unemployment shock, government sentiment rises by about 0.002 and opposition sentiment by about 0.004, with a peak after three to four months (Figures~\ref{unrate_gvt_2007_2025_irf} and~\ref{unrate_opp_2007_2025_irf}). For the opposition, this corresponds to roughly a quarter of a standard deviation of the sentiment shock. The forecast error variance decomposition indicates that this channel is quantitatively relevant: after about one year, unemployment shocks account for roughly 20\% of the forecast error variance of opposition sentiment (Figure~\ref{unrate_opp_2007_2025_fevd}). At first sight, this result contrasts with \textcite{abdelatif2026uncertainty}, who find that higher economic uncertainty is followed by more restrictive rhetoric. The two findings need not contradict each other, however. Uncertainty and unemployment are different shocks, and our sample extends beyond 2018. In this later period, labour shortages persisted in many occupations, and skilled immigration became a prominent policy issue. The Skilled Immigration Act came into force in 2020 \parencite{feg2019}, and its reform followed in several steps between November 2023 and June 2024 \parencite{feg2023}. Parliamentary debate in this period may therefore have linked weaker labour-market conditions with the need for targeted immigration rather than with restriction alone.
+    
+    \begin{figure}[htbp]
+    	\centering
+    	\includegraphics[width=11cm]{./../bvar_project/outputs/figures/unrate_gvt_2007_2025_irf.pdf}
+    	\caption{Impulse responses to a one-standard-deviation unemployment shock, new data panel, 2007M5--2025M6 ($n=218$, $p=3$ lags), including a COVID dummy (2020M3--2021M10). Bayesian VAR with a diffuse prior and Cholesky identification (variable ordering: arrivals, business expectations, consumer confidence, industrial production, unemployment, government immigration sentiment). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+    	\label{unrate_gvt_2007_2025_irf}
     \end{figure}
     
-    \begin{figure}[h]
-    	\begin{center}
-    		\includegraphics[width=12cm]{./../code/images/NewDataset/From2007To2025/BUto2007to2025.pdf}
-    		\caption{\small Macroeconomic and Sentiment Dynamics, New Sample: 2007--2025. The figure shows the responses of the endogenous variables to an increase in immigration sentiment, as reflected in speeches of all members of the Bundestag (horizons 0--50). Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with two lags and Normal--Wishart priors.}
-    		\label{fig:bu_2007_2025_irf}
-    	\end{center}
+    \begin{figure}[htbp]
+    	\centering
+    	\includegraphics[width=12cm]{./../bvar_project/outputs/figures/unrate_opp_2007_2025_irf.pdf}
+    	\caption{Impulse responses to a one-standard-deviation unemployment shock, new data panel, 2007M5--2025M6 ($n=218$, $p=2$ lags), including a COVID dummy (2020M3--2021M10). Bayesian VAR with a diffuse prior and Cholesky identification (variable ordering: arrivals, business expectations, consumer confidence, industrial production, unemployment, opposition immigration sentiment). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+    	\label{unrate_opp_2007_2025_irf}
     \end{figure}
     
-    Taken together, sentiments are associated with subsequent macroeconomic dynamics. However, we defer a detailed economic interpretation of these findings to the robustness section (\ref{sec:robustness}). This postponement is necessary due to limitations identified in our Doc2Vec model—specifically, its sensitivity to negative rhetoric, which can bias the computation of immigration sentiment within Bundestag speeches.
+    As a reference point, Figures~\ref{arr_gvt_2007_2025_irf} and~\ref{arr_opp_2007_2025_irf} in the Appendix show the responses to a shock in arrivals itself. Because arrivals are ordered first in both specifications, this shock is identified in the same way in both models, which differ only in the sentiment series and the lag length. Two responses are common to both models. The unemployment rate falls by about 0.09 to 0.10 percentage points, with a trough after two to three months, and industrial production rises by about 0.35\% within the first half year. Since \textcite{maffei2021does} report 68\% bands, we compare at this level. Both responses are credible at 68\% in both models, and their signs match the main findings of \textcite{maffei2021does} that migration shocks lower unemployment and expand economic activity, which supports the reconstructed data set. Under our stricter 90\% criterion, the fall in unemployment is credible for about two and a half years in the opposition specification but only for the first three months in the government specification, and the rise in industrial production is credible only in the opposition specification (months 5 to 15). Compared with \textcite{maffei2021does}, the responses in our sample also occur much faster, peaking within a few months rather than after one to two years.
+    
+    Other responses differ from the original study and are not credible in our estimates. Business expectations fall on impact in both models and then turn briefly positive, but the positive phase is not credible even at the 68\% level. By contrast, \textcite{maffei2021does} find an immediate increase. A plausible explanation is that our sample includes 2022, when the largest arrivals shock in the data coincided with the outbreak of the war in Ukraine and a sharp decline in business expectations. Since arrivals are ordered first, this coincidence enters the impact response. The response of consumer confidence is not credible in either specification, so we cannot confirm the negative response reported by \textcite{maffei2021does}, and we do not interpret it further.
+    
+    Finally, an arrivals shock is followed by a small shift toward more restrictive sentiment in both models. For opposition sentiment, this response is credible at the 90\% level from about the third month onward; for government sentiment, only the 68\% band excludes zero. This is in line with \textcite{abdelatif2026uncertainty}, who find that migration-related developments are followed by more restrictive parliamentary rhetoric. Taken together, immigration sentiment and realised migration are associated with opposite movements in unemployment: the unemployment rate rises after a sentiment shock but falls after an arrivals shock. The sentiment shock therefore captures information that differs from the migration flow itself.
+    
+    Three points qualify these results. First, the responses are dynamic associations, not causal effects (Section~\ref{identification}). Second, empty months in the sentiment series are filled by linear interpolation, which uses the value of the following month. This smooths the series and introduces a small amount of future information. Third, the government and opposition models for 2007--2025 use different lag lengths (three and two), as selected by the Schwarz criterion, so differences between them do not stem from the sentiment series alone. Section~\ref{sec:robustness} examines whether the main findings survive a different sample period, an alternative ordering, and an independent sentiment measure.
     
     \clearpage
     
     \subsection{Robustness}
     \label{sec:robustness}
-    
-    As a further robustness check on the identification scheme, we re-estimate
-    the opposition-sentiment specification on the pre-crisis subsample
-    2007--2014 under three alternative recursive orderings. Restricting the
-    sample to this window additionally allows us to assess whether the
-    sentiment--unemployment relationship documented in
-    Section~\ref{sec:extended_results} is already present before the
-    2015--2016 refugee episode, rather than being generated primarily by it.
-    
-    \paragraph{Specification 1: baseline ordering.} The first ordering follows
-    the baseline scheme of Equation~\ref{eq:short_baseline}, with arrivals
-    ordered first, the macroeconomic block ordered as business expectations,
-    consumer confidence, and industrial production, and opposition sentiment
-    ordered last:
-    \begin{equation}
-    	\mathbf{y}_t =
-    	\left[
-    	\text{Arrivals}_t,\,
-    	\text{BusExp}_t,\,
-    	\text{ConsConf}_t,\,
-    	\text{IndProd}_t,\,
-    	\text{Unemp}_t,\,
-    	\text{Sent}^{\mathit{Opp}}_t
-    	\right]^{\prime}.
-    	\label{eq:short_baseline}
-    \end{equation}
-    
-    Figure~\ref{fig:short1} reports the resulting impulse responses. Arrivals
-    decline on impact and remain significant for approximately 7 months
-    following the shock, while unemployment rises on impact and remains
-    significant for approximately 10--15 months. This indicates that the
-    effect of opposition immigration sentiment on arrivals and unemployment is
-    already present in the pre-crisis window, although it is comparatively
-    short-lived relative to the full 2007--2025 sample.
-    
-    \paragraph{Specification 2: reordered macroeconomic block.} The second
-    ordering places the two realized indicators, industrial production and
-    unemployment, ahead of the two survey-based expectations variables, while
-    keeping arrivals first and sentiment last:
-    \begin{equation}
-    	\mathbf{y}_t =
-    	\left[
-    	\text{Arrivals}_t,\,
-    	\text{IndProd}_t,\,
-    	\text{Unemp}_t,\,
-    	\text{BusExp}_t,\,
-    	\text{ConsConf}_t,\,
-    	\text{Sent}^{\mathit{Opp}}_t
-    	\right]^{\prime}.
-    	\label{eq:short_macro}
-    \end{equation}
-    Figure~\ref{fig:short2} shows results essentially unchanged from
-    Specification~1: the responses of arrivals and unemployment remain of
-    similar magnitude and significance, indicating that the results are robust
-    to this reordering.
-    
-    \paragraph{Specification 3: sentiment ordered second.} The third ordering
-    moves opposition sentiment to the second position, immediately after
-    arrivals and ahead of the entire macroeconomic block, thereby allowing
-    sentiment to affect all four macroeconomic variables contemporaneously:
-    \begin{equation}
-    	\mathbf{y}_t =
-    	\left[
-    	\text{Arrivals}_t,\,
-    	\text{Sent}^{\mathit{Opp}}_t,\,
-    	\text{IndProd}_t,\,
-    	\text{Unemp}_t,\,
-    	\text{BusExp}_t,\,
-    	\text{ConsConf}_t
-    	\right]^{\prime}.
-    	\label{eq:short_sent2nd}
-    \end{equation}
-    
-    Figure~\ref{fig:short3} shows a similar pattern to Specifications 1 and 2,
-    with arrivals and unemployment again responding significantly and over
-    comparable horizons. Overall, the three orderings deliver consistent
-    conclusions, suggesting that the documented responses are not highly sensitive to the alternative recursive orderings considered.
-    
-    \begin{figure}[h]
-    	\begin{center}
-    		\includegraphics[width=14cm]{./../code/images/robustness/short2007to2014_baseline.pdf}
-    		\caption{\small\textbf{Robustness check, Specification 1 (baseline ordering), sample 2007--2014.} The figure shows the responses of the endogenous variables to an increase in immigration sentiment, as reflected in speeches by members of the opposition parties (horizons 0--50). Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with one lag and Normal--Wishart priors.}
-    		\label{fig:short1}
-    	\end{center}
-    \end{figure}
-    
-    \begin{figure}[h]
-    	\begin{center}
-    		\includegraphics[width=14cm]{./../code/images/robustness/short2007to2014_macroreorder.pdf}
-    		\caption{\small\textbf{Robustness check, Specification 2 (reordered macroeconomic block), sample 2007--2014.} The figure shows the responses of the endogenous variables to an increase in immigration sentiment, as reflected in speeches by members of the opposition parties (horizons 0--50). Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with one lag and Normal--Wishart priors.}
-    		\label{fig:short2}
-    	\end{center}
-    \end{figure}
-    
-    \begin{figure}[h]
-    	\begin{center}
-    		\includegraphics[width=14cm]{./../code/images/robustness/short2007to2014_sentsecond.pdf}
-    		\caption{\small\textbf{Robustness check, Specification 3 (sentiment ordered second), sample 2007--2014.} The figure shows the responses of the endogenous variables to an increase in immigration sentiment, as reflected in speeches by members of the opposition parties (horizons 0--50). Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with one lag and Normal--Wishart priors.}
-    		\label{fig:short3}
-    	\end{center}
-    \end{figure}
-    
-    \begin{figure}[h]
-    	\begin{center}
-    		\includegraphics[width=14cm]{./../code/images/robustness/doc2vecandgpt.png}
-    		\caption{12-month rolling average of the immigration solidarity net score comparing Doc2vec and \ac{LLM}.}
-    		\label{fig:doc2vec_gpt_sentiment}
-    	\end{center}
-    \end{figure}
-    
-    
+     In this section, we examine the model further. First, we consider the pre-crisis period 2007--2014 to investigate whether the responses of the macroeconomic variables result from the refugee crisis rather than from immigration sentiment. Second, we revisit the identification by ordering immigration sentiment first in the model. Finally, we test the consistency of our results by recomputing immigration sentiment with the approach of \textcite{kostikova2024fine}.
      
-    \clearpage
+     Figures~\ref{new_gvt_2007_2014_irf} and \ref{new_opp_2007_2014_irf} show that the responses of the endogenous variables to immigration sentiment are already notable in the period 2007--2014. Business expectations, consumer confidence and industrial production show distinctly credible responses: they are negative immediately after a government immigration sentiment shock, whereas their responses to an opposition shock are not credible, as the credible bands include zero. The unemployment rate still responds positively, but less credibly.
      
-     \paragraph{Specification 4: alternative sentiment measure \ac{LLM}.}
-     
-     The three specifications above test robustness to the recursive ordering, keeping the
-     sentiment measure fixed. A separate concern, raised in
-     Section~\ref{migration-speech-identification-and-dictionary-construction}, is that
-     Doc2Vec struggles with negation. Manual inspection found several misclassified
-     speeches, and even after the correction in Section~\ref{sec:party_averages}, average
-     sentiment for some parties (CDU/CSU, Bündnis 90/Die Grünen, Die Linke) still looked
-     implausible. As a check on the sentiment measure itself, we re-estimate immigration
-     sentiment using large language models (GPT-4.1-nano and GPT-5-nano), following
-     \textcite{kostikova2024fine}. Each migration-related sentence is classified into
-     solidarity or anti-solidarity subtypes, and we build a monthly net-solidarity score
-     the same way as the dictionary-based measure, separately for government and
-     opposition speakers. The full prompt is in Appendix~\ref{app:gpt_prompt}.
-     
-     Figures~\ref{fig:gpt_party_average}, \ref{fig:gpt_compassion_party}, and
-     \ref{fig:gpt_economic_party} show that the LLM-based measure ranks parties in a way
-     that better matches their known public rhetoric than the uncorrected dictionary
-     measure. This supports our earlier suspicion that some of the discrepancies in
-     Section~\ref{sec:party_averages} came from negation-related misclassification.
      
      \begin{figure}[h]
      	\begin{center}
-     		\includegraphics[width=14cm]{./../code/images/LLM/partiesGtpaverage.png}
-     		\caption{\small Average Net Immigration Solidarity by Party
-     			(GPT-4.1-nano).}
-     		\label{fig:gpt_party_average}
-     	\end{center}
-     \end{figure}
-     
-     \begin{figure}[h]
-     	\centering
-     	\begin{minipage}[t]{0.45\linewidth}
      		\centering
-     		\includegraphics[width=8cm]{./images/compassion.png}
-     		\caption{\small Average Net Compassionate Solidarity by Party (GPT-4.1-nano).}
-     		\label{fig:gpt_compassion_party}
-     	\end{minipage}
-     	\hfill
-     	\begin{minipage}[t]{0.45\linewidth}
+     		\includegraphics[width=12cm]{./../bvar_project/outputs/figures/new_gvt_2007_2014_irf.pdf}
+     		\caption{Impulse responses to a one-standard-deviation government immigration sentiment shock, new data panel, 2007M5--2014M12 ($n=92$, $p=1$ lag). Bayesian VAR with a diffuse prior and Cholesky identification (sentiment ordered last). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+     		\label{new_gvt_2007_2014_irf}
+     	\end{center}
+     \end{figure}
+     
+     
+     \begin{figure}[h]
+     	\begin{center}
      		\centering
-     		\includegraphics[width=8cm]{./images/economics.png}
-     		\caption{\small Average Net Economic-Utility Solidarity by Party (GPT-4.1-nano).}
-     		\label{fig:gpt_economic_party}
-     	\end{minipage}
+     		\includegraphics[width=12cm]{./../bvar_project/outputs/figures/new_opp_2007_2014_irf.pdf}
+     		\caption{Impulse responses to a one-standard-deviation opposition immigration sentiment shock, new data panel, 2007M5--2014M12 ($n=92$, $p=2$ lags). Bayesian VAR with a diffuse prior and Cholesky identification (sentiment ordered last). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+     		\label{new_opp_2007_2014_irf}
+     	\end{center}
      \end{figure}
      
-     We re-estimate the baseline VAR using the LLM-based opposition-sentiment series over
-     three windows: 2007--2014, 2007--2019, and 2007--2025.
+     
+     Ordering immigration sentiment first allows it to affect the other variables contemporaneously. The results remain qualitatively unchanged for the period 2007--2025 (Figures~\ref{rob_gvt_sentfirst_irf}, \ref{rob_opp_sentfirst_irf}), indicating that our previous interpretation does not depend on the identification assumption.
      
      \begin{figure}[h]
      	\begin{center}
-     		\includegraphics[width=14cm]{./../code/images/LLM/gpt_var_2007_2014.pdf}
-     		\caption{\small Robustness check, LLM-based sentiment measure, sample 2007--2014. The figure shows the responses of the endogenous variables to an increase in opposition immigration sentiment, constructed using GPT-4.1-nano following \textcite{kostikova2024fine} (horizons 0--50). Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with two lags and Normal--Wishart priors.}
-     		\label{fig:gpt_var_2007_2014}
+     		\centering
+     		\includegraphics[width=12cm]{./../bvar_project/outputs/figures/rob_gvt_sentfirst_irf.pdf}
+     		\caption{Robustness to the variable ordering: impulse responses to a one-standard-deviation government immigration sentiment shock with sentiment ordered first, new data panel, 2007M5--2025M6 ($n=218$, $p=3$ lags), including a COVID dummy (2020M3--2021M10). Bayesian VAR with a diffuse prior and Cholesky identification. Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+     		\label{rob_gvt_sentfirst_irf}
      	\end{center}
      \end{figure}
      
      \begin{figure}[h]
      	\begin{center}
-     		\includegraphics[width=14cm]{./../code/images/LLM/gpt_var_2007_2019.pdf}
-     		\caption{\small Robustness check, LLM-based sentiment measure, sample 2007--2019. The figure shows the responses of the endogenous variables to an increase in opposition immigration sentiment, constructed using GPT-4.1-nano following \textcite{kostikova2024fine} (horizons 0--50). Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with two lags and Normal--Wishart priors.}
-     		\label{fig:gpt_var_2007_2019}
+     		\centering
+     		\includegraphics[width=12cm]{./../bvar_project/outputs/figures/rob_opp_sentfirst_irf.pdf}
+     		\caption{Robustness to the variable ordering: impulse responses to a one-standard-deviation opposition immigration sentiment shock with sentiment ordered first, new data panel, 2007M5--2025M6 ($n=218$, $p=2$ lags), including a COVID dummy (2020M3--2021M10). Bayesian VAR with a diffuse prior and Cholesky identification. Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+     		\label{rob_opp_sentfirst_irf}
+     	\end{center}
+     \end{figure}
+     
+      A separate concern, raised in
+      Section~\ref{migration-speech-identification-and-dictionary-construction}, is that
+      Doc2Vec struggles with negation. Manual inspection found several misclassified
+      speeches, and even after the correction, average
+      sentiment for some parties (CDU/CSU, Bündnis 90/Die Grünen, Die Linke) still looked
+      As a check on the sentiment measure itself, we re-estimate immigration sentiment with a large language model (GPT-4.1-nano), adapting the approach of \textcite{kostikova2024fine}. The Doc2Vec measure scores a speech by its lexical proximity to two reference vocabularies. The \ac{LLM}, by contrast, classifies the stance a speaker takes toward migrants in context. It can therefore distinguish the endorsement of restrictive positions from their quotation or criticism, which is the main weakness identified in Section~\ref{sec:party_averages}. Each migration-related excerpt is classified as solidarity, anti-solidarity, mixed, or none, and solidarity and anti-solidarity statements are additionally assigned to one subtype (Table~\ref{tab:solidarity_subtypes}; the full prompt is given in Appendix~\ref{app:gpt_prompt}). For speaker group $g$ (government or opposition) in month $m$, the net-solidarity score is
+      \begin{equation}
+      	\mathit{NS}_{gm} = \frac{S_{gm} - A_{gm}}{N_{gm}},
+      	\label{eq:net_solidarity}
+      \end{equation}
+      where $S_{gm}$ and $A_{gm}$ count the excerpts labelled solidarity and anti-solidarity, and $N_{gm}$ is the total number of migration-related excerpts in that month. Because mixed and neutral excerpts enter the denominator, the score lies between $-1$ and $1$ and reflects both the direction of stance and how often a clear stance is taken.
+      
+      We place more weight on this measure than on the Doc2Vec measure for three reasons. First, \textcite{kostikova2024fine} show on Bundestag speeches that a large language model (GPT-4) reproduces human high-level (anti-)solidarity labels toward migrants with a macro F1 of 0.73, close to the human upper bound of 0.78. Solidarity and anti-solidarity are confused in only about 1\% of cases. Our score in Eq.~\eqref{eq:net_solidarity} relies only on this high-level distinction, which is the dimension where the Doc2Vec measure is weakest. Second, the party patterns produced by GPT-4.1-nano agree with the findings of \textcite{kostikova2024fine}, which were validated against human annotations (see below). Third, a context-based classification does not depend on the composition of a fixed vocabulary, so the dictionary choices described in Section~\ref{sec:party_averages} do not affect it.
+      
+      This evidence should nevertheless be read with caution. \textcite{kostikova2024fine} validate GPT-4, not the smaller GPT-4.1-nano used here, and they report clearly lower performance for smaller models. Our prompt also differs from theirs. It distinguishes economic-utility and economic-burden subtypes instead of a single exchange-based category, and it asks for a short justification instead of step-by-step reasoning. We therefore treat the LLM-based measure as the more valid indicator of stance, but not as a validated ground truth.
+      
+      Figure~\ref{fig:gpt_party_average} shows that the LLM-based measure ranks parties in line with their known positions on immigration. The AfD ($-0.70$) and the BSW ($-0.43$) are the only parties with negative net solidarity, while the SPD, Bündnis~90/Die~Grünen and Die~Linke have the highest scores. This differs from the Doc2Vec measure, which assigns Die~Linke a clearly negative average (Figure~\ref{AveragePartySentiment}). The difference supports our earlier suspicion that some discrepancies in Section~\ref{sec:party_averages} stem from negation and the critical use of restrictive vocabulary. The subtype shares show a similar pattern (Figures~\ref{fig:gpt_compassion_party} and~\ref{fig:gpt_economic_party}). Die~Linke and Bündnis~90/Die~Grünen most often express compassionate solidarity, whereas the FDP most often justifies immigration by its economic utility. This mirrors the party distribution reported by \textcite{kostikova2024fine}, in which left-leaning parties emphasise compassionate solidarity, centrist and liberal parties emphasise economic contributions, and the AfD predominantly expresses anti-solidarity. Because even GPT-4 reaches only a fine-grained macro F1 of 0.42 in their evaluation, we interpret the subtype shares descriptively.
+      
+      \begin{figure}[htbp]
+      	\centering
+      	\includegraphics[width=\linewidth]{./../code/images/LLM/partiesGtpaverage.png}
+      	\caption{\small Net immigration solidarity over time (top) and average net immigration solidarity by party (bottom), GPT-4.1-nano.}
+      	\label{fig:gpt_party_average}
+      \end{figure}
+      
+      \begin{figure}[htbp]
+      	\centering
+      	\begin{minipage}[t]{0.49\linewidth}
+      		\centering
+      		\includegraphics[width=\linewidth]{./images/compassion.png}
+      		\caption{\small Average net compassionate solidarity by party (GPT-4.1-nano).}
+      		\label{fig:gpt_compassion_party}
+      	\end{minipage}
+      	\hfill
+      	\begin{minipage}[t]{0.49\linewidth}
+      		\centering
+      		\includegraphics[width=\linewidth]{./images/economics.png}
+      		\caption{\small Average net economic-utility solidarity by party (GPT-4.1-nano).}
+      		\label{fig:gpt_economic_party}
+      	\end{minipage}
+      \end{figure}
+      
+      The impulse responses based on the LLM measure confirm the main pattern of Section~\ref{sec:extended_results}. They also show more clearly that opposition sentiment carries more information than government sentiment. In the full sample 2007--2025, a one-standard-deviation opposition sentiment shock is followed by a rise in business expectations of about 1.2\%, peaking after roughly seven months. Consumer confidence rises by about 0.2\% with a similar timing, and the unemployment rate rises by about 0.10 percentage points, peaking after three to four months. Arrivals decline temporarily (Figure~\ref{rob_opp_gpt41_2007_2025_irf}).
+      The same signs already appear in 2007--2019, though with smaller magnitudes and wider bands (Figure~\ref{rob_opp_gpt41_2007_2019_irf}). Together with the Doc2Vec results (Figure~\ref{new_opp_2007_2025_irf}), this gives a robust core of findings that holds under both sentiment measures. After a shift toward a more welcoming opposition stance, unemployment, business expectations and consumer confidence rise, and arrivals fall temporarily. The response of industrial production differs between the two measures, so we do not interpret it further.
+      
+      By contrast, government sentiment shocks are followed by weaker responses whose credible bands mostly include zero, in both 2007--2019 and 2007--2025 (Figures~\ref{rob_gvt_gpt41_2007_2019_irf} and~\ref{rob_gvt_gpt41_2007_2025_irf}). One possible explanation is that government speakers are bound to the coalition's policy, so their stance changes less in response to new information. Opposition sentiment varies more strongly, partly because the composition of the opposition changes over the sample. Figure~\ref{fig:gpt_party_average} shows that opposition net solidarity falls sharply after 2017, when the AfD entered the Bundestag, while government net solidarity remains positive. Opposition sentiment may therefore capture shifts in the broader political climate that government statements do not reflect.
+     
+     \begin{figure}[h]
+     	\begin{center}
+     		\centering
+     		\includegraphics[width=12cm]{./../bvar_project/outputs/figures/rob_gvt_gpt41_2007_2019_irf.pdf}
+     		\caption{Robustness to the sentiment measure: impulse responses to a one-standard-deviation government immigration sentiment shock, with sentiment scored by GPT-4.1-nano instead of the doc2vec-based measure, new data panel, 2007M5--2019M10 ($n=150$, $p=2$ lags). Bayesian VAR with a diffuse prior and Cholesky identification (sentiment ordered last). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+     		\label{rob_gvt_gpt41_2007_2019_irf}
      	\end{center}
      \end{figure}
      
      \begin{figure}[h]
      	\begin{center}
-     		\includegraphics[width=14cm]{./../code/images/LLM/gpt_var_2007_2025.pdf}
-     		\caption{\small Robustness check, LLM-based sentiment measure, sample 2007--2025. The figure shows the responses of the endogenous variables to an increase in opposition immigration sentiment, constructed using GPT-4.1-nano following \textcite{kostikova2024fine} (horizons 0--50). Shaded areas denote 68\% credible intervals. All impulse responses are obtained from a recursively identified Bayesian VAR model with two lags and Normal--Wishart priors, including a COVID-19 exogenous control dummy for observations between March 2020 and October 2021.}
-     		\label{fig:gpt_var_2007_2025}
+     		\centering
+     		\includegraphics[width=12cm]{./../bvar_project/outputs/figures/rob_opp_gpt41_2007_2019_irf.pdf}
+     		\caption{Robustness to the sentiment measure: impulse responses to a one-standard-deviation opposition immigration sentiment shock, with sentiment scored by GPT-4.1-nano instead of the doc2vec-based measure, new data panel, 2007M5--2019M10 ($n=150$, $p=2$ lags). Bayesian VAR with a diffuse prior and Cholesky identification (sentiment ordered last). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+     		\label{rob_opp_gpt41_2007_2019_irf}
      	\end{center}
      \end{figure}
      
-     Figures~\ref{fig:gpt_var_2007_2014}, \ref{fig:gpt_var_2007_2019}, and
-     \ref{fig:gpt_var_2007_2025} show that opposition sentiment raises business
-     expectations, consumer confidence, and industrial production. Industrial production
-     does not react right away: it dips first, then turns positive. This dip lasts about
-     two months in the 2007--2014 sample, six months in 2007--2019, and ten months in
-     2007--2025.
-     
-     This pattern differs from the Doc2Vec results for 2007--2014 and 2007--2019, where
-     business expectations, consumer confidence, and industrial production all *decline*
-     after a sentiment shock. The likely reason is that the two sentiment series behave
-     differently between 2011 and 2019: the Doc2Vec series drops sharply in this period,
-     while the LLM series first rises and then falls sharply after 2014 (see
-     Figure~\ref{fig:doc2vec_gpt_sentiment}). In the 2007--2025 period, the two sentiment series follow a broadly similar overall trend, which is why their impulse responses end up looking similar in shape despite differing in level. Unemployment rises after the shock, most clearly in the
-     2007--2025 sample, where the response stays significant for about one and a half years.
-     
-     Migration arrivals behave differently across the three windows: the response is negligible in 2007--2014, significantly positive for over ten months in 2007--2019, and negative before flattening out in 2007--2025. In other words, opposition pro-immigration rhetoric had no clear effect on arrivals before 2015, a positive effect afterward — plausibly linked to the 2015--2016 refugee crisis — and a negative effect once the sample is extended to 2025, which may reflect stricter migration policy and more restrictive public rhetoric in recent years.
-     
-     Overall, the LLM-based sentiment measure (GPT-4.1-nano) offers a more
-     context-sensitive way to capture the tone of the immigration debate, as shown by Figures~\ref{fig:gpt_party_average}, \ref{fig:gpt_compassion_party}, and
-     \ref{fig:gpt_economic_party} and by the impulse responses above, consistent with \cite{kostikova2024fine}, who report a macro-F1 of 0.42 for GPT-4 on similar migration-related classification, against a human upper bound of 0.56. The differences from our dictionary-based measure are consistent with Doc2Vec's known weakness in handling negation. Finally, the fact that the impulse-response pattern is stable across samples suggests that immigration sentiment mainly works through expectation channels — business expectations and consumer confidence — while unemployment and arrivals respond more to the broader
-     macroeconomic conditions of each period.
-     
-     Figure~\ref{fig:gpt_var_2007_2025_var} shows the forecast error variance
-     decomposition: the opposition immigration sentiment shock explains about 30\% of monthly fluctuations in business expectations and consumer confidence after 10 to 15 months, but only about 5\% of the variance in unemployment after around 5 months.
+     \begin{figure}[h]
+     	\begin{center}
+     		\centering
+     		\includegraphics[width=12cm]{./../bvar_project/outputs/figures/rob_gvt_gpt41_2007_2025_irf.pdf}
+     		\caption{Robustness to the sentiment measure: impulse responses to a one-standard-deviation government immigration sentiment shock, with sentiment scored by GPT-4.1-nano instead of the doc2vec-based measure, new data panel, 2007M5--2025M6 ($n=218$, $p=3$ lags), including a COVID dummy (2020M3--2021M10). Bayesian VAR with a diffuse prior and Cholesky identification (sentiment ordered last). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+     		\label{rob_gvt_gpt41_2007_2025_irf}
+     	\end{center}
+     \end{figure}
      
      \begin{figure}[h]
-     	\centering
-     	\includegraphics[width=14cm]{./../code/images/LLM/gpt_var_2007_2025Forcast.pdf}
-     	\caption{Forecast Error Variance Decomposition (2007--2025) for Opposition Immigration Sentiment Shock}
-     	\label{fig:gpt_var_2007_2025_var}
+     	\begin{center}
+     		\centering
+     		\includegraphics[width=12cm]{./../bvar_project/outputs/figures/rob_opp_gpt41_2007_2025_irf.pdf}
+     		\caption{Robustness to the sentiment measure: impulse responses to a one-standard-deviation opposition immigration sentiment shock, with sentiment scored by GPT-4.1-nano instead of the doc2vec-based measure, new data panel, 2007M5--2025M6 ($n=218$, $p=2$ lags), including a COVID dummy (2020M3--2021M10). Bayesian VAR with a diffuse prior and Cholesky identification (sentiment ordered last). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+     		\label{rob_opp_gpt41_2007_2025_irf}
+     	\end{center}
      \end{figure}
     
     \clearpage
-    
-    \section{Conclusion}
-    \label{sec:conclusion}
-    
-    This thesis asked whether immigration-related political sentiment in the German Bundestag carries information about later macroeconomic and migration dynamics. To answer this, the analysis combined natural language processing with a Bayesian vector autoregressive (BVAR) framework. The empirical strategy first reproduced the macroeconomic setting of Maffei-Faccioli and Vella (2021) and then extended it by adding a time-varying measure of parliamentary immigration sentiment. The analysis also separated government from opposition sentiment and tested the robustness of the results across sample periods, recursive orderings, and an independent large language model (LLM)-based sentiment measure.
-    
-    A central methodological contribution is the construction of a dynamic immigration sentiment measure from Bundestag speeches. Instead of relying on a fixed dictionary, the approach combines manually selected seed terms with Word2Vec-based semantic expansion, PCA-guided vocabulary refinement, and rolling-window Doc2Vec representations. The rolling-window design matters because it lets the semantic representation of immigration-related language evolve over time and reduces the risk of leaking future information into the sentiment measure. The resulting index is then split into government, opposition, and aggregate Bundestag sentiment, which lets the analysis check whether political position is linked to different macroeconomic responses.
-    
-    The baseline BVAR results show that innovations in the dictionary-based sentiment measure are followed by movements in several macroeconomic variables. Sentiment shocks are followed by clear responses in business expectations, consumer confidence, and unemployment, while industrial production responds less strongly. Migration arrivals respond more weakly still, and this response varies across sample periods and political groups. In the reconstructed and extended samples, opposition and aggregate sentiment show especially visible responses in arrivals, unemployment, and expectations-related variables. These findings suggest that immigration-related parliamentary discourse carries economically relevant information beyond its immediate content.
-    
-    An important finding from the robustness checks is that the empirical relationship depends on how the sentiment measure is built. Three alternative recursive orderings for the 2007--2014 sample give qualitatively similar responses for unemployment, and to a lesser extent for arrivals, suggesting the main findings are not driven by one specific ordering choice. However, the LLM-based sentiment measure produces a different pattern for several macroeconomic variables. In particular, opposition sentiment is associated with increases in business expectations, consumer confidence, and industrial production in several specifications, while the unemployment response stays more persistent in the extended sample. Arrival responses also differ across sample periods. These differences matter because they show that conclusions about the economic content of political sentiment depend partly on how sentiment is measured.
-    
-    The comparison between the dictionary-based and LLM-based measures is therefore an important qualification of the results. The dictionary-based measure captures how closely parliamentary language relates to welcoming or restrictive immigration concepts, but it can be distorted by negation, reported speech, and the difference between discussing and endorsing a position. An LLM-based classifier can account for some of these contextual features more directly, though it introduces its own dependence on model choice and classification decisions. The robustness results should not be read as identifying one universally correct sentiment measure. Instead, they show that how political rhetoric is measured is itself a key part of the empirical analysis.
-    
-    Taken together, the evidence suggests that parliamentary immigration sentiment carries predictive information about later macroeconomic dynamics, but the size and direction of the estimated responses depend on the sentiment measure and sample period. The most persistent result across specifications is the unemployment response, while responses in expectations, industrial production, and arrivals are more sensitive to measurement and sample choice. Second, the responses of the endogenous variables to sentiment shocks built from Doc2Vec and from the LLM, using opposition speeches, show the same pattern over the larger 2007--2025 sample: a positive immigration rhetoric among opposition members is followed by more positive expectations among households and firms, while arrivals and unemployment are more sensitive to the sample period chosen.
-    
-    One plausible interpretation is that immigration-related rhetoric may partly reflect policymakers' reactions to prevailing economic conditions. For example, labour shortages, changes in migration pressure, or broader economic uncertainty may affect both macroeconomic indicators and how migration is discussed in parliament at the same time. In that case, a positive or welcoming sentiment shock need not be an exogenous policy move; it may instead capture a political reaction to the surrounding economic environment. The empirical design used here cannot fully separate these two mechanisms. This interpretation is offered as one possible explanation of the observed dynamics, not as a causal conclusion.
-    
-    The thesis also contributes to the literature by showing how political text data can be built into an established macroeconomic framework. Combining parliamentary speech analysis, dynamic semantic representations, and BVAR methods gives a framework for studying political discourse together with economic and migration variables. The government-opposition distinction further shows that parliamentary discourse should not be treated as one uniform block.
-    
-    Some limitations should be noted. First, the dictionary-based sentiment measure remains vulnerable to contextual features such as negation and reported speech. Second, the reconstructed macroeconomic dataset differs in some respects from the original data used by Maffei-Faccioli and Vella (2021), particularly for consumer confidence, which may explain some of the differences across replication exercises.
-    
-    These limitations point to directions for future work. Future research could compare several \ac{LLM}s and classification prompts under one shared validation framework. On the econometric side, richer information sets that include vacancies, wages, investment, consumption, housing prices, and net exports could help separate alternative transmission mechanisms. Nonlinear or asymmetric models could also test whether welcoming and restrictive immigration rhetoric have systematically different economic effects. Extending the analysis to other European parliaments would show whether the link between political immigration discourse and macroeconomic dynamics is specific to Germany or reflects a broader European pattern.
-    
-    Overall, the findings show that political discourse can be built into quantitative macroeconomic analysis in a systematic way, while also highlighting the methodological challenges of measuring political sentiment from text. The evidence supports the conclusion that immigration-related parliamentary sentiment carries economically relevant information about later macroeconomic and migration dynamics. At the same time, the sensitivity of several impulse responses to the sentiment measure and specification cautions against reading these relationships as stable structural effects. The main contribution of this thesis is therefore not to establish a simple causal link between immigration rhetoric and economic outcomes, but to build and test an empirical framework through which such relationships can be measured, compared, and studied more rigorously.
-        
+   
+   \section{Conclusion}
+   \label{sec:conclusion}
+   
+   This thesis asked whether immigration-related political sentiment in the German Bundestag carries information about later macroeconomic and migration dynamics. To answer this, the analysis combined natural language processing with a Bayesian vector autoregressive (BVAR) framework. The empirical strategy first reproduced the macroeconomic setting of \textcite{maffei2021does} and then extended it by adding a time-varying measure of parliamentary immigration sentiment, separately for government and opposition speakers. The results were tested across sample periods, recursive orderings, and an independent sentiment measure based on a large language model (LLM).
+   
+   A central methodological contribution is the construction of a dynamic immigration sentiment measure from Bundestag speeches. The approach combines manually selected seed terms with Word2Vec-based expansion, PCA-guided refinement, and rolling-window Doc2Vec representations, which let the semantic representation of immigration-related language evolve over time without leaking future information into the measure. The comparison with the LLM-based measure also shows the limits of this approach. The Doc2Vec index captures whether speakers use welcoming or restrictive vocabulary, but not whether they endorse or criticise it, whereas the LLM classifies stance in context and reproduces the party patterns documented by \textcite{kostikova2024fine}.
+   
+   The sentiment series is associated with macroeconomic variables, and the relationship runs in both directions. Under both measures, a shift toward a more welcoming opposition stance in 2007--2025 is followed by a rise in business expectations and consumer confidence and by a rise in the unemployment rate of about 0.08 percentage points, the most stable result across all specifications. Conversely, unemployment shocks account for about 20\% of the forecast error variance of opposition sentiment. Realised migration behaves differently: an arrivals shock lowers unemployment, as in \textcite{maffei2021does}, so the sentiment shock captures information that differs from the migration flow itself. Government sentiment carries less information, and the responses are weaker for 2007--2019, which may reflect the smaller sample.
+   
+   These results are dynamic associations, not causal effects. The rise in unemployment may partly reflect the delayed registration of refugees in the unemployment statistics rather than a direct effect of rhetoric, and the opposition results depend on which parties form the opposition. Future studies could therefore separate the unemployment rates of natives and foreigners, validate the LLM classification against human annotations, and extend the analysis to other European parliaments to see whether the link between political immigration discourse and macroeconomic dynamics is specific to Germany.
+   
+   Overall, the findings show that political discourse can be integrated into quantitative macroeconomic analysis in a systematic way, while also highlighting the methodological challenges of measuring political sentiment from text. The main contribution of this thesis is therefore not to establish a simple link between immigration rhetoric and economic outcomes, but to build and test an empirical framework through which such relationships can be measured, compared, and studied more rigorously.
+   
 	\clearpage
 	\addcontentsline{toc}{section}{Appendix} 					%sets header with chapter title
 	\section*{Appendix}
@@ -1166,172 +963,101 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
 	
 	\begin{table}[htbp]
 		\centering
-		\caption{KPSS Tests for Level Stationarity}
-		\label{tab:kpss_level}
-		\begin{tabular}{p{8cm}ccc}
-			\hline
-			\textbf{Variable} & \textbf{KPSS} & \textbf{p-value} & \textbf{Decision} \\
-			\hline
-			Immigration sentiment in government speeches
-			& 1.5265 & $<0.01$ & Non-stationary \\
-			Immigration sentiment in opposition speeches
-			& 1.7362 & $<0.01$ & Non-stationary \\
-			Consumer confidence index
-			& 1.9268 & $<0.01$ & Non-stationary \\
-			Business expectations index
-			& 0.1913 & $>0.10$ & Stationary \\
-			Industrial production index
-			& 1.8047 & $<0.01$ & Non-stationary \\
-			Number of registered unemployed
-			& 2.9381 & $<0.01$ & Non-stationary \\
-			Total net migration
-			& 1.7774 & $<0.01$ & Non-stationary \\
-			\hline
-		\end{tabular}
-		
-		\begin{flushleft}
-			\footnotesize
-			\textit{Notes:} The macroeconomic variables are based on the dataset
-			employed by Maffei-Faccioli and Vella \parencite{maffei2021does},
-			extended to the sample period considered in this study. The two
-			political sentiment variables are constructed from parliamentary
-			speeches and distinguish between government and opposition speeches.
-			The KPSS test has level stationarity as the null hypothesis. The
-			truncation lag parameter is 4 for all tests. The null hypothesis is
-			rejected at the 5\% significance level when the p-value is below 0.05.
-			Reported p-values of $<0.01$ and $>0.10$ reflect the bounds returned
-			by the R implementation.
-		\end{flushleft}
-	\end{table}
+		\begin{threeparttable}
+			\caption{KPSS tests for level stationarity}
+			\label{tab:kpss_level}
+			\begin{tabular}{lcccc}
+				\toprule
+				Variable & KPSS statistic & Truncation lag & $p$-value & Decision \\
+				\midrule
+				Sentiment government                 & 3.077 & 5 & $\leq 0.01$ & Non-stationary \\
+				Sentiment opposition                 & 5.187 & 5 & $\leq 0.01$ & Non-stationary \\
+				$\log(\text{Consumer Confidence})\times 100$      & 0.770 & 4 & $\leq 0.01$ & Non-stationary \\
+				$\log(\text{Business Expectation})\times 100$     & 1.330 & 4 & $\leq 0.01$ & Non-stationary \\
+				$\log(\text{Industrial Production})\times 100$    & 0.689 & 4 & 0.0145      & Stationary at 1\% \\
+				Unemployment rate                    & 3.423 & 4 & $\leq 0.01$ & Non-stationary \\
+				Arrivals                             & 0.984 & 4 & $\leq 0.01$ & Non-stationary \\
+				\bottomrule
+			\end{tabular}
+			\begin{tablenotes}
+				\small
+				\item \textit{Notes:} The null hypothesis is level stationarity. Critical values: 0.463 (5\%) and 0.739 (1\%).
+				$p$-values of 0.01 are truncated by the \texttt{tseries} implementation, so the true $p$-value is smaller. Industrial production is rejected at the 5\% level but not at the 1\% level.
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table} 
 
 	\begin{table}[htbp]
 		\centering
-		\caption{Johansen Trace Test for Cointegration}
-		\label{tab:johansen_trace}
-		\begin{tabular}{lrrrr}
-			\hline
-			\textbf{Null Hypothesis} & \textbf{Trace Statistic} &
-			\textbf{10\%} & \textbf{5\%} & \textbf{1\%} \\
-			\hline
-			$r = 0$    & 280.88 & 126.58 & 131.70 & 143.09 \\
-			$r \leq 1$ & 189.89 & 97.18  & 102.14 & 111.01 \\
-			$r \leq 2$ & 117.70 & 71.86  & 76.07  & 84.45 \\
-			$r \leq 3$ & 68.57  & 49.65  & 53.12  & 60.16 \\
-			$r \leq 4$ & 38.55  & 32.00  & 34.91  & 41.07 \\
-			$r \leq 5$ & 17.31  & 17.85  & 19.96  & 24.60 \\
-			$r \leq 6$ & 3.66   & 7.52   & 9.24   & 12.97 \\
-			\hline
-		\end{tabular}
-		
-		\begin{flushleft}
-			\footnotesize
-			\textit{Notes:} The Johansen trace test is estimated with three lags
-			($K=3$), a constant restricted to the cointegration space, and no
-			deterministic linear trend. The test is applied to the seven-variable
-			system including migration, business expectations, consumer confidence,
-			industrial production, unemployment, government sentiment, and
-			opposition sentiment. The trace test sequentially tests the null
-			hypothesis of at most $r$ cointegrating relationships. At the 5\%
-			significance level, the null hypotheses $r=0$, $r\leq1$, $r\leq2$,
-			$r\leq3$, and $r\leq4$ are rejected, whereas $r\leq5$ cannot be
-			rejected. Therefore, the results indicate a cointegration rank of
-			$r=5$ among the variables.
-		\end{flushleft}
-		
+		\begin{threeparttable}
+			\caption{Johansen trace tests: selected cointegration rank $r$}
+			\label{tab:johansen_trace}
+			\begin{tabular}{lcccccc}
+				\toprule
+				Sample & Sentiment & $n$ & $K$ & $r$ (1\%) & $r$ (5\%) & $r$ (10\%) \\
+				\midrule
+				2007--2025 & Overall    & 218 & 3 & 3 & 4 & 5 \\
+				\midrule
+				2007--2019 & Government & 150 & 2 & 3 & 4 & 5 \\
+				2007--2019 & Opposition & 150 & 2 & 2 & 3 & 4\tnote{a} \\
+				2007--2019 & Overall    & 150 & 2 & 2 & 4 & 5 \\
+				\midrule
+				2007--2014 & Government & 92  & 2 & 3 & 3 & 4 \\
+				2007--2014 & Opposition & 92  & 3 & 2 & 3\tnote{b} & 4 \\
+				2007--2014 & Overall    & 92  & 2 & 3 & 3 & 3 \\
+				\bottomrule
+			\end{tabular}
+			\begin{tablenotes}
+				\small
+				\item \textit{Notes:} Trace test with an unrestricted constant in the cointegrating relation (\texttt{ecdet = "const"}); $r$ is determined sequentially from $r=0$. $K$ is the lag order of the VAR in levels; the six variables are Arrivals, Business Expectation, Consumer Confidence, Industrial Production, Unemployment and one sentiment series.
+				\item[a] Borderline: the test statistic (17.85) equals the 10\% critical value.
+				\item[b] Borderline: the test statistic (34.84) is marginally below the 5\% critical value (34.91).
+			\end{tablenotes}
+		\end{threeparttable}
 	\end{table}
 		
 	\clearpage
 	
-	\begin{table}[htbp]
-		\centering
-		\caption{KPSS Tests for Level Stationarity}
-		\label{tab:kpss_level_dataset2}
-		\begin{tabular}{p{8cm}ccc}
-			\hline
-			\textbf{Variable} & \textbf{KPSS} & \textbf{p-value} & \textbf{Decision} \\
-			\hline
-			Immigration sentiment in opposition speeches
-			& 3.2246 & $<0.01$ & Non-stationary \\
-			Immigration sentiment in government speeches
-			& 1.4292 & $<0.01$ & Non-stationary \\
-			Consumer confidence index
-			& 0.7726 & $<0.01$ & Non-stationary \\
-			Business expectations index
-			& 1.3439 & $<0.01$ & Non-stationary \\
-			Industrial production index
-			& 0.7040 & 0.0132 & Non-stationary \\
-			Registered unemployment rate
-			& 3.3561 & $<0.01$ & Non-stationary \\
-			Number of arrivals
-			& 0.9843 & $<0.01$ & Non-stationary \\
-			\hline
-		\end{tabular}
-		
-		\begin{flushleft}
-			\footnotesize
-			\textit{Notes:} The two political sentiment variables are constructed
-			from parliamentary speeches and distinguish between government and
-			opposition speeches. The KPSS test has level stationarity as the null
-			hypothesis. The truncation lag parameter is 4 for all tests. The null
-			hypothesis is rejected at the 5\% significance level when the p-value
-			is below 0.05. Reported p-values of $<0.01$ reflect the lower bound
-			returned by the R implementation.
-		\end{flushleft}
-	\end{table}
-	
-	\begin{table}[htbp]
-		\centering
-		\caption{Johansen Trace Test for Cointegration}
-		\label{tab:johansen_trace_dataset2}
-		\begin{tabular}{lrrrr}
-			\hline
-			\textbf{Null Hypothesis} & \textbf{Trace Statistic} &
-			\textbf{10\%} & \textbf{5\%} & \textbf{1\%} \\
-			\hline		
-			$r = 0$    & 255.62 & 126.58 & 131.70 & 143.09 \\
-			$r \leq 1$ & 179.22 & 97.18  & 102.14 & 111.01 \\
-			$r \leq 2$ & 121.41 & 71.86  & 76.07  & 84.45  \\
-			$r \leq 3$ & 79.56  & 49.65  & 53.12  & 60.16  \\
-			$r \leq 4$ & 41.49  & 32.00  & 34.91  & 41.07  \\
-			$r \leq 5$ & 18.77  & 17.85  & 19.96  & 24.60  \\
-			$r \leq 6$ & 6.16   & 7.52   & 9.24   & 12.97  \\
-			\hline
-		\end{tabular}
-		
-		\begin{flushleft}
-			\footnotesize
-			\textit{Notes:} The Johansen trace test is estimated with three lags
-			($K=3$), a constant restricted to the cointegration space, and no
-			deterministic linear trend. The test sequentially evaluates the null
-			hypothesis of at most $r$ cointegrating relationships. At the 10\%
-			significance level, the null hypotheses $r=0$, $r\leq1$, $r\leq2$,
-			$r\leq3$, $r\leq4$, and $r\leq5$ are rejected, whereas $r\leq6$
-			cannot be rejected. Therefore, the results indicate a cointegration
-			rank of $r=6$ among the variables.
-		\end{flushleft}
-	\end{table}
-	
-	\clearpage
-	
-	\section{Additional Impulse Response Figures}
-	% All robustness specification IRFs
+	\section{Additional Plots}
 	
 	\begin{figure}[h]
-		\centering
-		\begin{minipage}[t]{0.5\linewidth}
+		\begin{center}
 			\centering
-			\includegraphics[width=10cm]{./../code/images/LLM/gpt5_var_2007_2025_opp_.pdf}
-			\caption{GPT-5-nano, 2007--2025, opposition sentiment shock.}
-			\label{fig:gpt5_opp_2007_2025}
-		\end{minipage}
-		\hfill
-		\begin{minipage}[t]{0.5\linewidth}
-			\centering
-			\includegraphics[width=10cm]{./../code/images/LLM/gpt5_var_2007_2025_gvt_.pdf}
-			\caption{GPT-5-nano, 2007--2025, government sentiment shock.}
-			\label{fig:gpt5_gvt_2007_2025}
-		\end{minipage}
+			\includegraphics[width=11cm]{./../bvar_project/outputs/figures/arr_gvt_2007_2025_irf.pdf}
+			\caption{Impulse responses to a one-standard-deviation arrivals shock, new data panel, 2007M5--2025M6 ($n=218$, $p=3$ lags), including a COVID dummy (2020M3--2021M10). Bayesian VAR with a diffuse prior and Cholesky identification (variable ordering: arrivals, business expectations, consumer confidence, industrial production, unemployment, government immigration sentiment). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+			\label{arr_gvt_2007_2025_irf}
+		\end{center}
 	\end{figure}
+	
+	\begin{figure}[h]
+		\begin{center}
+			\centering
+			\includegraphics[width=12cm]{./../bvar_project/outputs/figures/arr_opp_2007_2025_irf.pdf}
+			\caption{Impulse responses to a one-standard-deviation arrivals shock, new data panel, 2007M5--2025M6 ($n=218$, $p=2$ lags), including a COVID dummy (2020M3--2021M10). Bayesian VAR with a diffuse prior and Cholesky identification (variable ordering: arrivals, business expectations, consumer confidence, industrial production, unemployment, opposition immigration sentiment). Lines show the posterior median; shaded areas show 68\% and 90\% credible bands.}
+			\label{arr_opp_2007_2025_irf}
+		\end{center}
+	\end{figure}
+	
+	
+	\begin{figure}[h]
+		\begin{center}
+			\centering
+			\includegraphics[width=12cm]{./../bvar_project/outputs/figures/unrate_opp_2007_2025_fevd.pdf}
+			\caption{Forecast error variance decomposition for the model with opposition immigration sentiment, new data panel, 2007M5--2025M6 ($n=218$, $p=2$ lags), including a COVID dummy (2020M3--2021M10). Bars show the posterior median share of each variable's forecast error variance attributable to the unemployment shock (blue) and to all other shocks (orange). Bayesian VAR with a diffuse prior and Cholesky identification (variable ordering: arrivals, business expectations, consumer confidence, industrial production, unemployment, opposition immigration sentiment); horizon in months.}
+			\label{unrate_opp_2007_2025_fevd}
+		\end{center}
+	\end{figure}
+	
+	
+	\begin{figure}[h]
+		\begin{center}
+			\centering
+			\includegraphics[width=12cm]{./../bvar_project/outputs/figures/rob_opp_gpt41_2007_2025_fevd.pdf}
+			\caption{Forecast error variance decomposition for the model with sentiment scored by GPT-4.1-nano, new data panel, 2007M5--2025M6 ($n=218$, $p=2$ lags), including a COVID dummy (2020M3--2021M10). Bars show the posterior median share of each variable's forecast error variance attributable to the opposition immigration sentiment shock (blue) and to all other shocks (orange). Bayesian VAR with a diffuse prior and Cholesky identification (sentiment ordered last); horizon in months.}
+			\label{rob_opp_gpt41_2007_2025_fevd}
+		\end{center}
+	\end{figure}
+	
 	
 	\clearpage
 	
@@ -1339,7 +1065,7 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
 	% Full breakdown by party, year, and episode
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=14cm]{./../code/images/partyAveragesentiment.png}
+		\includegraphics[width=12cm]{./../code/images/partyAveragesentiment.png}
 		\caption{Evolution of Immigration Sentiment by Political Party}
 		\label{fig:party_sentiment}	
 		\begin{flushleft}
@@ -1358,7 +1084,7 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
 	\section{\ac{LLM} Sentiment Classification Prompt}
 	\label{app:gpt_prompt}
 	
-	Sentiment classification via GPT-4.1-nano and GPT-5-nano was performed
+	Sentiment classification via GPT-4.1-nano was performed
 	using the prompt template below, generated programmatically for each
 	speech excerpt. The five solidarity and five anti-solidarity subtypes,
 	defined in Table~\ref{tab:solidarity_subtypes}, are inserted into the
@@ -1461,7 +1187,7 @@ bottom=2.5cm]{geometry} 		              	% Sets the page margins
 	\thispagestyle{empty}
 	I hereby declare that I have written this Masterthesis independently and without using other than the indicated sources and aids and that I have identified the passages taken verbatim or in content from the used sources as such. The work in the same or similar form has not been submitted to any other examination authority.
 	\\[1cm]
-	Linden, 01.09.2026
+	Linden, 02.11.2026
 	\\[1.5cm]
 	Esdras Shaa Prombo
 	
