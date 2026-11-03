@@ -5,3 +5,4 @@
 businessExpectation.xlsx
 *.npy
 /python/results
+*.pdf
